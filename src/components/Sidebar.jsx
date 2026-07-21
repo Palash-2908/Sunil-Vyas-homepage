@@ -61,7 +61,7 @@ const Sidebar = ({ mobileOpen = false, onClose }) => {
             />
           </div>
           <h2 className="mt-4 text-[15px] font-semibold text-ink leading-tight">
-            Artistic Expressions
+            Sunil Vyas
           </h2>
           <p className="mt-1 text-[13px] text-muted2 leading-tight">
             Contemporary Art Portfolio
