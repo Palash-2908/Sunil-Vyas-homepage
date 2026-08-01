@@ -7,9 +7,7 @@ import {
   Star,
   Award,
 } from 'lucide-react';
-import PageLayout from '../components/PageLayout';
 import Quote from '../components/Quote';
-import Footer from '../components/Footer';
 import { awards, featuredRecognitions, timelineEvents } from '../data/achievementsData';
 
 const iconMap = {
@@ -36,9 +34,9 @@ const fadeUp = {
 
 const Achievements = () => {
   return (
-    <PageLayout>
+    <section id="achievements" className="scroll-mt-20">
       {/* Hero */}
-      <section className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+      <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,10 +59,10 @@ const Achievements = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
           className="mt-4 mx-auto h-[2px] w-16 bg-accent2 origin-center"
         />
-      </section>
+      </div>
 
       {/* Featured recognitions */}
-      <section className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">HIGHLIGHTS</p>
@@ -105,10 +103,10 @@ const Achievements = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Awards & Exhibition cards */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">AWARDS & EXHIBITIONS</p>
@@ -149,10 +147,10 @@ const Achievements = () => {
             })}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Timeline */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeUp} className="text-center mb-10">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">TIMELINE</p>
@@ -178,15 +176,13 @@ const Achievements = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       <Quote
         text="The reward of art is not in the prize, but in the quiet certainty that the work was worth making."
         author="Sunil Vyas"
       />
-
-      <Footer />
-    </PageLayout>
+    </section>
   );
 };
 

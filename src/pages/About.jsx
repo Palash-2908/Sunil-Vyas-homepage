@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
-import PageLayout from '../components/PageLayout';
 import Quote from '../components/Quote';
-import Footer from '../components/Footer';
 import { RiDoubleQuotesL } from 'react-icons/ri';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -40,9 +38,9 @@ const fadeUp = {
 
 const About = () => {
   return (
-    <PageLayout>
+    <section id="about" className="scroll-mt-20">
       {/* Hero */}
-      <section className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+      <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -65,10 +63,10 @@ const About = () => {
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
           className="mt-4 mx-auto h-[2px] w-16 bg-accent2 origin-center"
         />
-      </section>
+      </div>
 
       {/* Introduction */}
-      <section className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
         <div className="max-w-6xl mx-auto grid md:grid-cols-5 gap-10 md:gap-12 items-center">
           <motion.div
             {...fadeUp}
@@ -106,10 +104,10 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </div>
 
       {/* Philosophy */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
         <div className="max-w-5xl mx-auto">
           <motion.div {...fadeUp} className="text-center mb-10">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">PHILOSOPHY</p>
@@ -147,10 +145,10 @@ const About = () => {
             <p className="mt-5 text-[12px] tracking-[0.28em] text-accent2 font-medium">— SUNIL VYAS</p>
           </motion.div>
         </div>
-      </section>
+      </div>
 
       {/* Inspiration & Creative Journey */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14">
           <motion.div {...fadeUp}>
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium mb-3">INSPIRATION</p>
@@ -178,10 +176,10 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </div>
 
       {/* Timeline */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
         <div className="max-w-4xl mx-auto">
           <motion.div {...fadeUp} className="text-center mb-10">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">JOURNEY</p>
@@ -210,10 +208,10 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Studio / Workspace */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeUp} className="text-center mb-10">
             <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">THE STUDIO</p>
@@ -248,7 +246,7 @@ const About = () => {
             A modest space filled with the residue of making — shavings, offcuts, jars of nails, half-mixed pigments. The studio is organised by intuition rather than system, and it is here that every piece finds its final form.
           </motion.p>
         </div>
-      </section>
+      </div>
 
       <Quote
         text="Art is not what you see, but what you make others see."
@@ -256,7 +254,7 @@ const About = () => {
       />
 
       {/* Call to action */}
-      <section className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
+      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
         <motion.div
           {...fadeUp}
           className="max-w-4xl mx-auto text-center bg-ink/[0.03] rounded-xl px-6 md:px-10 py-12 md:py-14"
@@ -267,18 +265,20 @@ const About = () => {
           <p className="mt-4 text-muted2 text-[15px] leading-relaxed max-w-xl mx-auto">
             I welcome enquiries about custom artwork, exhibitions, and collaborations. Let's start a conversation.
           </p>
-          <Link
-            to="/contact"
-            className="mt-7 inline-flex items-center gap-2 px-7 py-3 rounded-md bg-ink text-canvas text-sm tracking-wide hover:bg-ink/85 transition-colors"
+          <ScrollLink
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={600}
+            className="mt-7 inline-flex items-center gap-2 px-7 py-3 rounded-md bg-ink text-canvas text-sm tracking-wide hover:bg-ink/85 transition-colors cursor-pointer"
           >
             Get in Touch
             <FiArrowRight />
-          </Link>
+          </ScrollLink>
         </motion.div>
-      </section>
-
-      <Footer />
-    </PageLayout>
+      </div>
+    </section>
   );
 };
 

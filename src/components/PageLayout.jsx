@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import TopNavbar from './TopNavbar';
+import Footer from './Footer';
 
 const PageLayout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,6 +18,7 @@ const PageLayout = ({ children }) => {
           sidebarOpen={sidebarOpen}
         />
         <main>{children}</main>
+        <Footer />
       </div>
     </div>
   );

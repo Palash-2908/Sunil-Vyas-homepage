@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiCalendar } from 'react-icons/fi';
-import PageLayout from '../components/PageLayout';
 import Quote from '../components/Quote';
-import Footer from '../components/Footer';
 import pressItems from '../data/pressData';
 
 const fadeUp = {
@@ -15,9 +13,9 @@ const fadeUp = {
 
 const Press = () => {
   return (
-    <PageLayout>
+    <section id="press" className="scroll-mt-20">
       {/* Hero */}
-      <section className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+      <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,10 +46,10 @@ const Press = () => {
         >
           Selected coverage from newspapers, magazines, interviews, and exhibitions that have featured the work over the years.
         </motion.p>
-      </section>
+      </div>
 
       {/* Press cards */}
-      <section className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
           {pressItems.map((item, i) => (
             <motion.article
@@ -103,15 +101,13 @@ const Press = () => {
             </motion.article>
           ))}
         </div>
-      </section>
+      </div>
 
       <Quote
         text="Recognition is not the goal of art, but its occasional companion — a reminder that the private work of the studio sometimes reaches beyond itself."
         author="Sunil Vyas"
       />
-
-      <Footer />
-    </PageLayout>
+    </section>
   );
 };
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const topLinks = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/about', label: 'About' },
-  { to: '/gallery', label: 'Gallery' },
-  { to: '/contact', label: 'Contact' },
+  { to: 'home', label: 'Home' },
+  { to: 'about', label: 'About' },
+  { to: 'gallery', label: 'Gallery' },
+  { to: 'contact', label: 'Contact' },
 ];
 
 const TopNavbar = ({ onToggleSidebar, sidebarOpen }) => {
@@ -28,21 +28,19 @@ const TopNavbar = ({ onToggleSidebar, sidebarOpen }) => {
 
         {/* Desktop right-aligned links */}
         <nav className="hidden lg:flex items-center gap-10 ml-auto">
-          {topLinks.map(({ to, label, end }) => (
-            <NavLink
+          {topLinks.map(({ to, label }) => (
+            <ScrollLink
               key={to}
               to={to}
-              end={end}
-              className={({ isActive }) =>
-                `text-[15px] transition-colors duration-200 ${
-                  isActive
-                    ? 'text-accent2 font-medium'
-                    : 'text-ink hover:text-accent2'
-                }`
-              }
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={600}
+              className="text-[15px] transition-colors duration-200 cursor-pointer text-ink hover:text-accent2"
+              activeClass="text-accent2 font-medium"
             >
               {label}
-            </NavLink>
+            </ScrollLink>
           ))}
         </nav>
 

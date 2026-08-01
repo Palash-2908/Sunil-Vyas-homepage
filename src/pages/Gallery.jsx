@@ -1,7 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import PageLayout from '../components/PageLayout';
-import Footer from '../components/Footer';
 import GalleryCategory from '../components/gallery/GalleryCategory';
 import galleryData from '../data/galleryData';
 
@@ -15,9 +13,9 @@ const Gallery = () => {
   }, [activeSlug, categories]);
 
   return (
-    <PageLayout>
+    <section id="gallery" className="scroll-mt-20">
       {/* Hero */}
-      <section className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+      <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -62,7 +60,7 @@ const Gallery = () => {
             />
           ))}
         </motion.div>
-      </section>
+      </div>
 
       {/* Categories */}
       <AnimatePresence mode="wait">
@@ -78,9 +76,7 @@ const Gallery = () => {
           ))}
         </motion.div>
       </AnimatePresence>
-
-      <Footer />
-    </PageLayout>
+    </section>
   );
 };
 

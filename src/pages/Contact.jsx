@@ -11,10 +11,8 @@ import {
   FiLinkedin,
   FiTwitter,
 } from 'react-icons/fi';
-import PageLayout from '../components/PageLayout';
-import Footer from '../components/Footer';
 import { toast } from 'sonner';
-import { Toaster } from '@/components/ui/sonner';
+import { Toaster } from '../components/ui/sonner';
 
 const contactDetails = [
   {
@@ -68,7 +66,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulated submit — replace with real API integration when backend is ready
     setTimeout(() => {
       setSubmitting(false);
       setForm({ name: '', email: '', subject: '', message: '' });
@@ -77,10 +74,10 @@ const Contact = () => {
   };
 
   return (
-    <PageLayout>
+    <section id="contact" className="scroll-mt-20">
       <Toaster position="bottom-right" richColors />
       {/* Hero */}
-      <section className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+      <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -111,10 +108,10 @@ const Contact = () => {
         >
           For commissions, studio visits, exhibition enquiries, or simply to talk about art — I'd be glad to hear from you.
         </motion.p>
-      </section>
+      </div>
 
       {/* Contact form + details */}
-      <section className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8 md:gap-10">
           {/* Form */}
           <motion.div
@@ -261,10 +258,10 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </div>
 
       {/* Map placeholder */}
-      <section className="px-6 md:px-10 lg:px-14 pb-12 md:pb-16">
+      <div className="px-6 md:px-10 lg:px-14 pb-12 md:pb-16">
         <motion.div
           {...fadeUp}
           className="max-w-6xl mx-auto rounded-xl overflow-hidden border border-black/5"
@@ -278,10 +275,8 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </motion.div>
-      </section>
-
-      <Footer />
-    </PageLayout>
+      </div>
+    </section>
   );
 };
 
