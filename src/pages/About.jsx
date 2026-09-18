@@ -6,7 +6,7 @@ import { RiDoubleQuotesL } from 'react-icons/ri';
 import { FiArrowRight } from 'react-icons/fi';
 
 const PROFILE_IMG =
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80';
+  '/images/Original.jpeg';
 const STUDIO_IMG_1 =
   'https://images.pexels.com/photos/4070354/pexels-photo-4070354.jpeg';
 const STUDIO_IMG_2 =
@@ -73,7 +73,7 @@ const About = () => {
             className="md:col-span-2 flex justify-center"
           >
             <div className="relative">
-              <div className="w-[280px] h-[360px] sm:w-[320px] sm:h-[400px] overflow-hidden rounded-lg shadow-lg">
+              <div className="w-[200px] h-[280px] sm:w-[230px] sm:h-[300px] overflow-hidden rounded-lg shadow-lg">
                 <img
                   src={PROFILE_IMG}
                   alt="Portrait of Sunil Vyas"

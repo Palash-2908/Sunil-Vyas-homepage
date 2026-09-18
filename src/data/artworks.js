@@ -1,45 +1,91 @@
-// Artwork data for the homepage slider
-const artworks = [
+const artworkSlides = [
   {
-    id: 1,
-    category: 'WOODEN ART',
-    displayCategory: 'Wooden Art',
-    image:
-      'https://images.pexels.com/photos/18758710/pexels-photo-18758710.jpeg',
-    alt: 'Intricate wooden sculpture in warm natural tones',
+    category: "WOODEN ART",
+    displayCategory: "Wooden Art",
+    artworks: [
+      {
+        id: 1,
+        image: "/images/artworks/Sachiv.jpeg",
+        alt: "Wooden artwork 1",
+      },
+      {
+        id: 2,
+        image: "/images/artworks/Sachiv2.jpeg",
+        alt: "Wooden artwork 2",
+      },
+      {
+        id: 3,
+        image: "/images/artworks/Sachiv3.jpeg",
+        alt: "Wooden artwork 3",
+      },
+    ],
   },
+
   {
-    id: 2,
-    category: 'SCRAP ART',
-    displayCategory: 'Scrap Art',
-    image:
-      'https://images.pexels.com/photos/28430951/pexels-photo-28430951.jpeg',
-    alt: 'Complex steel scrap sculpture with industrial design elements',
+    category: "PAINTINGS",
+    displayCategory: "Paintings",
+    artworks: [
+      {
+        id: 4,
+        image: "/images/artworks/CM1.jpeg",
+        alt: "Painting 1",
+      },
+      {
+        id: 5,
+        image: "/images/artworks/CM2.jpeg",
+        alt: "Painting 2",
+      },
+      {
+        id: 6,
+        image: "/images/artworks/CMWodden.jpeg",
+        alt: "Painting 3",
+      },
+    ],
   },
+
   {
-    id: 3,
-    category: 'NAIL ART',
-    displayCategory: 'Nail Art',
-    image:
-      'https://images.pexels.com/photos/7411911/pexels-photo-7411911.jpeg',
-    alt: 'Authentic string art with threaded nails on a wooden board',
+    category: "SCRAP ART",
+    displayCategory: "Scrap Art",
+    artworks: [
+      {
+        id: 7,
+        image: "/images/artworks/president.jpeg",
+        alt: "Scrap artwork 1",
+      },
+      {
+        id: 8,
+        image: "/images/artworks/ravindra.jpg.jpeg",
+        alt: "Scrap artwork 2",
+      },
+      {
+        id: 9,
+        image: "/images/artworks/rssguru.jpeg",
+        alt: "Scrap artwork 3",
+      },
+    ],
   },
+
   {
-    id: 4,
-    category: 'PAINTINGS',
-    displayCategory: 'Paintings',
-    image:
-      'https://images.unsplash.com/flagged/photo-1567934150921-7632371abb32?auto=format&fit=crop&w=900&q=80',
-    alt: 'Abstract painting with warm earthy tones',
-  },
-  {
-    id: 5,
-    category: 'WOOD CARVING',
-    displayCategory: 'Wood Carving',
-    image:
-      'https://images.pexels.com/photos/1570264/pexels-photo-1570264.jpeg',
-    alt: 'Wood carving artwork',
+    category: "NAIL ART",
+    displayCategory: "Nail Art",
+    artworks: [
+      {
+        id: 10,
+        image: "/images/artworks/wodengandhi.jpeg",
+        alt: "Nail artwork 1",
+      },
+      {
+        id: 11,
+        image: "/images/artworks/modi.jpg.jpeg",
+        alt: "Nail artwork 2",
+      },
+      {
+        id: 12,
+        image: "/images/artworks/sachiv4.jpeg",
+        alt: "Nail artwork 3",
+      },
+    ],
   },
 ];
 
-export default artworks;
+export default artworkSlides;

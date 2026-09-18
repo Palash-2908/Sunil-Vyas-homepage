@@ -23,7 +23,7 @@ const Home = () => {
           WELCOME TO MY WORLD OF ART
         </motion.p>
 
-        <div className="mt-5 md:mt-6 relative inline-block">
+        <div className="mt-1 md:mt-2 relative inline-block">
           <AnimatePresence mode="wait">
             <motion.h1
               key={category}
@@ -31,7 +31,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.55, ease: 'easeOut' }}
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-normal tracking-[0.06em] text-ink leading-tight"
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[54px] font-normal tracking-[0.06em] text-ink leading-tight"
             >
               {category}
             </motion.h1>
@@ -40,13 +40,13 @@ const Home = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
-            className="mt-4 mx-auto h-[2px] w-16 bg-accent2 origin-center"
+            className="mt-4 h-[2px] w-full bg-accent2 origin-left"
           />
         </div>
       </div>
 
       {/* Slider */}
-      <div className="px-2 md:px-6 lg:px-10 pt-6 md:pt-10">
+      <div className="px-2 md:px-6 lg:px-10 pt-0 md:pt-0">
         <ArtworkSlider onCategoryChange={handleCategoryChange} />
       </div>
 
