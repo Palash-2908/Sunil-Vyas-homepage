@@ -7,8 +7,7 @@ import { FiAward } from 'react-icons/fi';
 import { HiOutlineNewspaper } from 'react-icons/hi2';
 import { FiMail } from 'react-icons/fi';
 
-const PROFILE_IMG =
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80';
+const PROFILE_IMG = '/images/Original.jpeg';
 
 const navItems = [
   { to: 'home', label: 'Home', Icon: HiOutlineHome },
@@ -73,7 +72,7 @@ const Sidebar = ({ mobileOpen = false, onClose }) => {
 
         {/* Profile */}
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="w-[92px] h-[92px] rounded-full overflow-hidden ring-1 ring-black/5 shadow-sm">
+          <div className="w-[85px] h-[85px] rounded-full overflow-hidden ring-1 ring-black/5 shadow-sm">
             <img
               src={PROFILE_IMG}
               alt="Artist portrait"
