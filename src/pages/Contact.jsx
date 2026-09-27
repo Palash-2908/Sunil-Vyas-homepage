@@ -30,7 +30,7 @@ const contactDetails = [
   {
     icon: FiMapPin,
     label: 'Studio',
-    value: '12 Artisan Lane, Indiranagar, Bengaluru 560038',
+    value: '12 Sudama Nagar, Indore 452038',
   },
 ];
 
