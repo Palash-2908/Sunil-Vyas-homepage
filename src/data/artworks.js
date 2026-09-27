@@ -5,17 +5,17 @@ const artworkSlides = [
     artworks: [
       {
         id: 1,
-        image: "/images/artworks/Sachiv.jpeg",
+        image: "/images/Artworks/Sachiv.jpeg",
         alt: "Wooden artwork 1",
       },
       {
         id: 2,
-        image: "/images/artworks/Sachiv2.jpeg",
+        image: "/images/Artworks/Sachiv2.jpeg",
         alt: "Wooden artwork 2",
       },
       {
         id: 3,
-        image: "/images/artworks/Sachiv3.jpeg",
+        image: "/images/Artworks/Sachiv3.jpeg",
         alt: "Wooden artwork 3",
       },
     ],
@@ -27,17 +27,17 @@ const artworkSlides = [
     artworks: [
       {
         id: 4,
-        image: "/images/artworks/CM1.jpeg",
+        image: "/images/Artworks/CM1.jpeg",
         alt: "Painting 1",
       },
       {
         id: 5,
-        image: "/images/artworks/CM2.jpeg",
+        image: "/images/Artworks/CM2.jpeg",
         alt: "Painting 2",
       },
       {
         id: 6,
-        image: "/images/artworks/CMWodden.jpeg",
+        image: "/images/Artworks/CMWodden.jpeg",
         alt: "Painting 3",
       },
     ],
@@ -49,17 +49,17 @@ const artworkSlides = [
     artworks: [
       {
         id: 7,
-        image: "/images/artworks/president.jpeg",
+        image: "/images/Artworks/president.jpeg",
         alt: "Scrap artwork 1",
       },
       {
         id: 8,
-        image: "/images/artworks/ravindra.jpg.jpeg",
+        image: "/images/Artworks/ravindra.jpg.jpeg",
         alt: "Scrap artwork 2",
       },
       {
         id: 9,
-        image: "/images/artworks/rssguru.jpeg",
+        image: "/images/Artworks/rssguru.jpeg",
         alt: "Scrap artwork 3",
       },
     ],
@@ -71,17 +71,17 @@ const artworkSlides = [
     artworks: [
       {
         id: 10,
-        image: "/images/artworks/wodengandhi.jpeg",
+        image: "/images/Artworks/wodengandhi.jpeg",
         alt: "Nail artwork 1",
       },
       {
         id: 11,
-        image: "/images/artworks/modi.jpg.jpeg",
+        image: "/images/Artworks/modi.jpg.jpeg",
         alt: "Nail artwork 2",
       },
       {
         id: 12,
-        image: "/images/artworks/sachiv4.jpeg",
+        image: "/images/Artworks/sachiv4.jpeg",
         alt: "Nail artwork 3",
       },
     ],
