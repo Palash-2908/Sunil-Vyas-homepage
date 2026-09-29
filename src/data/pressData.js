@@ -1,69 +1,146 @@
 const pressItems = [
   {
     id: 'pr-1',
-    title: 'The Artist Turning Scrap Into Poetry',
-    publication: 'The National Arts Review',
-    type: 'Feature Article',
-    date: 'March 2024',
-    image: 'https://images.pexels.com/photos/6177645/pexels-photo-6177645.jpeg',
-    description:
-      'An in-depth profile on Sunil Vyas and how decades of working with discarded materials have shaped a singular artistic identity rooted in sustainability and narrative.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Bhaskar',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019- bhaskar.jpg.jpeg',
   },
+
   {
     id: 'pr-2',
-    title: 'Interview: On Craft, Process and Finding Beauty in Waste',
-    publication: 'Contemporary Craft Magazine',
-    type: 'Interview',
-    date: 'November 2023',
-    image: 'https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg',
-    description:
-      'A candid conversation about the creative process, the role of patience in nail art, and why every discarded object holds a story worth telling.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Naidunia',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019- naidunia.jpg.jpeg',
   },
+
   {
     id: 'pr-3',
-    title: '50 Artists Reshaping Indian Contemporary Art',
-    publication: 'ArtAsia Pacific',
-    type: 'Magazine Feature',
-    date: 'August 2023',
-    image: 'https://images.pexels.com/photos/4348095/pexels-photo-4348095.jpeg',
-    description:
-      'Featured among fifty artists selected for their contribution to the evolving landscape of Indian contemporary art practice.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Naidunia',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019-Naidunia2.jpg.jpeg',
   },
+
   {
     id: 'pr-4',
-    title: 'Wood, Nails and Narrative: A Studio Visit',
-    publication: 'Architectural Digest India',
-    type: 'Studio Visit',
-    date: 'May 2023',
-    image: 'https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg',
-    description:
-      'A photographic tour of the studio reveals a working environment where raw material and refined technique coexist in productive tension.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Naidunia',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019-Naidunia-II.jpg.jpeg',
   },
+
   {
     id: 'pr-5',
-    title: 'Sustainable Art Practices for a New Generation',
-    publication: 'The Guardian Arts',
-    type: 'Online Feature',
-    date: 'January 2023',
-    image: 'https://images.pexels.com/photos/5692237/pexels-photo-5692237.jpeg',
-    description:
-      'Cited as a leading example of how contemporary artists are integrating environmental responsibility into their creative practice without compromising artistic ambition.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Patrika',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019-Patrika.jpg.jpeg',
   },
+
   {
     id: 'pr-6',
-    title: 'London Exhibition Draws International Attention',
-    publication: 'BBC Arts Online',
-    type: 'Exhibition Coverage',
-    date: 'September 2022',
-    image: 'https://images.pexels.com/photos/3601094/pexels-photo-3601094.jpeg',
-    description:
-      'Coverage of the London Summer Contemporary Exhibition, highlighting works by Sunil Vyas as among the most discussed pieces of the show.',
-    url: '#',
+    title: 'Newspaper Feature',
+    publication: 'Patrika',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/2019-Patrika-II.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-7',
+    title: 'Newspaper Feature',
+    publication: 'Newspaper',
+    type: 'Newspaper Feature',
+    date: '2021',
+    image: '/images/Artworks/News Mentions/2021.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-8',
+    title: 'Newspaper Feature',
+    publication: 'News Today',
+    type: 'Newspaper Feature',
+    date: '2021',
+    image: '/images/Artworks/News Mentions/2021-news today.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-9',
+    title: 'Newspaper Feature',
+    publication: 'Bhaskar',
+    type: 'Newspaper Feature',
+    date: '2018',
+    image: '/images/Artworks/News Mentions/bhaskar 2018.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-10',
+    title: 'Newspaper Feature',
+    publication: 'Indradarshan',
+    type: 'Newspaper Feature',
+    date: '2018',
+    image: '/images/Artworks/News Mentions/Indradarshan.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-11',
+    title: 'Newspaper Feature',
+    publication: 'Naidunia',
+    type: 'Newspaper Feature',
+    date: '2021',
+    image: '/images/Artworks/News Mentions/naidunia.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-12',
+    title: 'Newspaper Feature',
+    publication: 'Naidunia',
+    type: 'Newspaper Feature',
+    date: '2018',
+    image: '/images/Artworks/News Mentions/naidunia-2018.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-13',
+    title: 'Newspaper Feature',
+    publication: 'Patrika',
+    type: 'Newspaper Feature',
+    date: '2021',
+    image: '/images/Artworks/News Mentions/patrika.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-14',
+    title: 'Newspaper Feature',
+    publication: 'Patrika',
+    type: 'Newspaper Feature',
+    date: '2020',
+    image: '/images/Artworks/News Mentions/patrika-2020.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-15',
+    title: 'Newspaper Feature',
+    publication: 'Prabhat Kiran',
+    type: 'Newspaper Feature',
+    date: '2018',
+    image: '/images/Artworks/News Mentions/prabhat kiran-2018.jpg.jpeg',
+  },
+
+  {
+    id: 'pr-16',
+    title: 'Newspaper Feature',
+    publication: 'Newspaper',
+    type: 'Newspaper Feature',
+    date: '2026',
+    image: '/images/Artworks/News Mentions/Patrika.jpeg',
   },
 ];
 

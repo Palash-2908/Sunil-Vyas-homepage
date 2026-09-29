@@ -1,21 +1,43 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FiExternalLink, FiCalendar } from 'react-icons/fi';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiCalendar, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Quote from '../components/Quote';
 import pressItems from '../data/pressData';
 
-const fadeUp = {
-  initial: { opacity: 0, y: 18 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.15 },
-  transition: { duration: 0.65, ease: 'easeOut' },
-};
-
 const Press = () => {
+  const [showAll, setShowAll] = useState(false);
+  const [selected, setSelected] = useState(null);
+
+  const visibleItems = showAll
+    ? pressItems
+    : pressItems.slice(0, 6);
+
+  const hasMore = pressItems.length > 6;
+
+  const selectedIndex = selected
+    ? pressItems.findIndex((item) => item.id === selected.id)
+    : -1;
+
+  const showPrevious = () => {
+    if (selectedIndex > 0) {
+      setSelected(pressItems[selectedIndex - 1]);
+    }
+  };
+
+  const showNext = () => {
+    if (selectedIndex < pressItems.length - 1) {
+      setSelected(pressItems[selectedIndex + 1]);
+    }
+  };
+
   return (
     <section id="press" className="scroll-mt-20">
-      {/* Hero */}
+
+      {/* =====================================================
+          HERO
+      ====================================================== */}
       <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,6 +46,7 @@ const Press = () => {
         >
           MEDIA & MENTIONS
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,81 +55,412 @@ const Press = () => {
         >
           Press Mentions
         </motion.h1>
+
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+          transition={{
+            duration: 0.7,
+            delay: 0.2,
+            ease: 'easeOut',
+          }}
           className="mt-4 mx-auto h-[2px] w-16 bg-accent2 origin-center"
         />
+
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+          transition={{
+            duration: 0.6,
+            delay: 0.3,
+            ease: 'easeOut',
+          }}
           className="mt-6 max-w-xl mx-auto text-muted2 text-[15px] leading-relaxed"
         >
-          Selected coverage from newspapers, magazines, interviews, and exhibitions that have featured the work over the years.
+          A collection of newspaper features, interviews, and media
+          coverage documenting the artistic journey over the years.
         </motion.p>
       </div>
 
-      {/* Press cards */}
+
+      {/* =====================================================
+          PRESS ARCHIVE
+      ====================================================== */}
       <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
-          {pressItems.map((item, i) => (
-            <motion.article
-              key={item.id}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.6, delay: (i % 3) * 0.08, ease: 'easeOut' }}
-              className="group flex flex-col overflow-hidden rounded-lg bg-canvas border border-black/5 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="aspect-[16/10] overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
 
-              <div className="p-5 md:p-6 flex flex-col flex-1">
-                <div className="flex items-center justify-between gap-3 mb-3">
-                  <span className="text-[10px] tracking-[0.22em] uppercase text-accent2 font-medium">
-                    {item.type}
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-[11px] text-muted2">
-                    <FiCalendar className="w-3.5 h-3.5" />
-                    {item.date}
-                  </span>
-                </div>
+        <div className="max-w-6xl mx-auto">
 
-                <h3 className="font-display text-lg text-ink leading-snug">
-                  {item.title}
-                </h3>
-                <p className="mt-1 text-[13px] text-muted2">{item.publication}</p>
-                <p className="mt-3 text-muted2 text-sm leading-relaxed flex-1">
-                  {item.description}
-                </p>
+          {/* Section heading */}
+          <div className="mb-8 md:mb-10">
 
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-[13px] text-accent2 hover:gap-3 transition-all"
+            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
+              PRESS ARCHIVE
+            </p>
+
+            <h2 className="mt-2 font-display text-2xl md:text-3xl text-ink">
+              Selected Press Mentions
+            </h2>
+
+            <div className="mt-4 h-px w-12 bg-accent2" />
+
+          </div>
+
+
+          {/* Newspaper grid */}
+          <motion.div
+            layout
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          >
+
+            <AnimatePresence mode="popLayout">
+
+              {visibleItems.map((item, index) => (
+
+                <motion.article
+                  key={item.id}
+                  layout
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -18 }}
+                  transition={{
+                    duration: 0.45,
+                    delay: (index % 3) * 0.06,
+                    ease: 'easeOut',
+                  }}
+                  className="group cursor-pointer"
+                  onClick={() => setSelected(item)}
                 >
-                  Read more
-                  <FiExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </motion.article>
-          ))}
+
+                  {/* Newspaper image */}
+                  <div
+                    className="
+                      relative
+                      overflow-hidden
+                      rounded-lg
+                      border border-black/8
+                      bg-white
+                      p-3
+                      shadow-sm
+                      transition-all
+                      duration-300
+                      group-hover:-translate-y-1
+                      group-hover:shadow-lg
+                    "
+                  >
+
+                    <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-[#f4f1eb]">
+
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        loading={index < 6 ? 'eager' : 'lazy'}
+                        className="
+                          w-full
+                          h-full
+                          object-contain
+                          transition-transform
+                          duration-700
+                          group-hover:scale-[1.025]
+                        "
+                      />
+
+                      {/* Hover overlay */}
+                      <div
+                        className="
+                          absolute
+                          inset-0
+                          flex
+                          items-end
+                          bg-black/0
+                          group-hover:bg-black/10
+                          transition-all
+                          duration-300
+                        "
+                      >
+
+                        <div
+                          className="
+                            absolute
+                            bottom-3
+                            right-3
+                            w-9
+                            h-9
+                            rounded-full
+                            bg-white/90
+                            flex
+                            items-center
+                            justify-center
+                            opacity-0
+                            group-hover:opacity-100
+                            transition-opacity
+                            duration-300
+                            shadow-sm
+                          "
+                        >
+                          <span className="text-ink text-sm">
+                            +
+                          </span>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  {/* Newspaper information */}
+                  <div className="px-1 pt-4">
+
+                    <div className="flex items-center justify-between gap-3">
+
+                      <span className="text-[10px] tracking-[0.22em] uppercase text-accent2 font-medium">
+                        {item.type}
+                      </span>
+
+                      {item.date && (
+                        <span className="inline-flex items-center gap-1 text-[11px] text-muted2">
+                          <FiCalendar className="w-3.5 h-3.5" />
+                          {item.date}
+                        </span>
+                      )}
+
+                    </div>
+
+
+                    <h3 className="mt-2 font-display text-lg text-ink leading-snug">
+                      {item.title}
+                    </h3>
+
+
+                    {item.publication && (
+                      <p className="mt-1 text-[13px] text-muted2">
+                        {item.publication}
+                      </p>
+                    )}
+
+                  </div>
+
+                </motion.article>
+
+              ))}
+
+            </AnimatePresence>
+
+          </motion.div>
+
+
+          {/* =================================================
+              VIEW ALL BUTTON
+          ================================================== */}
+          {hasMore && (
+            <div className="flex justify-center mt-10 md:mt-12">
+
+              <button
+                onClick={() => setShowAll((prev) => !prev)}
+                className="
+                  px-6
+                  py-2.5
+                  rounded-full
+                  border
+                  border-ink/20
+                  text-sm
+                  tracking-wide
+                  text-ink
+                  transition-all
+                  duration-300
+                  hover:bg-ink
+                  hover:text-canvas
+                  hover:border-ink
+                "
+              >
+                {showAll
+                  ? 'Show Less'
+                  : `View All ${pressItems.length} Press Mentions`}
+              </button>
+
+            </div>
+          )}
+
         </div>
       </div>
 
+
+      {/* =====================================================
+          QUOTE
+      ====================================================== */}
       <Quote
         text="Recognition is not the goal of art, but its occasional companion — a reminder that the private work of the studio sometimes reaches beyond itself."
         author="Sunil Vyas"
       />
+
+
+      {/* =====================================================
+          LIGHTBOX
+      ====================================================== */}
+      <AnimatePresence>
+
+        {selected && (
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="
+              fixed
+              inset-0
+              z-[100]
+              bg-black/85
+              backdrop-blur-sm
+              flex
+              items-center
+              justify-center
+              p-4
+              md:p-8
+            "
+            onClick={() => setSelected(null)}
+          >
+
+            {/* Close button */}
+            <button
+              onClick={() => setSelected(null)}
+              className="
+                absolute
+                top-5
+                right-5
+                md:top-7
+                md:right-7
+                z-20
+                w-10
+                h-10
+                rounded-full
+                bg-white/10
+                hover:bg-white/20
+                flex
+                items-center
+                justify-center
+                text-white
+                transition-colors
+              "
+              aria-label="Close"
+            >
+              <FiX className="w-5 h-5" />
+            </button>
+
+
+            {/* Previous */}
+            {selectedIndex > 0 && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  showPrevious();
+                }}
+                className="
+                  absolute
+                  left-3
+                  md:left-6
+                  z-20
+                  w-10
+                  h-10
+                  md:w-12
+                  md:h-12
+                  rounded-full
+                  bg-white/10
+                  hover:bg-white/20
+                  flex
+                  items-center
+                  justify-center
+                  text-white
+                  transition-colors
+                "
+                aria-label="Previous"
+              >
+                <FiChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+              </button>
+            )}
+
+
+            {/* Next */}
+            {selectedIndex < pressItems.length - 1 && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  showNext();
+                }}
+                className="
+                  absolute
+                  right-3
+                  md:right-6
+                  z-20
+                  w-10
+                  h-10
+                  md:w-12
+                  md:h-12
+                  rounded-full
+                  bg-white/10
+                  hover:bg-white/20
+                  flex
+                  items-center
+                  justify-center
+                  text-white
+                  transition-colors
+                "
+                aria-label="Next"
+              >
+                <FiChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+              </button>
+            )}
+
+
+            {/* Large image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              transition={{ duration: 0.25 }}
+              className="
+                relative
+                max-w-[90vw]
+                max-h-[92vh]
+                flex
+                flex-col
+                items-center
+              "
+              onClick={(e) => e.stopPropagation()}
+            >
+
+              <img
+                src={selected.image}
+                alt={selected.title}
+                className="
+                  max-w-[90vw]
+                  max-h-[82vh]
+                  object-contain
+                  rounded-sm
+                  shadow-2xl
+                "
+              />
+
+              <div className="mt-3 text-center">
+
+                <p className="text-white font-display text-lg">
+                  {selected.title}
+                </p>
+
+                <p className="mt-1 text-white/60 text-xs tracking-wide">
+                  {selected.publication}
+                  {selected.date ? ` • ${selected.date}` : ''}
+                </p>
+
+              </div>
+
+            </motion.div>
+
+          </motion.div>
+
+        )}
+
+      </AnimatePresence>
+
     </section>
   );
 };

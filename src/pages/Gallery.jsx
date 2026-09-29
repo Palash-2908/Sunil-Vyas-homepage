@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import GalleryCategory from '../components/gallery/GalleryCategory';
 import galleryData from '../data/galleryData';
 
@@ -8,14 +8,19 @@ const Gallery = () => {
   const [activeSlug, setActiveSlug] = useState('all');
 
   const visibleCategories = useMemo(() => {
-    if (activeSlug === 'all') return categories;
-    return categories.filter((c) => c.slug === activeSlug);
+    if (activeSlug === 'all') {
+      return categories;
+    }
+
+    return categories.filter((category) => category.slug === activeSlug);
   }, [activeSlug, categories]);
 
   return (
     <section id="gallery" className="scroll-mt-20">
+
       {/* Hero */}
       <div className="pt-8 md:pt-10 pb-6 px-6 md:px-10 lg:px-14 text-center">
+
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,6 +29,7 @@ const Gallery = () => {
         >
           EXPLORE THE COLLECTIONS
         </motion.p>
+
         <motion.h1
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,10 +38,15 @@ const Gallery = () => {
         >
           Gallery
         </motion.h1>
+
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+          transition={{
+            duration: 0.7,
+            delay: 0.2,
+            ease: 'easeOut',
+          }}
           className="mt-4 mx-auto h-[2px] w-16 bg-accent2 origin-center"
         />
 
@@ -43,7 +54,11 @@ const Gallery = () => {
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.25, ease: 'easeOut' }}
+          transition={{
+            duration: 0.6,
+            delay: 0.25,
+            ease: 'easeOut',
+          }}
           className="mt-8 md:mt-10 flex flex-wrap items-center justify-center gap-2 md:gap-3"
         >
           <FilterButton
@@ -51,31 +66,28 @@ const Gallery = () => {
             active={activeSlug === 'all'}
             onClick={() => setActiveSlug('all')}
           />
-          {categories.map((c) => (
+
+          {categories.map((category) => (
             <FilterButton
-              key={c.slug}
-              label={c.label}
-              active={activeSlug === c.slug}
-              onClick={() => setActiveSlug(c.slug)}
+              key={category.slug}
+              label={category.label}
+              active={activeSlug === category.slug}
+              onClick={() => setActiveSlug(category.slug)}
             />
           ))}
         </motion.div>
       </div>
 
       {/* Categories */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeSlug}
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ duration: 0.4, ease: 'easeOut' }}
-        >
-          {visibleCategories.map((category) => (
-            <GalleryCategory key={category.slug} category={category} />
-          ))}
-        </motion.div>
-      </AnimatePresence>
+      <div>
+        {visibleCategories.map((category) => (
+          <GalleryCategory
+            key={category.slug}
+            category={category}
+          />
+        ))}
+      </div>
+
     </section>
   );
 };
