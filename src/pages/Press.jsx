@@ -163,25 +163,25 @@ const PressCard = ({ item, index, frameAspect, onSelect }) => (
 );
 
 const Press = () => {
-  const [showAll, setShowAll] = useState(false);
   const [selected, setSelected] = useState(null);
   const orientations = useImageOrientations(pressItems);
 
-  const visibleItems = showAll
-    ? pressItems
-    : pressItems.slice(0, 6);
 
-  const portraitItems = useMemo(
-    () => visibleItems.filter((item) => orientations[item.id] === 'portrait'),
-    [visibleItems, orientations]
-  );
+const portraitItems = useMemo(
+  () =>
+    pressItems.filter(
+      (item) => orientations[item.id] === 'portrait'
+    ),
+  [orientations]
+);
 
-  const landscapeItems = useMemo(
-    () => visibleItems.filter((item) => orientations[item.id] === 'landscape'),
-    [visibleItems, orientations]
-  );
-
-  const hasMore = pressItems.length > 6;
+const landscapeItems = useMemo(
+  () =>
+    pressItems.filter(
+      (item) => orientations[item.id] === 'landscape'
+    ),
+  [orientations]
+);
 
   const selectedIndex = selected
     ? pressItems.findIndex((item) => item.id === selected.id)
@@ -255,99 +255,91 @@ const Press = () => {
       {/* =====================================================
           PRESS ARCHIVE — split by orientation
       ====================================================== */}
-      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+      {/* =====================================================
+    PRESS ARCHIVE
+    Portrait and landscape images are kept in separate
+    rows for clean alignment, but remain one continuous
+    press archive.
+====================================================== */}
+{/* =====================================================
+    PRESS ARCHIVE
+====================================================== */}
+<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+  <div className="max-w-6xl mx-auto">
 
-        <div className="max-w-6xl mx-auto">
+    {/* Landscape row */}
+    {landscapeItems.length > 0 && (
+      <motion.div
+        layout
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+      >
+        <AnimatePresence mode="popLayout">
+          {landscapeItems.map((item, index) => (
+            <PressCard
+              key={item.id}
+              item={item}
+              index={index}
+              frameAspect="aspect-[4/3]"
+              onSelect={setSelected}
+            />
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    )}
 
-          {/* Portrait Press Mentions */}
-          {portraitItems.length > 0 && (
-            <div className="mb-12 md:mb-16">
-              <SectionHeading
-                label="PORTRAIT"
-                title="Portrait Press Mentions"
-              />
+{/* =====================================================
+    PRESS ARCHIVE
+====================================================== */}
+<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+  <div className="max-w-6xl mx-auto">
 
-              <motion.div
-                layout
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-              >
-                <AnimatePresence mode="popLayout">
-                  {portraitItems.map((item, index) => (
-                    <PressCard
-                      key={item.id}
-                      item={item}
-                      index={index}
-                      frameAspect="aspect-[3/4]"
-                      onSelect={setSelected}
-                    />
-                  ))}
-                </AnimatePresence>
-              </motion.div>
-            </div>
-          )}
+    {/* Landscape row */}
+    {landscapeItems.length > 0 && (
+      <motion.div
+        layout
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+      >
+        <AnimatePresence mode="popLayout">
+          {landscapeItems.map((item, index) => (
+            <PressCard
+              key={item.id}
+              item={item}
+              index={index}
+              frameAspect="aspect-[4/3]"
+              onSelect={setSelected}
+            />
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    )}
 
-          {/* Landscape Press Mentions */}
-          {landscapeItems.length > 0 && (
-            <div className="mb-12 md:mb-16">
-              <SectionHeading
-                label="LANDSCAPE"
-                title="Landscape Press Mentions"
-              />
+    {/* Portrait row */}
+    {portraitItems.length > 0 && (
+      <motion.div
+        layout
+        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ${
+          landscapeItems.length > 0 ? 'mt-12 md:mt-16' : ''
+        }`}
+      >
+        <AnimatePresence mode="popLayout">
+          {portraitItems.map((item, index) => (
+            <PressCard
+              key={item.id}
+              item={item}
+              index={index}
+              frameAspect="aspect-[3/4]"
+              onSelect={setSelected}
+            />
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    )}
 
-              <motion.div
-                layout
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-              >
-                <AnimatePresence mode="popLayout">
-                  {landscapeItems.map((item, index) => (
-                    <PressCard
-                      key={item.id}
-                      item={item}
-                      index={index}
-                      frameAspect="aspect-[4/3]"
-                      onSelect={setSelected}
-                    />
-                  ))}
-                </AnimatePresence>
-              </motion.div>
-            </div>
-          )}
+  </div>
+</div>
 
-          {/* =================================================
-              VIEW ALL BUTTON
-          ================================================== */}
-          {hasMore && (
-            <div className="flex justify-center mt-10 md:mt-12">
-
-              <button
-                onClick={() => setShowAll((prev) => !prev)}
-                className="
-                  px-6
-                  py-2.5
-                  rounded-full
-                  border
-                  border-ink/20
-                  text-sm
-                  tracking-wide
-                  text-ink
-                  transition-all
-                  duration-300
-                  hover:bg-ink
-                  hover:text-canvas
-                  hover:border-ink
-                "
-              >
-                {showAll
-                  ? 'Show Less'
-                  : `View All ${pressItems.length} Press Mentions`}
-              </button>
-
-            </div>
-          )}
-
-        </div>
-      </div>
-
+  </div>
+</div>
 
       {/* =====================================================
           QUOTE

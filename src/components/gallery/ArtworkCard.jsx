@@ -17,9 +17,6 @@ const ArtworkCard = ({ artwork, onClick }) => {
             h-full
             w-full
             object-contain
-            transition-transform
-            duration-700
-            group-hover:scale-105
           "
         />
       </div>
@@ -29,10 +26,10 @@ const ArtworkCard = ({ artwork, onClick }) => {
         className="
           absolute
           inset-0
-          bg-ink/0
+          bg-black/0
           transition-all
           duration-400
-          group-hover:bg-ink/40
+          group-hover:bg-black/40
           flex
           items-end
         "
