@@ -7,12 +7,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const PROFILE_IMG =
   '/images/Original.jpeg';
-const STUDIO_IMG_1 =
-  'https://images.pexels.com/photos/4070354/pexels-photo-4070354.jpeg';
-const STUDIO_IMG_2 =
-  'https://images.pexels.com/photos/4348095/pexels-photo-4348095.jpeg';
-const STUDIO_IMG_3 =
-  'https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg';
+
 
 const timeline = [
   { year: '2015', title: 'Beginnings', text: 'Graduated with Honours from the National Institute of Fine Arts, drawn early to the textures of reclaimed material and handmade craft.' },
@@ -211,42 +206,7 @@ const About = () => {
       </div>
 
       {/* Studio / Workspace */}
-      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">THE STUDIO</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">Where the Work Happens</h2>
-            <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-            {[STUDIO_IMG_1, STUDIO_IMG_2, STUDIO_IMG_3].map((src, i) => (
-              <motion.div
-                key={src}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: i * 0.1, ease: 'easeOut' }}
-                className="overflow-hidden rounded-lg"
-              >
-                <img
-                  src={src}
-                  alt="Studio workspace"
-                  loading="lazy"
-                  className="w-full h-64 md:h-72 object-cover transition-transform duration-700 hover:scale-105"
-                />
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.p
-            {...fadeUp}
-            className="mt-8 max-w-3xl mx-auto text-center text-muted2 text-[15px] leading-[1.7]"
-          >
-            A modest space filled with the residue of making — shavings, offcuts, jars of nails, half-mixed pigments. The studio is organised by intuition rather than system, and it is here that every piece finds its final form.
-          </motion.p>
-        </div>
-      </div>
+      
 
       <Quote
         text="Art is not what you see, but what you make others see."
@@ -254,30 +214,7 @@ const About = () => {
       />
 
       {/* Call to action */}
-      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
-        <motion.div
-          {...fadeUp}
-          className="max-w-4xl mx-auto text-center bg-ink/[0.03] rounded-xl px-6 md:px-10 py-12 md:py-14"
-        >
-          <h2 className="font-display text-2xl md:text-3xl text-ink">
-            Interested in a commission or a studio visit?
-          </h2>
-          <p className="mt-4 text-muted2 text-[15px] leading-relaxed max-w-xl mx-auto">
-            I welcome enquiries about custom artwork, exhibitions, and collaborations. Let's start a conversation.
-          </p>
-          <ScrollLink
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-20}
-            duration={600}
-            className="mt-7 inline-flex items-center gap-2 px-7 py-3 rounded-md bg-ink text-canvas text-sm tracking-wide hover:bg-ink/85 transition-colors cursor-pointer"
-          >
-            Get in Touch
-            <FiArrowRight />
-          </ScrollLink>
-        </motion.div>
-      </div>
+      
     </section>
   );
 };

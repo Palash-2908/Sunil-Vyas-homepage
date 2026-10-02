@@ -18,19 +18,19 @@ const contactDetails = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'studio@sunilvyas.art',
-    href: 'mailto:studio@sunilvyas.art',
+    value: 'contactmesvyas@gmail.com',
+    href: 'mailto:contactmesvyas@gmail.com',
   },
   {
     icon: FiPhone,
     label: 'Phone',
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
+    value: '+91 9893844057',
+    href: 'tel:+919893844057',
   },
   {
     icon: FiMapPin,
     label: 'Studio',
-    value: '12 Sudama Nagar, Indore 452038',
+    value: '2006-D Sudama Nagar, Indore 452009,M.P,India',
   },
 ];
 

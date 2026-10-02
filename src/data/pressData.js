@@ -5,7 +5,7 @@ const pressItems = [
     publication: 'Bhaskar',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019- bhaskar.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019- bhaskar.jpg.webp',
   },
 
   {
@@ -14,7 +14,7 @@ const pressItems = [
     publication: 'Naidunia',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019- naidunia.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019- naidunia.jpg.webp',
   },
 
   {
@@ -23,7 +23,7 @@ const pressItems = [
     publication: 'Naidunia',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019-Naidunia2.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019-Naidunia2.jpg.webp',
   },
 
   {
@@ -32,7 +32,7 @@ const pressItems = [
     publication: 'Naidunia',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019-Naidunia-II.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019-Naidunia-II.jpg.webp',
   },
 
   {
@@ -41,7 +41,7 @@ const pressItems = [
     publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019-Patrika.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019-Patrika.jpg.webp',
   },
 
   {
@@ -50,7 +50,7 @@ const pressItems = [
     publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/2019-Patrika-II.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2019-Patrika-II.jpg.webp',
   },
 
   {
@@ -59,7 +59,7 @@ const pressItems = [
     publication: 'Newspaper',
     type: 'Newspaper Feature',
     date: '2021',
-    image: '/images/Artworks/News Mentions/2021.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2021.jpg.webp',
   },
 
   {
@@ -68,7 +68,7 @@ const pressItems = [
     publication: 'News Today',
     type: 'Newspaper Feature',
     date: '2021',
-    image: '/images/Artworks/News Mentions/2021-news today.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/2021-news today.jpg.webp',
   },
 
   {
@@ -77,7 +77,7 @@ const pressItems = [
     publication: 'Bhaskar',
     type: 'Newspaper Feature',
     date: '2018',
-    image: '/images/Artworks/News Mentions/bhaskar 2018.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/bhaskar 2018.jpg.webp',
   },
 
   {
@@ -86,7 +86,7 @@ const pressItems = [
     publication: 'Indradarshan',
     type: 'Newspaper Feature',
     date: '2018',
-    image: '/images/Artworks/News Mentions/Indradarshan.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/Indradarshan.jpg.webp',
   },
 
   {
@@ -95,7 +95,7 @@ const pressItems = [
     publication: 'Naidunia',
     type: 'Newspaper Feature',
     date: '2021',
-    image: '/images/Artworks/News Mentions/naidunia.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/naidunia.jpg.webp',
   },
 
   {
@@ -104,7 +104,7 @@ const pressItems = [
     publication: 'Naidunia',
     type: 'Newspaper Feature',
     date: '2018',
-    image: '/images/Artworks/News Mentions/naidunia-2018.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/naidunia-2018.jpg.webp',
   },
 
   {
@@ -113,7 +113,7 @@ const pressItems = [
     publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2021',
-    image: '/images/Artworks/News Mentions/patrika.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/patrika.jpg.webp',
   },
 
   {
@@ -122,7 +122,7 @@ const pressItems = [
     publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2020',
-    image: '/images/Artworks/News Mentions/patrika-2020.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/patrika-2020.jpg.webp',
   },
 
   {
@@ -131,16 +131,16 @@ const pressItems = [
     publication: 'Prabhat Kiran',
     type: 'Newspaper Feature',
     date: '2018',
-    image: '/images/Artworks/News Mentions/prabhat kiran-2018.jpg.jpeg',
+    image: '/images/Artworks/News Mentions/prabhat kiran-2018.jpg.webp',
   },
 
   {
     id: 'pr-16',
     title: 'Newspaper Feature',
-    publication: 'Newspaper',
+    publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2026',
-    image: '/images/Artworks/News Mentions/Patrika.jpeg',
+    image: '/images/Artworks/News Mentions/Patrika.webp',
   },
 ];
 

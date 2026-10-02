@@ -10,7 +10,7 @@ const galleryCategories = [
     {
       id: 'na-1',
       title: 'Nail Artwork 1',
-      image: '/images/Artworks/wodengandhi.jpeg',
+      image: '/images/Artworks/Wooden Scrap Art/wodengandhi.webp',
       alt: 'Nail artwork by Sunil Vyas',
     },
     {
