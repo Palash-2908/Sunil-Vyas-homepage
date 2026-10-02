@@ -1,16 +1,185 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiCalendar, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Quote from '../components/Quote';
 import pressItems from '../data/pressData';
 
+/**
+ * Detects the natural orientation (portrait vs landscape) of each
+ * press image at runtime using the browser's Image API.
+ *
+ * Returns a map of { [item.id]: 'portrait' | 'landscape' }.
+ * Images that fail to load default to 'portrait' (newspaper clippings
+ * are most commonly portrait-oriented).
+ */
+const useImageOrientations = (items) => {
+  const [orientations, setOrientations] = useState({});
+
+  useEffect(() => {
+    items.forEach((item) => {
+      const img = new Image();
+      img.onload = () => {
+        const isPortrait = img.naturalHeight > img.naturalWidth;
+        setOrientations((prev) => ({
+          ...prev,
+          [item.id]: isPortrait ? 'portrait' : 'landscape',
+        }));
+      };
+      img.onerror = () => {
+        setOrientations((prev) => ({
+          ...prev,
+          [item.id]: 'portrait',
+        }));
+      };
+      img.src = item.image;
+    });
+  }, [items]);
+
+  return orientations;
+};
+
+const SectionHeading = ({ label, title }) => (
+  <div className="mb-6 md:mb-8">
+    <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
+      {label}
+    </p>
+    <h2 className="mt-2 font-display text-2xl md:text-3xl text-ink">
+      {title}
+    </h2>
+    <div className="mt-4 h-px w-12 bg-accent2" />
+  </div>
+);
+
+const PressCard = ({ item, index, frameAspect, onSelect }) => (
+  <motion.article
+    layout
+    initial={{ opacity: 0, y: 18 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -18 }}
+    transition={{
+      duration: 0.45,
+      delay: (index % 3) * 0.06,
+      ease: 'easeOut',
+    }}
+    className="group cursor-pointer"
+    onClick={() => onSelect(item)}
+  >
+    {/* Newspaper image frame */}
+    <div
+      className="
+        relative
+        overflow-hidden
+        rounded-lg
+        border border-black/8
+        bg-white
+        p-3
+        shadow-sm
+        transition-all
+        duration-300
+        group-hover:-translate-y-1
+        group-hover:shadow-lg
+      "
+    >
+      <div
+        className={`relative ${frameAspect} overflow-hidden rounded-md bg-[#f4f1eb] flex items-center justify-center`}
+      >
+        <img
+          src={item.image}
+          alt={item.title}
+          loading={index < 6 ? 'eager' : 'lazy'}
+          className="
+            w-full
+            h-full
+            object-contain
+            transition-transform
+            duration-700
+            group-hover:scale-[1.025]
+          "
+        />
+
+        {/* Hover overlay */}
+        <div
+          className="
+            absolute
+            inset-0
+            flex
+            items-end
+            bg-black/0
+            group-hover:bg-black/10
+            transition-all
+            duration-300
+          "
+        >
+          <div
+            className="
+              absolute
+              bottom-3
+              right-3
+              w-9
+              h-9
+              rounded-full
+              bg-white/90
+              flex
+              items-center
+              justify-center
+              opacity-0
+              group-hover:opacity-100
+              transition-opacity
+              duration-300
+              shadow-sm
+            "
+          >
+            <span className="text-ink text-sm">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Newspaper information */}
+    <div className="px-1 pt-4">
+      <div className="flex items-center justify-between gap-3">
+        <span className="text-[10px] tracking-[0.22em] uppercase text-accent2 font-medium">
+          {item.type}
+        </span>
+        {item.date && (
+          <span className="inline-flex items-center gap-1 text-[11px] text-muted2">
+            <FiCalendar className="w-3.5 h-3.5" />
+            {item.date}
+          </span>
+        )}
+      </div>
+
+      <h3 className="mt-2 font-display text-lg text-ink leading-snug">
+        {item.title}
+      </h3>
+
+      {item.publication && (
+        <p className="mt-1 text-[13px] text-muted2">
+          {item.publication}
+        </p>
+      )}
+    </div>
+  </motion.article>
+);
+
 const Press = () => {
   const [showAll, setShowAll] = useState(false);
   const [selected, setSelected] = useState(null);
+  const orientations = useImageOrientations(pressItems);
 
   const visibleItems = showAll
     ? pressItems
     : pressItems.slice(0, 6);
+
+  const portraitItems = useMemo(
+    () => visibleItems.filter((item) => orientations[item.id] === 'portrait'),
+    [visibleItems, orientations]
+  );
+
+  const landscapeItems = useMemo(
+    () => visibleItems.filter((item) => orientations[item.id] === 'landscape'),
+    [visibleItems, orientations]
+  );
 
   const hasMore = pressItems.length > 6;
 
@@ -84,170 +253,65 @@ const Press = () => {
 
 
       {/* =====================================================
-          PRESS ARCHIVE
+          PRESS ARCHIVE — split by orientation
       ====================================================== */}
       <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
 
         <div className="max-w-6xl mx-auto">
 
-          {/* Section heading */}
-          <div className="mb-8 md:mb-10">
+          {/* Portrait Press Mentions */}
+          {portraitItems.length > 0 && (
+            <div className="mb-12 md:mb-16">
+              <SectionHeading
+                label="PORTRAIT"
+                title="Portrait Press Mentions"
+              />
 
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
-              PRESS ARCHIVE
-            </p>
+              <motion.div
+                layout
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+              >
+                <AnimatePresence mode="popLayout">
+                  {portraitItems.map((item, index) => (
+                    <PressCard
+                      key={item.id}
+                      item={item}
+                      index={index}
+                      frameAspect="aspect-[3/4]"
+                      onSelect={setSelected}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            </div>
+          )}
 
-            <h2 className="mt-2 font-display text-2xl md:text-3xl text-ink">
-              Selected Press Mentions
-            </h2>
+          {/* Landscape Press Mentions */}
+          {landscapeItems.length > 0 && (
+            <div className="mb-12 md:mb-16">
+              <SectionHeading
+                label="LANDSCAPE"
+                title="Landscape Press Mentions"
+              />
 
-            <div className="mt-4 h-px w-12 bg-accent2" />
-
-          </div>
-
-
-          {/* Newspaper grid */}
-          <motion.div
-            layout
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-          >
-
-            <AnimatePresence mode="popLayout">
-
-              {visibleItems.map((item, index) => (
-
-                <motion.article
-                  key={item.id}
-                  layout
-                  initial={{ opacity: 0, y: 18 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -18 }}
-                  transition={{
-                    duration: 0.45,
-                    delay: (index % 3) * 0.06,
-                    ease: 'easeOut',
-                  }}
-                  className="group cursor-pointer"
-                  onClick={() => setSelected(item)}
-                >
-
-                  {/* Newspaper image */}
-                  <div
-                    className="
-                      relative
-                      overflow-hidden
-                      rounded-lg
-                      border border-black/8
-                      bg-white
-                      p-3
-                      shadow-sm
-                      transition-all
-                      duration-300
-                      group-hover:-translate-y-1
-                      group-hover:shadow-lg
-                    "
-                  >
-
-                    <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-[#f4f1eb]">
-
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        loading={index < 6 ? 'eager' : 'lazy'}
-                        className="
-                          w-full
-                          h-full
-                          object-contain
-                          transition-transform
-                          duration-700
-                          group-hover:scale-[1.025]
-                        "
-                      />
-
-                      {/* Hover overlay */}
-                      <div
-                        className="
-                          absolute
-                          inset-0
-                          flex
-                          items-end
-                          bg-black/0
-                          group-hover:bg-black/10
-                          transition-all
-                          duration-300
-                        "
-                      >
-
-                        <div
-                          className="
-                            absolute
-                            bottom-3
-                            right-3
-                            w-9
-                            h-9
-                            rounded-full
-                            bg-white/90
-                            flex
-                            items-center
-                            justify-center
-                            opacity-0
-                            group-hover:opacity-100
-                            transition-opacity
-                            duration-300
-                            shadow-sm
-                          "
-                        >
-                          <span className="text-ink text-sm">
-                            +
-                          </span>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-
-
-                  {/* Newspaper information */}
-                  <div className="px-1 pt-4">
-
-                    <div className="flex items-center justify-between gap-3">
-
-                      <span className="text-[10px] tracking-[0.22em] uppercase text-accent2 font-medium">
-                        {item.type}
-                      </span>
-
-                      {item.date && (
-                        <span className="inline-flex items-center gap-1 text-[11px] text-muted2">
-                          <FiCalendar className="w-3.5 h-3.5" />
-                          {item.date}
-                        </span>
-                      )}
-
-                    </div>
-
-
-                    <h3 className="mt-2 font-display text-lg text-ink leading-snug">
-                      {item.title}
-                    </h3>
-
-
-                    {item.publication && (
-                      <p className="mt-1 text-[13px] text-muted2">
-                        {item.publication}
-                      </p>
-                    )}
-
-                  </div>
-
-                </motion.article>
-
-              ))}
-
-            </AnimatePresence>
-
-          </motion.div>
-
+              <motion.div
+                layout
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+              >
+                <AnimatePresence mode="popLayout">
+                  {landscapeItems.map((item, index) => (
+                    <PressCard
+                      key={item.id}
+                      item={item}
+                      index={index}
+                      frameAspect="aspect-[4/3]"
+                      onSelect={setSelected}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            </div>
+          )}
 
           {/* =================================================
               VIEW ALL BUTTON
