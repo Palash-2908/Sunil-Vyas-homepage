@@ -32,11 +32,11 @@ const ArtworkLightbox = ({ artwork, onClose }) => {
             className="bg-canvas rounded-xl max-w-5xl w-full max-h-[90vh] overflow-auto grid md:grid-cols-2 gap-0 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-ink/5 aspect-square md:aspect-auto">
+            <div className="bg-ink/5 aspect-square md:aspect-auto flex items-center justify-center">
               <img
                 src={artwork.image}
                 alt={artwork.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="p-6 md:p-8 flex flex-col justify-center">

@@ -7,7 +7,7 @@ const ArtworkCard = ({ artwork, onClick }) => {
       className="group relative cursor-pointer overflow-hidden rounded-lg bg-black/5"
       onClick={() => onClick(artwork)}
     >
-      <div className="aspect-[4/3] overflow-hidden">
+      <div className="aspect-[4/3] overflow-hidden bg-black/[0.03] flex items-center justify-center">
         <img
           src={artwork.image}
           alt={artwork.alt}
@@ -16,7 +16,7 @@ const ArtworkCard = ({ artwork, onClick }) => {
           className="
             h-full
             w-full
-            object-cover
+            object-contain
             transition-transform
             duration-700
             group-hover:scale-105
