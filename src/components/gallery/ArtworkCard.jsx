@@ -1,25 +1,38 @@
 import React from 'react';
 import { Expand } from 'lucide-react';
 
-const ArtworkCard = ({ artwork, onClick }) => {
+const ArtworkCard = ({ artwork, onClick, frameStyle }) => {
   return (
     <div
-      className="group relative cursor-pointer overflow-hidden rounded-lg bg-black/5"
+      className="
+        group
+        relative
+        cursor-pointer
+        overflow-hidden
+        rounded-lg
+        bg-black/5
+        border
+        border-black/10
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all
+        duration-300
+      "
+      style={frameStyle}
       onClick={() => onClick(artwork)}
     >
-      <div className="aspect-[4/3] overflow-hidden bg-black/[0.03] flex items-center justify-center">
-        <img
-          src={artwork.image}
-          alt={artwork.alt}
-          loading="lazy"
-          decoding="async"
-          className="
-            h-full
-            w-full
-            object-contain
-          "
-        />
-      </div>
+      <img
+        src={artwork.image}
+        alt={artwork.alt}
+        loading="lazy"
+        decoding="async"
+        className="
+          h-full
+          w-full
+          object-cover
+          block
+        "
+      />
 
       {/* Hover overlay */}
       <div

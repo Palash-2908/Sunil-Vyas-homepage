@@ -9,6 +9,7 @@ import {
   FiInstagram,
   FiFacebook,
   FiLinkedin,
+  FiYoutube,
   FiTwitter,
 } from 'react-icons/fi';
 import { toast } from 'sonner';
@@ -37,8 +38,7 @@ const contactDetails = [
 const socialLinks = [
   { icon: FiInstagram, label: 'Instagram', href: '#' },
   { icon: FiFacebook, label: 'Facebook', href: '#' },
-  { icon: FiLinkedin, label: 'LinkedIn', href: '#' },
-  { icon: FiTwitter, label: 'Twitter', href: '#' },
+  { icon: FiYoutube, label: 'YouTube', href: '#' },
 ];
 
 const workingHours = [
@@ -260,7 +260,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Map placeholder */}
+      {/* Studio location map */}
       <div className="px-6 md:px-10 lg:px-14 pb-12 md:pb-16">
         <motion.div
           {...fadeUp}
@@ -268,11 +268,12 @@ const Contact = () => {
         >
           <iframe
             title="Studio location map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=77.6333%2C12.9600%2C77.6533%2C12.9800&layer=mapnik&marker=12.9700%2C77.6433"
-            className="w-full h-[300px] md:h-[380px] grayscale-[0.2]"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460.1332339208491!2d75.8303187794145!3d22.688591646260495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc482bf7da45%3A0x8e7ac6f11cfb306c!2sD%2F2005%2C%20Sector%20D%2C%20Dravid%20Nagar%2C%20Sudama%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452009!5e0!3m2!1sen!2sin!4v1791035740556!5m2!1sen!2sin"
+            className="w-full h-[300px] md:h-[380px]"
             style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </motion.div>
       </div>
