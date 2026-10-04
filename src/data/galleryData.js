@@ -87,7 +87,7 @@ const galleryCategories = [
       {
         id: 'ta-3',
         title: 'Textile Artwork 3',
-        image: '/images/Artworks/Textile Art/CMRdenim.jpeg',
+        image: '/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
@@ -103,12 +103,6 @@ const galleryCategories = [
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
-        id: 'ta-5',
-        title: 'Textile Artwork 5',
-        image: '/images/Artworks/Textile Art/Shivrajsingh.jpeg',
-        alt: 'Textile artwork by Sunil Vyas',
-      },
-      {
         id: 'ta-6',
         title: 'Textile Artwork 6',
         image: '/images/Artworks/Textile Art/Rajwada.jpeg',
@@ -118,12 +112,6 @@ const galleryCategories = [
         id: 'ta-7',
         title: 'Textile Artwork 7',
         image: '/images/Artworks/Textile Art/TA.jpeg',
-        alt: 'Textile artwork by Sunil Vyas',
-      },
-      {
-        id: 'ta-8',
-        title: 'Textile Artwork 8',
-        image: '/images/Artworks/Textile Art/TA2.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
     ],
@@ -146,7 +134,7 @@ const galleryCategories = [
       {
         id: 'pca-2',
         title: 'Paper Cutting Artwork 2',
-        image: '/images/Artworks/Paper Cutting Art/Gandhi.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/Gandhi3.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -170,7 +158,7 @@ const galleryCategories = [
       {
         id: 'pca-6',
         title: 'Paper Cutting Artwork 6',
-        image: '/images/Artworks/Paper Cutting Art/PC1.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -193,6 +181,93 @@ const galleryCategories = [
       },
     ],
   },
+  {
+  id: 'nail-art',
+  slug: 'nail-art',
+  label: 'Nail Art',
+  description:
+    'Intricate artworks created using nails, exploring detail, texture, patterns, and portraiture through a distinctive handmade technique.',
+  artworks: [
+    {
+      id: 'nail-1',
+      title: 'Nail Artwork 1',
+      image: '/images/Artworks/Nail Art/TA2.jpeg',
+      alt: 'Nail art by Sunil Vyas',
+    },
+    {
+      id: 'nail-2',
+      title: 'Nail Artwork 2',
+      image: '/images/Artworks/Nail Art/SwamiVivek.jpeg',
+      alt: 'Nail art by Sunil Vyas',
+    },
+  ],
+},
+{
+  id: 'plastic-art',
+  slug: 'plastic-art',
+  label: 'Plastic Art',
+  description:
+    'Creative artworks made from discarded and repurposed plastic materials, transforming everyday waste into expressive works of art.',
+  artworks: [
+    {
+      id: 'plastic-1',
+      title: 'Plastic Artwork 1',
+      image: '/images/Artworks/Plastic Art/Clean.jpeg',
+      alt: 'Plastic artwork by Sunil Vyas',
+    },
+    {
+      id: 'plastic-2',
+      title: 'Plastic Artwork 2',
+      image: '/images/Artworks/Plastic Art/PlasticGandhi.jpeg',
+      alt: 'Plastic artwork by Sunil Vyas',
+    },
+  ],
+},
+{
+  id: 'waste-wrapper-art',
+  slug: 'waste-wrapper-art',
+  label: 'Waste Wrapper Art',
+  description:
+    'Artworks created by transforming discarded wrappers and packaging materials into creative and visually striking compositions.',
+  artworks: [
+    {
+      id: 'wrapper-1',
+      title: 'Waste Wrapper Artwork 1',
+      image: '/images/Artworks/Waste Wrapper Art/Gandhi.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+    {
+      id: 'wrapper-2',
+      title: 'Waste Wrapper Artwork 2',
+      image: '/images/Artworks/Waste Wrapper Art/PC1.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+    {
+      id: 'wrapper-3',
+      title: 'Waste Wrapper Artwork 3',
+      image: '/images/Artworks/Waste Wrapper Art/Cleaning.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+    {
+      id: 'wrapper-4',
+      title: 'Waste Wrapper Artwork 4',
+      image: '/images/Artworks/Waste Wrapper Art/Scene1.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+    {
+      id: 'wrapper-5',
+      title: 'Waste Wrapper Artwork 5',
+      image: '/images/Artworks/Waste Wrapper Art/Woman.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+    {
+      id: 'wrapper-6',
+      title: 'Waste Wrapper Artwork 6',
+      image: '/images/Artworks/Waste Wrapper Art/Buddha.jpeg',
+      alt: 'Waste wrapper artwork by Sunil Vyas',
+    },
+  ],
+},
 
   {
     id: 'special-art',
@@ -229,13 +304,19 @@ const galleryCategories = [
       {
         id: 'ca-5',
         title: 'Contemporary Artwork 5',
-        image: '/images/Artworks/Contemporary Art/Clean.jpeg',
+        image: '/images/Artworks/Contemporary Art/Shivrajsingh.jpeg',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-6',
         title: 'Contemporary Artwork 6',
-        image: '/images/Artworks/Contemporary Art/PlasticGandhi.jpeg',
+        image: '/images/Artworks/Contemporary Art/eichor.jpeg',
+        alt: 'Contemporary artwork by Sunil Vyas',
+      },
+      {
+        id: 'ca-7',
+        title: 'Contemporary Artwork 7',
+        image: '/images/Artworks/Contemporary Art/SCBose.jpeg',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
     ],

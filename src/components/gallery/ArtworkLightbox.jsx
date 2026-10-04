@@ -29,7 +29,7 @@ const ArtworkLightbox = ({ artwork, onClose }) => {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: 10 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="bg-canvas rounded-xl max-w-5xl w-full max-h-[90vh] overflow-auto grid md:grid-cols-2 gap-0 shadow-2xl"
+            className="relative bg-canvas rounded-xl max-w-5xl w-full max-h-[90vh] overflow-auto grid md:grid-cols-2 gap-0 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="bg-ink/5 aspect-square md:aspect-auto flex items-center justify-center">
