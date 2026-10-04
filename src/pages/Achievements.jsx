@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 import {
   Trophy,
   Frame as GalleryIcon,
@@ -7,8 +8,13 @@ import {
   Star,
   Award,
 } from 'lucide-react';
+
 import Quote from '../components/Quote';
-import { awards, featuredRecognitions, timelineEvents } from '../data/achievementsData';
+
+import {
+  awards,
+  featuredRecognitions,
+} from '../data/achievementsData';
 
 const iconMap = {
   trophy: Trophy,
@@ -24,7 +30,6 @@ const categoryLabel = {
   recognition: 'Recognition',
   commission: 'Commission',
 };
-
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
   whileInView: { opacity: 1, y: 0 },
@@ -62,48 +67,66 @@ const Achievements = () => {
       </div>
 
       {/* Featured recognitions */}
-      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">HIGHLIGHTS</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">Featured Recognitions</h2>
-            <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
-          </motion.div>
+<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+  <div className="max-w-6xl mx-auto">
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {featuredRecognitions.map((rec, i) => (
-              <motion.div
-                key={rec.id}
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.6, delay: i * 0.08, ease: 'easeOut' }}
-                className="group overflow-hidden rounded-lg bg-black/5"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={rec.image}
-                    alt={rec.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4 md:p-5">
-                  <p className="text-[10px] tracking-[0.28em] text-accent2 font-medium">
-                    {rec.organization} · {rec.year}
-                  </p>
-                  <h3 className="mt-2 font-display text-base text-ink leading-snug">
-                    {rec.title}
-                  </h3>
-                  <p className="mt-2 text-muted2 text-[13px] leading-relaxed">
-                    {rec.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+    <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
+      <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
+        HIGHLIGHTS
+      </p>
+
+      <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">
+        Featured Recognitions
+      </h2>
+
+      <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
+    </motion.div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
+      {featuredRecognitions.map((rec, i) => (
+        <motion.div
+          key={rec.id}
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{
+            duration: 0.6,
+            delay: i * 0.08,
+            ease: 'easeOut',
+          }}
+          className="group overflow-hidden rounded-lg bg-black/5"
+        >
+          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-black/[0.03]">
+            <img
+              src={rec.image}
+              alt={rec.title}
+              loading={i < 3 ? 'eager' : 'lazy'}
+              decoding="async"
+              className="w-full h-full object-contain"
+            />
           </div>
-        </div>
-      </div>
+
+          <div className="p-4 md:p-5">
+            <p className="text-[10px] tracking-[0.28em] text-accent2 font-medium">
+              {rec.organization}
+            </p>
+
+            <h3 className="mt-2 font-display text-base text-ink leading-snug">
+              {rec.title}
+            </h3>
+
+            {rec.description && (
+              <p className="mt-2 text-muted2 text-[13px] leading-relaxed">
+                {rec.description}
+              </p>
+            )}
+          </div>
+        </motion.div>
+      ))}
+    </div>
+
+  </div>
+</div>
 
       {/* Awards & Exhibition cards */}
       <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
@@ -149,34 +172,6 @@ const Achievements = () => {
         </div>
       </div>
 
-      {/* Timeline */}
-      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16">
-        <div className="max-w-4xl mx-auto">
-          <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">TIMELINE</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">Milestones</h2>
-            <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
-          </motion.div>
-
-          <div className="relative pl-8 md:pl-10">
-            <div className="absolute left-0 top-1 bottom-1 w-px bg-accent2/30" />
-            {timelineEvents.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -12 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.5, delay: i * 0.06, ease: 'easeOut' }}
-                className="relative pb-7 last:pb-0"
-              >
-                <span className="absolute -left-[33px] md:-left-[41px] top-1 w-3 h-3 rounded-full bg-accent2 ring-4 ring-canvas" />
-                <p className="text-accent2 font-display text-base tracking-wide">{item.year}</p>
-                <p className="mt-1 text-ink text-[15px] leading-relaxed">{item.event}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       <Quote
         text="The reward of art is not in the prize, but in the quiet certainty that the work was worth making."

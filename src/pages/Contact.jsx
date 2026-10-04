@@ -31,7 +31,7 @@ const contactDetails = [
   {
     icon: FiMapPin,
     label: 'Studio',
-    value: '2006-D Sudama Nagar, Indore 452009,M.P,India',
+    value: '2006-D Sudama Nagar, Indore 452009, M.P., India',
   },
 ];
 

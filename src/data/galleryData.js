@@ -8,6 +8,24 @@ const galleryCategories = [
 
     artworks: [
       {
+        id: 'wsa-4',
+        title: 'Wooden Scrap Artwork 4',
+        image: '/images/Artworks/Wooden Scrap Art/CMWodden.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
+        id: 'wsa-6',
+        title: 'Wooden Scrap Artwork 6',
+        image: '/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
+        id: 'wsa-5',
+        title: 'Wooden Scrap Artwork 5',
+        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
         id: 'wsa-1',
         title: 'Wooden Scrap Artwork 1',
         image: '/images/Artworks/Wooden Scrap Art/Sachiv.jpeg',
@@ -26,24 +44,6 @@ const galleryCategories = [
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
-        id: 'wsa-4',
-        title: 'Wooden Scrap Artwork 4',
-        image: '/images/Artworks/Wooden Scrap Art/CMWodden.jpeg',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
-      {
-        id: 'wsa-5',
-        title: 'Wooden Scrap Artwork 5',
-        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
-      {
-        id: 'wsa-6',
-        title: 'Wooden Scrap Artwork 6',
-        image: '/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
-      {
         id: 'wsa-7',
         title: 'Wooden Scrap Artwork 7',
         image: '/images/Artworks/Wooden Scrap Art/rssguru.jpeg',
@@ -56,38 +56,32 @@ const galleryCategories = [
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
-        id: 'wsa-9',
-        title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/model-scrap.jpg.jpeg',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
-      {
         id: 'wsa-10',
         title: 'Wooden Scrap Artwork 10',
         image: '/images/Artworks/Wooden Scrap Art/ravindra.jpg.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
+        id: 'wsa-9',
+        title: 'Wooden Scrap Artwork 9',
+        image: '/images/Artworks/Wooden Scrap Art/model-scrap.jpg.jpeg',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
     ],
   },
 
   {
-    id: 'textile-art',
-    slug: 'textile-art',
-    label: 'Textile Art',
+    id: 'denim-art',
+    slug: 'denim-art',
+    label: 'Denim Art',
     description:
-      'Expressive textile-based works exploring texture, fabric, and fibre as a medium for visual storytelling.',
+      'Expressive denim based works exploring texture, denim fabric, and fiber as a medium for visual storytelling.',
 
     artworks: [
       {
         id: 'ta-1',
         title: 'Textile Artwork 1',
         image: '/images/Artworks/Textile Art/Ambedkar.jpeg',
-        alt: 'Textile artwork by Sunil Vyas',
-      },
-      {
-        id: 'ta-2',
-        title: 'Textile Artwork 2',
-        image: '/images/Artworks/Textile Art/CM2.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
@@ -100,6 +94,12 @@ const galleryCategories = [
         id: 'ta-4',
         title: 'Textile Artwork 4',
         image: '/images/Artworks/Textile Art/DenimArt.jpeg',
+        alt: 'Textile artwork by Sunil Vyas',
+      },
+      {
+        id: 'ta-2',
+        title: 'Textile Artwork 2',
+        image: '/images/Artworks/Textile Art/CM2.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
@@ -195,9 +195,9 @@ const galleryCategories = [
   },
 
   {
-    id: 'contemporary-art',
-    slug: 'contemporary-art',
-    label: 'Contemporary Art',
+    id: 'special-art',
+    slug: 'special-art',
+    label: 'Special Art',
     description:
       'Modern mixed-media works that bridge traditional craft with contemporary visual language.',
 

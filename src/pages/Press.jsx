@@ -167,20 +167,12 @@ const Press = () => {
   const orientations = useImageOrientations(pressItems);
 
 
-const portraitItems = useMemo(
+const sortedPressItems = useMemo(
   () =>
-    pressItems.filter(
-      (item) => orientations[item.id] === 'portrait'
+    [...pressItems].sort(
+      (a, b) => Number(b.date) - Number(a.date)
     ),
-  [orientations]
-);
-
-const landscapeItems = useMemo(
-  () =>
-    pressItems.filter(
-      (item) => orientations[item.id] === 'landscape'
-    ),
-  [orientations]
+  []
 );
 
   const selectedIndex = selected
@@ -251,92 +243,36 @@ const landscapeItems = useMemo(
         </motion.p>
       </div>
 
-
-      {/* =====================================================
-          PRESS ARCHIVE — split by orientation
-      ====================================================== */}
-      {/* =====================================================
+{/* =====================================================
     PRESS ARCHIVE
     Portrait and landscape images are kept in separate
-    rows for clean alignment, but remain one continuous
-    press archive.
+    rows for clean alignment.
 ====================================================== */}
-{/* =====================================================
-    PRESS ARCHIVE
-====================================================== */}
+
 <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
   <div className="max-w-6xl mx-auto">
 
-    {/* Landscape row */}
-    {landscapeItems.length > 0 && (
-      <motion.div
-        layout
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-      >
-        <AnimatePresence mode="popLayout">
-          {landscapeItems.map((item, index) => (
-            <PressCard
-              key={item.id}
-              item={item}
-              index={index}
-              frameAspect="aspect-[4/3]"
-              onSelect={setSelected}
-            />
-          ))}
-        </AnimatePresence>
-      </motion.div>
-    )}
-
-{/* =====================================================
-    PRESS ARCHIVE
-====================================================== */}
-<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
-  <div className="max-w-6xl mx-auto">
-
-    {/* Landscape row */}
-    {landscapeItems.length > 0 && (
-      <motion.div
-        layout
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-      >
-        <AnimatePresence mode="popLayout">
-          {landscapeItems.map((item, index) => (
-            <PressCard
-              key={item.id}
-              item={item}
-              index={index}
-              frameAspect="aspect-[4/3]"
-              onSelect={setSelected}
-            />
-          ))}
-        </AnimatePresence>
-      </motion.div>
-    )}
-
-    {/* Portrait row */}
-    {portraitItems.length > 0 && (
-      <motion.div
-        layout
-        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 ${
-          landscapeItems.length > 0 ? 'mt-12 md:mt-16' : ''
-        }`}
-      >
-        <AnimatePresence mode="popLayout">
-          {portraitItems.map((item, index) => (
-            <PressCard
-              key={item.id}
-              item={item}
-              index={index}
-              frameAspect="aspect-[3/4]"
-              onSelect={setSelected}
-            />
-          ))}
-        </AnimatePresence>
-      </motion.div>
-    )}
-
-  </div>
-</div>
+    {/* Press mentions - latest to oldest */}
+    <motion.div
+      layout
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+    >
+      <AnimatePresence mode="popLayout">
+        {sortedPressItems.map((item, index) => (
+          <PressCard
+            key={item.id}
+            item={item}
+            index={index}
+            frameAspect={
+              orientations[item.id] === 'landscape'
+                ? 'aspect-[4/3]'
+                : 'aspect-[3/4]'
+            }
+            onSelect={setSelected}
+          />
+        ))}
+      </AnimatePresence>
+    </motion.div>
 
   </div>
 </div>
