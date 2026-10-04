@@ -69,10 +69,23 @@ for (const filePath of imageFiles) {
 
     const dimensions = imageSize(buffer);
 
-    if (!dimensions.width || !dimensions.height) {
-      console.warn(`⚠ Could not determine dimensions: ${filePath}`);
-      continue;
-    }
+if (!dimensions.width || !dimensions.height) {
+  console.warn(`⚠ Could not determine dimensions: ${filePath}`);
+  continue;
+}
+
+// JPEG EXIF orientation can rotate the image when displayed.
+// Orientations 5, 6, 7, and 8 swap the displayed width/height.
+const shouldSwapDimensions =
+  [5, 6, 7, 8].includes(dimensions.orientation);
+
+const width = shouldSwapDimensions
+  ? dimensions.height
+  : dimensions.width;
+
+const height = shouldSwapDimensions
+  ? dimensions.width
+  : dimensions.height;
 
     /*
      * Convert:
@@ -92,10 +105,10 @@ for (const filePath of imageFiles) {
 
     const publicPath = `/${relativePath}`;
 
-    metadata[publicPath] = {
-      width: dimensions.width,
-      height: dimensions.height,
-    };
+   metadata[publicPath] = {
+  width,
+  height,
+};
 
     console.log(
       `✓ ${publicPath} → ${dimensions.width} × ${dimensions.height}`

@@ -29,7 +29,7 @@ const ArtworkCard = ({ artwork, onClick, frameStyle }) => {
         className="
           h-full
           w-full
-          object-cover
+          object-contain
           block
         "
       />

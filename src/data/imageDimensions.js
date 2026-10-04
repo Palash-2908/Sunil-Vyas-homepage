@@ -28,8 +28,8 @@ const imageDimensions = {
     "height": 1280
   },
   "/images/Artworks/Contemporary Art/SCBose.jpeg": {
-    "width": 4000,
-    "height": 3000
+    "width": 3000,
+    "height": 4000
   },
   "/images/Artworks/Contemporary Art/Shivrajsingh.jpeg": {
     "width": 1030,
@@ -48,8 +48,8 @@ const imageDimensions = {
     "height": 2916
   },
   "/images/Artworks/Nail Art/SwamiVivek.jpeg": {
-    "width": 4000,
-    "height": 3000
+    "width": 3000,
+    "height": 4000
   },
   "/images/Artworks/Nail Art/TA2.jpeg": {
     "width": 774,
@@ -536,8 +536,8 @@ const imageDimensions = {
     "height": 1280
   },
   "/images/Artworks/Wooden Scrap Art/CMWodden.jpeg": {
-    "width": 4000,
-    "height": 3000
+    "width": 3000,
+    "height": 4000
   },
   "/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg": {
     "width": 2146,
