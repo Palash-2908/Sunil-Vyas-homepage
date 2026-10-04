@@ -37,7 +37,7 @@ const artworkSlides = [
       },
       {
         id: 6,
-        image: "/images/Artworks/Textile Art/CMRdenim.jpeg",
+        image: "/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg",
         alt: "Painting 3",
       },
     ],
@@ -54,7 +54,7 @@ const artworkSlides = [
       },
       {
         id: 8,
-        image: "/images/Artworks/Paper Cutting Art/Gandhi.jpeg",
+        image: "/images/Artworks/Paper Cutting Art/RaniAhilya.jpeg",
         alt: "Scrap artwork 2",
       },
       {

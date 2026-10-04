@@ -1,42 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiCalendar, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Quote from '../components/Quote';
 import pressItems from '../data/pressData';
+import imageDimensions from '../data/imageDimensions';
 
-/**
- * Detects the natural orientation (portrait vs landscape) of each
- * press image at runtime using the browser's Image API.
- *
- * Returns a map of { [item.id]: 'portrait' | 'landscape' }.
- * Images that fail to load default to 'portrait' (newspaper clippings
- * are most commonly portrait-oriented).
- */
-const useImageOrientations = (items) => {
-  const [orientations, setOrientations] = useState({});
-
-  useEffect(() => {
-    items.forEach((item) => {
-      const img = new Image();
-      img.onload = () => {
-        const isPortrait = img.naturalHeight > img.naturalWidth;
-        setOrientations((prev) => ({
-          ...prev,
-          [item.id]: isPortrait ? 'portrait' : 'landscape',
-        }));
-      };
-      img.onerror = () => {
-        setOrientations((prev) => ({
-          ...prev,
-          [item.id]: 'portrait',
-        }));
-      };
-      img.src = item.image;
-    });
-  }, [items]);
-
-  return orientations;
-};
 
 const SectionHeading = ({ label, title }) => (
   <div className="mb-6 md:mb-8">
@@ -164,30 +132,29 @@ const PressCard = ({ item, index, frameAspect, onSelect }) => (
 
 const Press = () => {
   const [selected, setSelected] = useState(null);
-  const orientations = useImageOrientations(pressItems);
 
 
-const sortedPressItems = useMemo(
-  () =>
-    [...pressItems].sort(
-      (a, b) => Number(b.date) - Number(a.date)
-    ),
-  []
-);
+  const sortedPressItems = useMemo(
+    () =>
+      [...pressItems].sort(
+        (a, b) => Number(b.date) - Number(a.date)
+      ),
+    []
+  );
 
   const selectedIndex = selected
-    ? pressItems.findIndex((item) => item.id === selected.id)
-    : -1;
+  ? sortedPressItems.findIndex((item) => item.id === selected.id)
+  : -1;
 
   const showPrevious = () => {
     if (selectedIndex > 0) {
-      setSelected(pressItems[selectedIndex - 1]);
+      setSelected(sortedPressItems[selectedIndex - 1]);
     }
   };
 
   const showNext = () => {
     if (selectedIndex < pressItems.length - 1) {
-      setSelected(pressItems[selectedIndex + 1]);
+      setSelected(sortedPressItems[selectedIndex + 1]);
     }
   };
 
@@ -243,39 +210,40 @@ const sortedPressItems = useMemo(
         </motion.p>
       </div>
 
-{/* =====================================================
+      {/* =====================================================
     PRESS ARCHIVE
     Portrait and landscape images are kept in separate
     rows for clean alignment.
 ====================================================== */}
 
-<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
-  <div className="max-w-6xl mx-auto">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+        <div className="max-w-6xl mx-auto">
 
-    {/* Press mentions - latest to oldest */}
-    <motion.div
-      layout
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
-    >
-      <AnimatePresence mode="popLayout">
-        {sortedPressItems.map((item, index) => (
-          <PressCard
-            key={item.id}
-            item={item}
-            index={index}
-            frameAspect={
-              orientations[item.id] === 'landscape'
-                ? 'aspect-[4/3]'
-                : 'aspect-[3/4]'
-            }
-            onSelect={setSelected}
-          />
-        ))}
-      </AnimatePresence>
-    </motion.div>
+          {/* Press mentions - latest to oldest */}
+          <motion.div
+            layout
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          >
+            <AnimatePresence mode="popLayout">
+              {sortedPressItems.map((item, index) => (
+                <PressCard
+                  key={item.id}
+                  item={item}
+                  index={index}
+                  frameAspect={
+                    imageDimensions[item.image] &&
+                      imageDimensions[item.image].width >= imageDimensions[item.image].height
+                      ? 'aspect-[4/3]'
+                      : 'aspect-[3/4]'
+                  }
+                  onSelect={setSelected}
+                />
+              ))}
+            </AnimatePresence>
+          </motion.div>
 
-  </div>
-</div>
+        </div>
+      </div>
 
       {/* =====================================================
           QUOTE

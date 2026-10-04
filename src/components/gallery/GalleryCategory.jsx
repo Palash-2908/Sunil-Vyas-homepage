@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import ArtworkCard from './ArtworkCard';
 import ArtworkLightbox from './ArtworkLightbox';
+import imageDimensions from '../../data/imageDimensions';
 
 const GAP = 20;
 const MAX_IMAGES_PER_ROW = 5;
@@ -15,7 +16,6 @@ const getTargetRowHeight = (width) => {
 const GalleryCategory = ({ category }) => {
   const [selected, setSelected] = useState(null);
   const [showAll, setShowAll] = useState(false);
-  const [imageRatios, setImageRatios] = useState({});
   const [containerWidth, setContainerWidth] = useState(0);
 
   const containerRef = useRef(null);
@@ -47,53 +47,11 @@ const GalleryCategory = ({ category }) => {
   /*
    * Load the natural aspect ratio of every artwork.
    */
-  useEffect(() => {
-    let cancelled = false;
 
-    const loadDimensions = async () => {
-      const entries = await Promise.all(
-        artworks.map(
-          (art) =>
-            new Promise((resolve) => {
-              const img = new Image();
-
-              img.onload = () => {
-                if (img.naturalWidth && img.naturalHeight) {
-                  resolve([
-                    art.id,
-                    img.naturalWidth / img.naturalHeight,
-                  ]);
-                } else {
-                  resolve([art.id, 1]);
-                }
-              };
-
-              img.onerror = () => {
-                resolve([art.id, 1]);
-              };
-
-              img.src = art.image;
-            })
-        )
-      );
-
-      if (!cancelled) {
-        setImageRatios(Object.fromEntries(entries));
-      }
-    };
-
-    if (artworks.length > 0) {
-      loadDimensions();
-    }
-
-    return () => {
-      cancelled = true;
-    };
-  }, [artworks]);
-
-  const visibleArtworks = showAll
-    ? artworks
-    : artworks.slice(0, 4);
+  const visibleArtworks = useMemo(
+  () => (showAll ? artworks : artworks.slice(0, 4)),
+  [showAll, artworks]
+);
 
   const hasMore = artworks.length > 4;
 
@@ -118,9 +76,11 @@ const GalleryCategory = ({ category }) => {
     let currentAspectSum = 0;
 
     visibleArtworks.forEach((artwork) => {
-      const ratio = imageRatios[artwork.id];
+  const dimensions = imageDimensions[artwork.image];
 
-      if (!ratio) return;
+  const ratio = dimensions
+    ? dimensions.width / dimensions.height
+    : 1;
 
       currentRow.push({
         artwork,
@@ -168,7 +128,6 @@ const GalleryCategory = ({ category }) => {
     return rows;
   }, [
     visibleArtworks,
-    imageRatios,
     containerWidth,
   ]);
 
