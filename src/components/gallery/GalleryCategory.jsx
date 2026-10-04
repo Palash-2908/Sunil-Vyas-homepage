@@ -20,8 +20,10 @@ const GalleryCategory = ({ category }) => {
 
   const containerRef = useRef(null);
 
-  const artworks = category.artworks ?? [];
-
+  const artworks = useMemo(
+  () => category.artworks ?? [],
+  [category.artworks]
+);
   /*
    * Measure gallery width.
    */
