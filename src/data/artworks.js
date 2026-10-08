@@ -32,7 +32,7 @@ const artworkSlides = [
       },
       {
         id: 5,
-        image: "/images/Artworks/Textile Art/CM2.jpeg",
+        image: "/images/Artworks/Textile Art/Horse.jpeg",
         alt: "Painting 2",
       },
       {

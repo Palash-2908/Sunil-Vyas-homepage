@@ -11,7 +11,7 @@ const imageDimensions = {
     "width": 2160,
     "height": 3840
   },
-  "/images/Artworks/Contemporary Art/IMG-20260826-WA0025.jpg.jpeg": {
+  "/images/Artworks/Contemporary Art/Eichor2.jpeg": {
     "width": 4080,
     "height": 3060
   },
@@ -39,11 +39,39 @@ const imageDimensions = {
     "width": 7900,
     "height": 13085
   },
+  "/images/Artworks/Fabric Art/AhilyaFabric.jpeg": {
+    "width": 2434,
+    "height": 3742
+  },
+  "/images/Artworks/Fabric Art/CM2.jpeg": {
+    "width": 1080,
+    "height": 1080
+  },
+  "/images/Artworks/Fabric Art/Gandhi.jpeg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/images/Artworks/Fabric Art/Gandhi3.jpeg": {
+    "width": 988,
+    "height": 1280
+  },
+  "/images/Artworks/Fabric Art/IMG-20220621-WA0029.jpg.jpeg": {
+    "width": 1200,
+    "height": 1600
+  },
+  "/images/Artworks/Fabric Art/Rajwada.jpeg": {
+    "width": 1280,
+    "height": 950
+  },
+  "/images/Artworks/Fabric Art/WhatsApp Image 2026-09-07 at 5.16.03 PM (2).jpeg": {
+    "width": 1600,
+    "height": 1236
+  },
   "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
     "width": 1848,
     "height": 3002
   },
-  "/images/Artworks/Nail Art/20260922_174441.jpg.jpeg": {
+  "/images/Artworks/Nail Art/GandhiNA.jpeg": {
     "width": 1848,
     "height": 2916
   },
@@ -99,21 +127,13 @@ const imageDimensions = {
     "width": 13977,
     "height": 6259
   },
-  "/images/Artworks/News Mentions/IMG-20220215-WA0000.jpg.jpeg": {
-    "width": 1280,
-    "height": 1059
+  "/images/Artworks/News Mentions/DainikB.jpeg": {
+    "width": 596,
+    "height": 1280
   },
   "/images/Artworks/News Mentions/IMG-20220222-WA0001.jpg.jpeg": {
     "width": 1237,
     "height": 1600
-  },
-  "/images/Artworks/News Mentions/IMG-20220222-WA0013.jpg.jpeg": {
-    "width": 596,
-    "height": 1280
-  },
-  "/images/Artworks/News Mentions/IMG-20241106-WA0000.jpg.jpeg": {
-    "width": 667,
-    "height": 660
   },
   "/images/Artworks/News Mentions/IMG-20241119-WA0003.jpg.jpeg": {
     "width": 936,
@@ -147,9 +167,17 @@ const imageDimensions = {
     "width": 11545,
     "height": 3755
   },
-  "/images/Artworks/Paper Cutting Art/20251107_103528.jpg.jpeg": {
-    "width": 3000,
-    "height": 4000
+  "/images/Artworks/News Mentions/RajivTimes.jpeg": {
+    "width": 1280,
+    "height": 1059
+  },
+  "/images/Artworks/News Mentions/TatkalTimes.jpeg": {
+    "width": 667,
+    "height": 660
+  },
+  "/images/Artworks/Paper Cutting Art/CleanIndia.jpeg": {
+    "width": 808,
+    "height": 808
   },
   "/images/Artworks/Paper Cutting Art/CM1.jpeg": {
     "width": 1280,
@@ -159,6 +187,10 @@ const imageDimensions = {
     "width": 720,
     "height": 347
   },
+  "/images/Artworks/Paper Cutting Art/Face.jpeg": {
+    "width": 2002,
+    "height": 2670
+  },
   "/images/Artworks/Paper Cutting Art/FB_IMG_1761902089344.jpg.jpeg": {
     "width": 1386,
     "height": 1600
@@ -166,10 +198,6 @@ const imageDimensions = {
   "/images/Artworks/Paper Cutting Art/horse.jpeg": {
     "width": 960,
     "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/IMG_20180601_164042.jpg.jpeg": {
-    "width": 2002,
-    "height": 2670
   },
   "/images/Artworks/Paper Cutting Art/IMG_20230729_125336.jpg.jpeg": {
     "width": 2992,
@@ -203,29 +231,29 @@ const imageDimensions = {
     "width": 1082,
     "height": 1280
   },
+  "/images/Artworks/Paper Cutting Art/PC6.jpeg": {
+    "width": 1600,
+    "height": 1600
+  },
   "/images/Artworks/Paper Cutting Art/RaniAhilya.jpeg": {
     "width": 1280,
     "height": 1277
+  },
+  "/images/Artworks/Paper Cutting Art/RaniAhilya2.jpeg": {
+    "width": 1080,
+    "height": 1444
   },
   "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg": {
     "width": 2427,
     "height": 2649
   },
-  "/images/Artworks/Paper Cutting Art/Shankar.jpeg": {
-    "width": 996,
-    "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.09 PM.jpeg": {
+  "/images/Artworks/Paper Cutting Art/Scenery.jpeg": {
     "width": 938,
     "height": 1280
   },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.14 PM (1).jpeg": {
-    "width": 1080,
-    "height": 1444
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.16 PM (1).jpeg": {
-    "width": 1600,
-    "height": 1600
+  "/images/Artworks/Paper Cutting Art/Shankar.jpeg": {
+    "width": 996,
+    "height": 1280
   },
   "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.17 PM.jpeg": {
     "width": 720,
@@ -234,10 +262,6 @@ const imageDimensions = {
   "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM (1).jpeg": {
     "width": 1217,
     "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM (2).jpeg": {
-    "width": 808,
-    "height": 808
   },
   "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM.jpeg": {
     "width": 1080,
@@ -251,6 +275,10 @@ const imageDimensions = {
     "width": 960,
     "height": 1280
   },
+  "/images/Artworks/Paper Cutting Art/Woman3.jpeg": {
+    "width": 3000,
+    "height": 4000
+  },
   "/images/Artworks/Plastic Art/Clean.jpeg": {
     "width": 864,
     "height": 1280
@@ -259,7 +287,7 @@ const imageDimensions = {
     "width": 1600,
     "height": 1200
   },
-  "/images/Artworks/Plastic Art/IMG-20231128-WA0001.jpg.jpeg": {
+  "/images/Artworks/Plastic Art/LataMangeshkar.jpeg": {
     "width": 1280,
     "height": 960
   },
@@ -435,17 +463,9 @@ const imageDimensions = {
     "width": 2726,
     "height": 1870
   },
-  "/images/Artworks/Textile Art/20250930_160154.jpg.jpeg": {
-    "width": 2434,
-    "height": 3742
-  },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,
     "height": 1280
-  },
-  "/images/Artworks/Textile Art/CM2.jpeg": {
-    "width": 1080,
-    "height": 1080
   },
   "/images/Artworks/Textile Art/DenimArt.jpeg": {
     "width": 1270,
@@ -455,49 +475,25 @@ const imageDimensions = {
     "width": 2596,
     "height": 3526
   },
-  "/images/Artworks/Textile Art/Gandhi.jpeg": {
-    "width": 1200,
-    "height": 1600
-  },
-  "/images/Artworks/Textile Art/Gandhi3.jpeg": {
-    "width": 988,
-    "height": 1280
-  },
   "/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg": {
     "width": 828,
     "height": 1073
   },
-  "/images/Artworks/Textile Art/IMG-20220621-WA0029.jpg.jpeg": {
-    "width": 1200,
-    "height": 1600
-  },
-  "/images/Artworks/Textile Art/IMG-20251102-WA0033.jpg.jpeg": {
+  "/images/Artworks/Textile Art/Horse.jpeg": {
     "width": 3108,
     "height": 4712
-  },
-  "/images/Artworks/Textile Art/Rajwada.jpeg": {
-    "width": 1280,
-    "height": 950
-  },
-  "/images/Artworks/Textile Art/WhatsApp Image 2026-09-07 at 5.16.03 PM (2).jpeg": {
-    "width": 1600,
-    "height": 1236
-  },
-  "/images/Artworks/Waste Wrapper Art/20251011_151446.jpg.jpeg": {
-    "width": 2208,
-    "height": 3556
   },
   "/images/Artworks/Waste Wrapper Art/Buddha.jpeg": {
     "width": 1599,
     "height": 899
   },
+  "/images/Artworks/Waste Wrapper Art/Buddha2.jpeg": {
+    "width": 1280,
+    "height": 957
+  },
   "/images/Artworks/Waste Wrapper Art/Cleaning.jpeg": {
     "width": 540,
     "height": 553
-  },
-  "/images/Artworks/Waste Wrapper Art/FB_IMG_1761902167744.jpg.jpeg": {
-    "width": 1536,
-    "height": 2048
   },
   "/images/Artworks/Waste Wrapper Art/FB_IMG_1761902210283.jpg.jpeg": {
     "width": 1532,
@@ -506,6 +502,10 @@ const imageDimensions = {
   "/images/Artworks/Waste Wrapper Art/Gandhi.jpeg": {
     "width": 720,
     "height": 1280
+  },
+  "/images/Artworks/Waste Wrapper Art/Gandhi2.jpeg": {
+    "width": 1536,
+    "height": 2048
   },
   "/images/Artworks/Waste Wrapper Art/IMG-20230705-WA0007.jpg.jpeg": {
     "width": 1200,
@@ -527,13 +527,17 @@ const imageDimensions = {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Waste Wrapper Art/WhatsApp Image 2026-09-07 at 5.16.19 PM (1).jpeg": {
-    "width": 1280,
-    "height": 957
-  },
   "/images/Artworks/Waste Wrapper Art/Woman.jpeg": {
     "width": 1147,
     "height": 1280
+  },
+  "/images/Artworks/Waste Wrapper Art/WSA1.jpeg": {
+    "width": 2208,
+    "height": 3556
+  },
+  "/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg": {
+    "width": 924,
+    "height": 1374
   },
   "/images/Artworks/Wooden Scrap Art/CMWodden.jpeg": {
     "width": 3000,
@@ -546,14 +550,6 @@ const imageDimensions = {
   "/images/Artworks/Wooden Scrap Art/Dalai-lama2.jpeg": {
     "width": 1058,
     "height": 1349
-  },
-  "/images/Artworks/Wooden Scrap Art/FB_IMG_1761901923066.jpg.jpeg": {
-    "width": 1454,
-    "height": 1785
-  },
-  "/images/Artworks/Wooden Scrap Art/FB_IMG_1761902178539.jpg.jpeg": {
-    "width": 924,
-    "height": 1374
   },
   "/images/Artworks/Wooden Scrap Art/gst.jpeg": {
     "width": 960,
@@ -610,6 +606,10 @@ const imageDimensions = {
   "/images/Artworks/Wooden Scrap Art/wooden3.jpeg": {
     "width": 932,
     "height": 1204
+  },
+  "/images/Artworks/Wooden Scrap Art/Wooden4.jpeg": {
+    "width": 1454,
+    "height": 1785
   }
 };
 

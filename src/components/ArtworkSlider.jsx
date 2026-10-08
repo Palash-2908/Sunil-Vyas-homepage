@@ -92,8 +92,8 @@ const ArtworkSlider = ({ onCategoryChange }) => {
         className="artwork-swiper"
       >
 
-        {artworks.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {artworks.map((slide, slideIndex) => (
+  <SwiperSlide key={slide.category}>
 
             <div className="three-artworks">
 
@@ -102,7 +102,7 @@ const ArtworkSlider = ({ onCategoryChange }) => {
                   <img
                     src={art.image}
                     alt={art.alt}
-                    loading="eager"
+                    loading={slideIndex === 0 ? 'eager' : 'lazy'}
                   />
                 </div>
               ))}
