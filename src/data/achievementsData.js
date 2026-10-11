@@ -64,10 +64,10 @@ export const awards = [
 export const featuredRecognitions = [
   {
     id: 'recognition-1',
-    title: 'Recognition',
+    title: '2021-T.jpg.jpeg',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/2021-T.jpg.jpeg',
+      '/images/Artworks/Recognitions/1.jpeg',
   },
 
   {
@@ -75,7 +75,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/bharat sarkar sachiv shree durgashankar mishra-2021.jpg.jpeg',
+      '/images/Artworks/Recognitions/2.jpeg',
   },
 
   {
@@ -83,7 +83,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/bikram aahuja.jpg.jpeg',
+      '/images/Artworks/Recognitions/3.jpeg',
   },
 
   {
@@ -91,7 +91,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/commitioner madam.jpg.jpeg',
+      '/images/Artworks/Recognitions/4.jpeg',
   },
 
   {
@@ -99,7 +99,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/manish singh-Home.jpg.jpeg',
+      '/images/Artworks/Recognitions/5.jpeg',
   },
 
   {
@@ -107,6 +107,223 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/RSS.Zhaa.jpg.jpeg',
+      '/images/Artworks/Recognitions/6.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/7.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/8.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/9.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/10.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/11.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/12.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/13.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/14.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/15.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/16.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/17.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/18.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/19.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/20.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/21.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/22.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/23.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/24.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/25.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/26.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/27.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/28.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/29.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/30.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/31.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/32.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/33.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/34.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/35.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/36.jpeg',
+  },
+  {
+    id: 'recognition-6',
+    title: 'Recognition',
+    organization: 'Featured Recognition',
+    image:
+      '/images/Artworks/Recognitions/37.jpeg',
   },
 ];

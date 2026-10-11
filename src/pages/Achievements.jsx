@@ -1,35 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { featuredRecognitions } from '../data/achievementsData';
 
-import {
-  Trophy,
-  Frame as GalleryIcon,
-  Sparkles,
-  Star,
-  Award,
-} from 'lucide-react';
-
-import Quote from '../components/Quote';
-
-import {
-  awards,
-  featuredRecognitions,
-} from '../data/achievementsData';
-
-const iconMap = {
-  trophy: Trophy,
-  gallery: GalleryIcon,
-  craft: Sparkles,
-  star: Star,
-  award: Award,
-};
-
-const categoryLabel = {
-  award: 'Award',
-  exhibition: 'Exhibition',
-  recognition: 'Recognition',
-  commission: 'Commission',
-};
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
   whileInView: { opacity: 1, y: 0 },
@@ -38,6 +10,7 @@ const fadeUp = {
 };
 
 const Achievements = () => {
+  const [showAllRecognitions, setShowAllRecognitions] = useState(false);
   return (
     <section id="achievements" className="scroll-mt-20">
       {/* Hero */}
@@ -67,116 +40,98 @@ const Achievements = () => {
       </div>
 
       {/* Featured recognitions */}
-<div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
-  <div className="max-w-6xl mx-auto">
+      <div className="px-6 md:px-10 lg:px-14 py-10 md:py-14">
+        <div className="max-w-6xl mx-auto">
 
-    <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
-      <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
-        HIGHLIGHTS
-      </p>
-
-      <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">
-        Featured Recognitions
-      </h2>
-
-      <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
-    </motion.div>
-
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
-      {featuredRecognitions.map((rec, i) => (
-        <motion.div
-          key={rec.id}
-          initial={{ opacity: 0, y: 18 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{
-            duration: 0.6,
-            delay: i * 0.08,
-            ease: 'easeOut',
-          }}
-          className="group overflow-hidden rounded-lg bg-black/5"
-        >
-          <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-black/[0.03]">
-            <img
-              src={rec.image}
-              alt={rec.title}
-              loading={i < 3 ? 'eager' : 'lazy'}
-              decoding="async"
-              className="w-full h-full object-contain"
-            />
-          </div>
-
-          <div className="p-4 md:p-5">
-            <p className="text-[10px] tracking-[0.28em] text-accent2 font-medium">
-              {rec.organization}
+          <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
+            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">
+              HIGHLIGHTS
             </p>
 
-            <h3 className="mt-2 font-display text-base text-ink leading-snug">
-              {rec.title}
-            </h3>
+            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">
+              Featured Recognitions
+            </h2>
 
-            {rec.description && (
-              <p className="mt-2 text-muted2 text-[13px] leading-relaxed">
-                {rec.description}
-              </p>
-            )}
-          </div>
-        </motion.div>
-      ))}
-    </div>
-
-  </div>
-</div>
-
-      {/* Awards & Exhibition cards */}
-      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
-        <div className="max-w-6xl mx-auto">
-          <motion.div {...fadeUp} className="mb-8 md:mb-10 text-center">
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">AWARDS & EXHIBITIONS</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">Honours Over the Years</h2>
             <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {awards.map((item, i) => {
-              const Icon = iconMap[item.icon] || Trophy;
-              return (
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.6, delay: i * 0.07, ease: 'easeOut' }}
-                  className="rounded-lg border border-black/5 bg-canvas p-5 md:p-6 hover:shadow-md transition-shadow duration-300"
-                >
-                  <div className="flex items-start justify-between gap-4 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-accent2/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-accent2" />
-                    </div>
-                    <span className="text-[10px] tracking-[0.22em] uppercase text-muted2 border border-black/10 rounded-full px-2.5 py-1">
-                      {categoryLabel[item.category] || item.category}
-                    </span>
-                  </div>
-                  <p className="text-accent2 font-display text-sm tracking-wide">{item.year}</p>
-                  <h3 className="mt-1 font-display text-lg text-ink leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="mt-1 text-[13px] text-muted2">{item.organization}</p>
-                  <p className="mt-3 text-muted2 text-sm leading-relaxed">
-                    {item.description}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
+            {(showAllRecognitions
+              ? featuredRecognitions
+              : featuredRecognitions.slice(0, 6)
+            ).map((rec, i) => (
+              <motion.div
+                key={rec.id}
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.6,
+                  delay: i * 0.08,
+                  ease: 'easeOut',
+                }}
+                className="group overflow-hidden rounded-lg bg-black/5"
+              >
+                <div className="aspect-[4/3] overflow-hidden flex items-center justify-center bg-black/[0.03]">
+                  <img
+                    src={rec.image}
+                    alt={rec.title}
+                    loading={i < 3 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div className="p-4 md:p-5">
+                  <p className="text-[10px] tracking-[0.28em] text-accent2 font-medium">
+                    {rec.organization}
                   </p>
-                </motion.div>
-              );
-            })}
+
+                  <h3 className="mt-2 font-display text-base text-ink leading-snug">
+                    {rec.title}
+                  </h3>
+
+                  {rec.description && (
+                    <p className="mt-2 text-muted2 text-[13px] leading-relaxed">
+                      {rec.description}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
           </div>
+
         </div>
       </div>
+      {featuredRecognitions.length > 6 && (
+  <div className="flex justify-center mt-8 md:mt-10">
+    <button
+      onClick={() =>
+        setShowAllRecognitions((prev) => !prev)
+      }
+      className="
+        px-6 py-2.5
+        rounded-full
+        border border-ink/20
+        text-sm
+        tracking-wide
+        text-ink
+        transition-all
+        duration-300
+        hover:bg-ink
+        hover:text-canvas
+        hover:border-ink
+      "
+    >
+      {showAllRecognitions
+        ? 'Show Less'
+        : 'View More Recognitions'}
+    </button>
+  </div>
+)}
 
-
-      <Quote
-        text="The reward of art is not in the prize, but in the quiet certainty that the work was worth making."
-        author="Sunil Vyas"
-      />
+      {/* Awards & Exhibition cards */}
+     
     </section>
   );
 };

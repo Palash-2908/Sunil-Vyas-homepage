@@ -191,17 +191,9 @@ const imageDimensions = {
     "width": 2002,
     "height": 2670
   },
-  "/images/Artworks/Paper Cutting Art/FB_IMG_1761902089344.jpg.jpeg": {
-    "width": 1386,
-    "height": 1600
-  },
   "/images/Artworks/Paper Cutting Art/horse.jpeg": {
     "width": 960,
     "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/IMG_20230729_125336.jpg.jpeg": {
-    "width": 2992,
-    "height": 4000
   },
   "/images/Artworks/Paper Cutting Art/IMG_20231130_153655.jpg.jpeg": {
     "width": 6550,
@@ -235,6 +227,18 @@ const imageDimensions = {
     "width": 1600,
     "height": 1600
   },
+  "/images/Artworks/Paper Cutting Art/PC7.jpeg": {
+    "width": 1386,
+    "height": 1600
+  },
+  "/images/Artworks/Paper Cutting Art/PC8.jpeg": {
+    "width": 2992,
+    "height": 4000
+  },
+  "/images/Artworks/Paper Cutting Art/PC9.jpeg": {
+    "width": 1080,
+    "height": 1080
+  },
   "/images/Artworks/Paper Cutting Art/RaniAhilya.jpeg": {
     "width": 1280,
     "height": 1277
@@ -262,10 +266,6 @@ const imageDimensions = {
   "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM (1).jpeg": {
     "width": 1217,
     "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM.jpeg": {
-    "width": 1080,
-    "height": 1080
   },
   "/images/Artworks/Paper Cutting Art/woman.jpeg": {
     "width": 951,
@@ -315,153 +315,153 @@ const imageDimensions = {
     "width": 540,
     "height": 1170
   },
-  "/images/Artworks/Recognitions/11c.jpg.jpeg": {
-    "width": 1280,
-    "height": 960
-  },
-  "/images/Artworks/Recognitions/2021-T.jpg.jpeg": {
+  "/images/Artworks/Recognitions/1.jpeg": {
     "width": 1550,
     "height": 1296
   },
-  "/images/Artworks/Recognitions/20250810_180844.jpg.jpeg": {
-    "width": 4000,
-    "height": 2252
-  },
-  "/images/Artworks/Recognitions/20250810_181900(0).jpg.jpeg": {
-    "width": 4000,
-    "height": 2252
-  },
-  "/images/Artworks/Recognitions/bharat sarkar sachiv shree durgashankar mishra-2021.jpg.jpeg": {
-    "width": 4453,
-    "height": 4512
-  },
-  "/images/Artworks/Recognitions/bikram aahuja.jpg.jpeg": {
-    "width": 5596,
-    "height": 6046
-  },
-  "/images/Artworks/Recognitions/commitioner madam.jpg.jpeg": {
-    "width": 2032,
-    "height": 1264
-  },
-  "/images/Artworks/Recognitions/FB_IMG_1761901567101.jpg.jpeg": {
+  "/images/Artworks/Recognitions/10.jpeg": {
     "width": 2048,
     "height": 1152
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901650749.jpg.jpeg": {
+  "/images/Artworks/Recognitions/11.jpeg": {
     "width": 786,
     "height": 1139
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901678964.jpg.jpeg": {
+  "/images/Artworks/Recognitions/12.jpeg": {
     "width": 1156,
     "height": 866
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901712027.jpg.jpeg": {
+  "/images/Artworks/Recognitions/13.jpeg": {
     "width": 1154,
     "height": 2048
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901856174.jpg.jpeg": {
+  "/images/Artworks/Recognitions/14.jpeg": {
     "width": 2420,
     "height": 2304
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901861825.jpg.jpeg": {
+  "/images/Artworks/Recognitions/15.jpeg": {
     "width": 2020,
     "height": 2824
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901890370.jpg.jpeg": {
+  "/images/Artworks/Recognitions/16.jpeg": {
     "width": 2880,
     "height": 1980
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901934181.jpg.jpeg": {
+  "/images/Artworks/Recognitions/17.jpeg": {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901961945.jpg.jpeg": {
+  "/images/Artworks/Recognitions/18.jpeg": {
     "width": 864,
     "height": 1152
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901967383.jpg.jpeg": {
+  "/images/Artworks/Recognitions/19.jpeg": {
     "width": 868,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761901973272.jpg.jpeg": {
+  "/images/Artworks/Recognitions/2.jpeg": {
+    "width": 4453,
+    "height": 4512
+  },
+  "/images/Artworks/Recognitions/20.jpeg": {
     "width": 1280,
     "height": 853
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902003289.jpg.jpeg": {
+  "/images/Artworks/Recognitions/21.jpeg": {
     "width": 868,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902029886.jpg.jpeg": {
+  "/images/Artworks/Recognitions/22.jpeg": {
     "width": 720,
     "height": 1600
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902069892.jpg.jpeg": {
+  "/images/Artworks/Recognitions/23.jpeg": {
     "width": 866,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902082243.jpg.jpeg": {
+  "/images/Artworks/Recognitions/24.jpeg": {
     "width": 1200,
     "height": 1109
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902264791.jpg.jpeg": {
+  "/images/Artworks/Recognitions/25.jpeg": {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902301462.jpg.jpeg": {
+  "/images/Artworks/Recognitions/26.jpeg": {
     "width": 2456,
     "height": 2776
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902335478.jpg.jpeg": {
+  "/images/Artworks/Recognitions/27.jpeg": {
     "width": 4232,
     "height": 2352
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902387274.jpg.jpeg": {
+  "/images/Artworks/Recognitions/28.jpeg": {
     "width": 1156,
     "height": 534
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902401316.jpg.jpeg": {
+  "/images/Artworks/Recognitions/29.jpeg": {
     "width": 4024,
     "height": 3892
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902456657.jpg.jpeg": {
+  "/images/Artworks/Recognitions/3.jpeg": {
+    "width": 5596,
+    "height": 6046
+  },
+  "/images/Artworks/Recognitions/30.jpeg": {
     "width": 1080,
     "height": 1080
   },
-  "/images/Artworks/Recognitions/FB_IMG_1761902492516.jpg.jpeg": {
+  "/images/Artworks/Recognitions/31.jpeg": {
     "width": 2880,
     "height": 3464
   },
-  "/images/Artworks/Recognitions/FB_IMG_1762358080318.jpg.jpeg": {
+  "/images/Artworks/Recognitions/32.jpeg": {
     "width": 1156,
     "height": 534
   },
-  "/images/Artworks/Recognitions/FB_IMG_1782550542559.jpg.jpeg": {
+  "/images/Artworks/Recognitions/33.jpeg": {
     "width": 1280,
     "height": 853
   },
-  "/images/Artworks/Recognitions/IMG-20220707-WA0006.jpg.jpeg": {
+  "/images/Artworks/Recognitions/34.jpeg": {
     "width": 864,
     "height": 1152
   },
-  "/images/Artworks/Recognitions/IMG-20250303-WA0003.jpg.jpeg": {
+  "/images/Artworks/Recognitions/35.jpeg": {
     "width": 729,
     "height": 1296
   },
-  "/images/Artworks/Recognitions/IMG-20250813-WA0015.jpg.jpeg": {
+  "/images/Artworks/Recognitions/36.jpeg": {
     "width": 1600,
     "height": 1066
   },
-  "/images/Artworks/Recognitions/IMG-20251103-WA0004.jpg.jpeg": {
+  "/images/Artworks/Recognitions/37.jpeg": {
     "width": 1080,
     "height": 1434
   },
-  "/images/Artworks/Recognitions/manish singh-Home.jpg.jpeg": {
+  "/images/Artworks/Recognitions/4.jpeg": {
+    "width": 2032,
+    "height": 1264
+  },
+  "/images/Artworks/Recognitions/5.jpeg": {
     "width": 4758,
     "height": 2470
   },
-  "/images/Artworks/Recognitions/RSS.Zhaa.jpg.jpeg": {
+  "/images/Artworks/Recognitions/6.jpeg": {
     "width": 2726,
     "height": 1870
+  },
+  "/images/Artworks/Recognitions/7.jpeg": {
+    "width": 1280,
+    "height": 960
+  },
+  "/images/Artworks/Recognitions/8.jpeg": {
+    "width": 4000,
+    "height": 2252
+  },
+  "/images/Artworks/Recognitions/9.jpeg": {
+    "width": 4000,
+    "height": 2252
   },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,

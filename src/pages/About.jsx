@@ -174,36 +174,7 @@ const About = () => {
       </div>
 
       {/* Timeline */}
-      <div className="px-6 md:px-10 lg:px-14 py-12 md:py-16 bg-black/[0.02]">
-        <div className="max-w-4xl mx-auto">
-          <motion.div {...fadeUp} className="text-center mb-10">
-            <p className="text-[11px] tracking-[0.32em] text-accent2 font-medium">JOURNEY</p>
-            <h2 className="mt-2 font-display text-3xl md:text-4xl text-ink">A Decade in the Making</h2>
-            <div className="mt-4 mx-auto h-px w-12 bg-accent2" />
-          </motion.div>
-
-          <div className="relative pl-8 md:pl-10">
-            <div className="absolute left-0 top-1 bottom-1 w-px bg-accent2/30" />
-            {timeline.map((item, i) => (
-              <motion.div
-                key={item.year}
-                initial={{ opacity: 0, x: -12 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: 'easeOut' }}
-                className="relative pb-10 last:pb-0"
-              >
-                <span className="absolute -left-[33px] md:-left-[41px] top-1 w-3 h-3 rounded-full bg-accent2 ring-4 ring-canvas" />
-                <p className="text-accent2 font-display text-lg tracking-wide">{item.year}</p>
-                <h3 className="mt-1 font-display text-lg text-ink">{item.title}</h3>
-                <p className="mt-2 text-muted2 text-sm md:text-[15px] leading-relaxed max-w-2xl">
-                  {item.text}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
 
       {/* Studio / Workspace */}
       
