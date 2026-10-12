@@ -22,8 +22,8 @@ const artworkSlides = [
   },
 
   {
-    category: "Textile Art",
-    displayCategory: "Textile Art",
+    category: "Denim Art",
+    displayCategory: "Denim Art",
     artworks: [
       {
         id: 4,

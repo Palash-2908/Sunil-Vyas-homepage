@@ -7,6 +7,22 @@ const pressItems = [
     date: '2026',
     image: '/images/Artworks/News Mentions/Patrika.webp',
   },
+  {
+    id: 'pr-17',
+    title: 'Newspaper Feature',
+    publication: 'Tatkal Times',
+    type: 'Newspaper Feature',
+    date: '2024',
+    image: '/images/Artworks/News Mentions/TatkalTimes.jpeg',
+  },
+  {
+    id: 'pr-18',
+    title: 'Newspaper Feature',
+    publication: 'Rajiv Times',
+    type: 'Newspaper Feature',
+    date: '2022',
+    image: '/images/Artworks/News Mentions/RajivTimes.jpeg',
+  },
 
   {
     id: 'pr-7',
@@ -75,6 +91,14 @@ const pressItems = [
     image: '/images/Artworks/News Mentions/2019-Naidunia2.jpg.webp',
   },
   {
+    id: 'pr-19',
+    title: 'Newspaper Feature',
+    publication: 'Patrika',
+    type: 'Newspaper Feature',
+    date: '2019',
+    image: '/images/Artworks/News Mentions/NewsPaper.jpeg',
+  },
+  {
     id: 'pr-4',
     title: 'Newspaper Feature',
     publication: 'Naidunia',
@@ -82,6 +106,7 @@ const pressItems = [
     date: '2019',
     image: '/images/Artworks/News Mentions/2019-Naidunia-II.jpg.webp',
   },
+  
   {
     id: 'pr-5',
     title: 'Newspaper Feature',
@@ -98,6 +123,7 @@ const pressItems = [
     date: '2019',
     image: '/images/Artworks/News Mentions/2019-Patrika-II.jpg.webp',
   },
+  
 
   {
     id: 'pr-10',
