@@ -86,13 +86,6 @@ export const featuredRecognitions = [
       '/images/Artworks/Recognitions/3.jpeg',
   },
 
-  {
-    id: 'recognition-4',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/4.jpeg',
-  },
 
   {
     id: 'recognition-5',
@@ -128,21 +121,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/9.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
       '/images/Artworks/Recognitions/10.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/11.jpeg',
   },
   {
     id: 'recognition-6',
@@ -170,13 +149,6 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/15.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
       '/images/Artworks/Recognitions/16.jpeg',
   },
   {
@@ -184,28 +156,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/17.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/18.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
       '/images/Artworks/Recognitions/19.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/20.jpeg',
   },
   {
     id: 'recognition-6',
@@ -234,13 +185,6 @@ export const featuredRecognitions = [
     organization: 'Featured Recognition',
     image:
       '/images/Artworks/Recognitions/24.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/25.jpeg',
   },
   {
     id: 'recognition-6',
@@ -296,20 +240,6 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/33.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/34.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
       '/images/Artworks/Recognitions/35.jpeg',
   },
   {
@@ -318,12 +248,5 @@ export const featuredRecognitions = [
     organization: 'Featured Recognition',
     image:
       '/images/Artworks/Recognitions/36.jpeg',
-  },
-  {
-    id: 'recognition-6',
-    title: 'Recognition',
-    organization: 'Featured Recognition',
-    image:
-      '/images/Artworks/Recognitions/37.jpeg',
   },
 ];

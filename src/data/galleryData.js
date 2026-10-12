@@ -74,12 +74,6 @@ const galleryCategories = [
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
-        id: 'wsa-12',
-        title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/wooden1.webp',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
-      {
         id: 'wsa-13',
         title: 'Wooden Scrap Artwork 9',
         image: '/images/Artworks/Wooden Scrap Art/Wooden2.jpeg',
@@ -214,12 +208,6 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
-        id: 'pca-7',
-        title: 'Paper Cutting Artwork 7',
-        image: '/images/Artworks/Paper Cutting Art/PC2.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
         id: 'pca-8',
         title: 'Paper Cutting Artwork 8',
         image: '/images/Artworks/Paper Cutting Art/PC4.jpeg',
@@ -277,12 +265,6 @@ const galleryCategories = [
         id: 'pca-17',
         title: 'Paper Cutting Artwork 9',
         image: '/images/Artworks/Paper Cutting Art/horse.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
-        id: 'pca-18',
-        title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -417,7 +399,7 @@ const galleryCategories = [
     {
       id: 'wrapper-6',
       title: 'Waste Wrapper Artwork 6',
-      image: '/images/Artworks/Waste Wrapper Art/Buddha.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/PC2.jpeg',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {

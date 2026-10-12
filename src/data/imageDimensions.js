@@ -3,6 +3,14 @@ const imageDimensions = {
     "width": 3204,
     "height": 4856
   },
+  "/images/Artworks/Buddha.jpeg": {
+    "width": 1599,
+    "height": 899
+  },
+  "/images/Artworks/Buddha2.jpeg": {
+    "width": 1280,
+    "height": 957
+  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 960,
     "height": 1280
@@ -66,6 +74,10 @@ const imageDimensions = {
   "/images/Artworks/Fabric Art/WhatsApp Image 2026-09-07 at 5.16.03 PM (2).jpeg": {
     "width": 1600,
     "height": 1236
+  },
+  "/images/Artworks/IMG-20241119-WA0003.jpg.jpeg": {
+    "width": 936,
+    "height": 1600
   },
   "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
     "width": 1848,
@@ -131,14 +143,6 @@ const imageDimensions = {
     "width": 596,
     "height": 1280
   },
-  "/images/Artworks/News Mentions/IMG-20220222-WA0001.jpg.jpeg": {
-    "width": 1237,
-    "height": 1600
-  },
-  "/images/Artworks/News Mentions/IMG-20241119-WA0003.jpg.jpeg": {
-    "width": 936,
-    "height": 1600
-  },
   "/images/Artworks/News Mentions/Indradarshan.jpg.webp": {
     "width": 7402,
     "height": 10169
@@ -150,6 +154,10 @@ const imageDimensions = {
   "/images/Artworks/News Mentions/naidunia.jpg.webp": {
     "width": 4767,
     "height": 7000
+  },
+  "/images/Artworks/News Mentions/NewsPaper.jpeg": {
+    "width": 1237,
+    "height": 1600
   },
   "/images/Artworks/News Mentions/patrika-2020.jpg.webp": {
     "width": 6567,
@@ -195,10 +203,6 @@ const imageDimensions = {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Paper Cutting Art/IMG_20231130_153655.jpg.jpeg": {
-    "width": 6550,
-    "height": 13271
-  },
   "/images/Artworks/Paper Cutting Art/india.jpeg": {
     "width": 894,
     "height": 1280
@@ -207,9 +211,13 @@ const imageDimensions = {
     "width": 1371,
     "height": 1363
   },
-  "/images/Artworks/Paper Cutting Art/PC2.jpeg": {
-    "width": 1196,
-    "height": 1600
+  "/images/Artworks/Paper Cutting Art/PC10.jpeg": {
+    "width": 6550,
+    "height": 13271
+  },
+  "/images/Artworks/Paper Cutting Art/PC11.jpeg": {
+    "width": 1217,
+    "height": 1280
   },
   "/images/Artworks/Paper Cutting Art/PC3.jpeg": {
     "width": 1335,
@@ -243,10 +251,6 @@ const imageDimensions = {
     "width": 1280,
     "height": 1277
   },
-  "/images/Artworks/Paper Cutting Art/RaniAhilya2.jpeg": {
-    "width": 1080,
-    "height": 1444
-  },
   "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg": {
     "width": 2427,
     "height": 2649
@@ -257,14 +261,6 @@ const imageDimensions = {
   },
   "/images/Artworks/Paper Cutting Art/Shankar.jpeg": {
     "width": 996,
-    "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.17 PM.jpeg": {
-    "width": 720,
-    "height": 1280
-  },
-  "/images/Artworks/Paper Cutting Art/WhatsApp Image 2026-09-07 at 5.16.18 PM (1).jpeg": {
-    "width": 1217,
     "height": 1280
   },
   "/images/Artworks/Paper Cutting Art/woman.jpeg": {
@@ -314,6 +310,10 @@ const imageDimensions = {
   "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.12 PM.jpeg": {
     "width": 540,
     "height": 1170
+  },
+  "/images/Artworks/RaniAhilya2.jpeg": {
+    "width": 1080,
+    "height": 1444
   },
   "/images/Artworks/Recognitions/1.jpeg": {
     "width": 1550,
@@ -483,14 +483,6 @@ const imageDimensions = {
     "width": 3108,
     "height": 4712
   },
-  "/images/Artworks/Waste Wrapper Art/Buddha.jpeg": {
-    "width": 1599,
-    "height": 899
-  },
-  "/images/Artworks/Waste Wrapper Art/Buddha2.jpeg": {
-    "width": 1280,
-    "height": 957
-  },
   "/images/Artworks/Waste Wrapper Art/Cleaning.jpeg": {
     "width": 540,
     "height": 553
@@ -519,6 +511,10 @@ const imageDimensions = {
     "width": 1080,
     "height": 968
   },
+  "/images/Artworks/Waste Wrapper Art/PC2.jpeg": {
+    "width": 1196,
+    "height": 1600
+  },
   "/images/Artworks/Waste Wrapper Art/Scene1.jpeg": {
     "width": 959,
     "height": 1280
@@ -534,6 +530,10 @@ const imageDimensions = {
   "/images/Artworks/Waste Wrapper Art/WSA1.jpeg": {
     "width": 2208,
     "height": 3556
+  },
+  "/images/Artworks/WhatsApp Image 2026-09-07 at 5.16.17 PM.jpeg": {
+    "width": 720,
+    "height": 1280
   },
   "/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg": {
     "width": 924,
