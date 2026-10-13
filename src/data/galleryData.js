@@ -280,12 +280,6 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
-        id: 'pca-21',
-        title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC10.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
         id: 'pca-22',
         title: 'Paper Cutting Artwork 9',
         image: '/images/Artworks/Paper Cutting Art/PC11.jpeg',

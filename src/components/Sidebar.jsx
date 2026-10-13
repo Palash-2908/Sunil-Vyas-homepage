@@ -64,10 +64,10 @@ const Sidebar = ({ mobileOpen = false, onClose }) => {
         aria-label="Primary sidebar"
       >
         {/* Brand */}
-        <div className="mb-6">
-          <p className="text-[11px] tracking-[0.22em] font-semibold text-ink">
-            ARTIST PORTFOLIO
-          </p>
+        <div className="px-6 pt-6">
+          <div className="w-full text-center -translate-y-3 text-[14px] tracking-[0.10em] text-ink font-bold">
+            WASTE2ART
+          </div>
         </div>
 
         {/* Profile */}
@@ -105,19 +105,17 @@ const Sidebar = ({ mobileOpen = false, onClose }) => {
                     offset={-20}
                     duration={600}
                     onClick={onClose}
-                    className={`group relative flex items-center gap-3 px-3 py-2.5 rounded-md text-[14px] transition-colors duration-200 cursor-pointer ${
-                      isActive
-                        ? 'text-accent2 font-medium'
-                        : 'text-ink/80 hover:text-accent2'
-                    }`}
+                    className={`group relative flex items-center gap-3 px-3 py-2.5 rounded-md text-[14px] transition-colors duration-200 cursor-pointer ${isActive
+                      ? 'text-accent2 font-medium'
+                      : 'text-ink/80 hover:text-accent2'
+                      }`}
                   >
                     {isActive && (
                       <span className="absolute right-0 top-1/2 -translate-y-1/2 h-6 w-[2px] bg-accent2 rounded-l" />
                     )}
                     <Icon
-                      className={`text-[18px] ${
-                        isActive ? 'text-accent2' : 'text-ink/70 group-hover:text-accent2'
-                      }`}
+                      className={`text-[18px] ${isActive ? 'text-accent2' : 'text-ink/70 group-hover:text-accent2'
+                        }`}
                     />
                     <span>{label}</span>
                   </ScrollLink>

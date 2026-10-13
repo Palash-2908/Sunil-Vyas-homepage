@@ -1,10 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiCalendar, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Quote from '../components/Quote';
 import pressItems from '../data/pressData';
 import imageDimensions from '../data/imageDimensions';
-
+import ZoomableImage from '../components/ZoomableImage';
 
 const SectionHeading = ({ label, title }) => (
   <div className="mb-6 md:mb-8">
@@ -132,6 +132,17 @@ const PressCard = ({ item, index, frameAspect, onSelect }) => (
 
 const Press = () => {
   const [selected, setSelected] = useState(null);
+  useEffect(() => {
+    if (!selected) return;
+
+    const originalOverflow = document.body.style.overflow;
+
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [selected]);
 
 
   const sortedPressItems = useMemo(
@@ -143,8 +154,8 @@ const Press = () => {
   );
 
   const selectedIndex = selected
-  ? sortedPressItems.findIndex((item) => item.id === selected.id)
-  : -1;
+    ? sortedPressItems.findIndex((item) => item.id === selected.id)
+    : -1;
 
   const showPrevious = () => {
     if (selectedIndex > 0) {
@@ -388,16 +399,16 @@ const Press = () => {
               onClick={(e) => e.stopPropagation()}
             >
 
-              <img
+              <ZoomableImage
                 src={selected.image}
                 alt={selected.title}
                 className="
-                  max-w-[90vw]
-                  max-h-[82vh]
-                  object-contain
-                  rounded-sm
-                  shadow-2xl
-                "
+                max-w-[90vw]
+                max-h-[82vh]
+                object-contain
+                rounded-sm
+                shadow-2xl
+                 "
               />
 
               <div className="mt-3 text-center">

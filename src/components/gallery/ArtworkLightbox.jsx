@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Calendar, Brush, Ruler } from 'lucide-react';
+import ZoomableImage from '../ZoomableImage';
 
 const ArtworkLightbox = ({ artwork, onClose }) => {
   useEffect(() => {
@@ -33,10 +34,9 @@ const ArtworkLightbox = ({ artwork, onClose }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="bg-ink/5 aspect-square md:aspect-auto flex items-center justify-center">
-              <img
+              <ZoomableImage
                 src={artwork.image}
                 alt={artwork.alt}
-                className="w-full h-full object-contain"
               />
             </div>
             <div className="p-6 md:p-8 flex flex-col justify-center">
