@@ -6,6 +6,7 @@ import { BsGrid } from 'react-icons/bs';
 import { FiAward } from 'react-icons/fi';
 import { HiOutlineNewspaper } from 'react-icons/hi2';
 import { FiMail } from 'react-icons/fi';
+import { FiMenu } from 'react-icons/fi';
 
 const PROFILE_IMG = '/images/Original.jpeg';
 
@@ -18,7 +19,7 @@ const navItems = [
   { to: 'contact', label: 'Contact', Icon: FiMail },
 ];
 
-const Sidebar = ({ mobileOpen = false, onClose }) => {
+const Sidebar = ({ mobileOpen = false, onClose, onToggle }) => {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -53,16 +54,37 @@ const Sidebar = ({ mobileOpen = false, onClose }) => {
 
       <aside
         className={`
-          fixed top-0 left-0 z-40 h-screen w-[240px] bg-canvas
+         fixed top-0 left-0 z-40 h-screen w-[240px]
+           bg-canvas
           border-r border-black/5
           flex flex-col
           px-6 pt-8 pb-8
           transform transition-transform duration-300 ease-out
-          ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}
-          lg:translate-x-0
-        `}
+        ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}
+  `}
         aria-label="Primary sidebar"
       >
+        <button
+          onClick={onToggle}
+          aria-label={mobileOpen ? 'Close sidebar' : 'Open sidebar'}
+          className="
+    absolute
+    top-5
+    right-2
+    z-50
+    w-8
+    h-8
+    flex
+    items-center
+    justify-center
+    rounded-md
+    text-ink
+    hover:bg-black/5
+    transition-colors
+  "
+        >
+          <FiMenu size={21} />
+        </button>
         {/* Brand */}
         <div className="px-6 pt-6">
           <div className="w-full text-center -translate-y-3 text-[14px] tracking-[0.10em] text-ink font-bold">
