@@ -178,6 +178,30 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
+        id: 'pca-9',
+        title: 'Paper Cutting Artwork 9',
+        image: '/images/Artworks/Paper Cutting Art/PC5.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
+        id: 'pca-10',
+        title: 'Paper Cutting Artwork 8',
+        image: '/images/Artworks/Paper Cutting Art/PC7.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
+        id: 'pca-28',
+        title: 'Paper Cutting Artwork 8',
+        image: '/images/Artworks/Paper Cutting Art/Mayor.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
+        id: 'pca-14',
+        title: 'Paper Cutting Artwork 8',
+        image: '/images/Artworks/Paper Cutting Art/Woman3.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
         id: 'pca-2',
         title: 'Paper Cutting Artwork 2',
         image: '/images/Artworks/Paper Cutting Art/CleanIndia.jpeg',
@@ -214,18 +238,6 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
-        id: 'pca-9',
-        title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC5.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
-        id: 'pca-10',
-        title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/PC7.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
         id: 'pca-11',
         title: 'Paper Cutting Artwork 9',
         image: '/images/Artworks/Paper Cutting Art/PC8.jpeg',
@@ -243,16 +255,11 @@ const galleryCategories = [
         image: '/images/Artworks/Paper Cutting Art/woman.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
-      {
-        id: 'pca-14',
-        title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/woman2.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
+      
       {
         id: 'pca-15',
         title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/Woman3.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/woman2.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -277,12 +284,6 @@ const galleryCategories = [
         id: 'pca-20',
         title: 'Paper Cutting Artwork 9',
         image: '/images/Artworks/Paper Cutting Art/PC6.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
-      {
-        id: 'pca-22',
-        title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC11.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
