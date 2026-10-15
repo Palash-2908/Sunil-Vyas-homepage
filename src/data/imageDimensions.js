@@ -3,14 +3,6 @@ const imageDimensions = {
     "width": 3204,
     "height": 4856
   },
-  "/images/Artworks/Buddha.jpeg": {
-    "width": 1599,
-    "height": 899
-  },
-  "/images/Artworks/Buddha2.jpeg": {
-    "width": 1280,
-    "height": 957
-  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 960,
     "height": 1280
@@ -75,9 +67,29 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/IMG-20241119-WA0003.jpg.jpeg": {
-    "width": 936,
-    "height": 1600
+  "/images/Artworks/FB_IMG_1744266826696.jpg.jpeg": {
+    "width": 2725,
+    "height": 4266
+  },
+  "/images/Artworks/Images to crop/CM-MohanYadav.jpeg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/images/Artworks/Images to crop/Gandhi.jpeg": {
+    "width": 720,
+    "height": 1280
+  },
+  "/images/Artworks/Images to crop/horse.jpeg": {
+    "width": 960,
+    "height": 1280
+  },
+  "/images/Artworks/Images to crop/india.jpeg": {
+    "width": 894,
+    "height": 1280
+  },
+  "/images/Artworks/Images to crop/PlasticGandhi.jpeg": {
+    "width": 1080,
+    "height": 1079
   },
   "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
     "width": 1848,
@@ -138,6 +150,54 @@ const imageDimensions = {
   "/images/Artworks/News Mentions/bhaskar 2018.jpg.webp": {
     "width": 13977,
     "height": 6259
+  },
+  "/images/Artworks/News Mentions/Compressed/2019- bhaskar.jpg.webp": {
+    "width": 7566,
+    "height": 11934
+  },
+  "/images/Artworks/News Mentions/Compressed/2019- naidunia.jpg.webp": {
+    "width": 11316,
+    "height": 8083
+  },
+  "/images/Artworks/News Mentions/Compressed/2019-Naidunia-II.jpg.webp": {
+    "width": 8100,
+    "height": 7566
+  },
+  "/images/Artworks/News Mentions/Compressed/2019-Naidunia2.jpg.webp": {
+    "width": 5200,
+    "height": 10667
+  },
+  "/images/Artworks/News Mentions/Compressed/2019-Patrika-II.jpg.webp": {
+    "width": 13950,
+    "height": 7217
+  },
+  "/images/Artworks/News Mentions/Compressed/2019-Patrika.jpg.webp": {
+    "width": 9100,
+    "height": 6417
+  },
+  "/images/Artworks/News Mentions/Compressed/2021.jpg.webp": {
+    "width": 7500,
+    "height": 7217
+  },
+  "/images/Artworks/News Mentions/Compressed/bhaskar 2018.jpg.webp": {
+    "width": 13977,
+    "height": 6259
+  },
+  "/images/Artworks/News Mentions/Compressed/Indradarshan.jpg.webp": {
+    "width": 7402,
+    "height": 10169
+  },
+  "/images/Artworks/News Mentions/Compressed/naidunia-2018.jpg.webp": {
+    "width": 6554,
+    "height": 11133
+  },
+  "/images/Artworks/News Mentions/Compressed/naidunia.jpg.webp": {
+    "width": 4767,
+    "height": 7000
+  },
+  "/images/Artworks/News Mentions/Compressed/patrika-2020.jpg.webp": {
+    "width": 6567,
+    "height": 7650
   },
   "/images/Artworks/News Mentions/DainikB.jpeg": {
     "width": 596,
@@ -211,6 +271,14 @@ const imageDimensions = {
     "width": 1371,
     "height": 1363
   },
+  "/images/Artworks/Paper Cutting Art/Kid.jpeg": {
+    "width": 1440,
+    "height": 1440
+  },
+  "/images/Artworks/Paper Cutting Art/Mayor.jpeg": {
+    "width": 1471,
+    "height": 1600
+  },
   "/images/Artworks/Paper Cutting Art/PC10.jpeg": {
     "width": 6550,
     "height": 13271
@@ -279,7 +347,7 @@ const imageDimensions = {
     "width": 864,
     "height": 1280
   },
-  "/images/Artworks/Plastic Art/IMG-20220206-WA0016.jpg.jpeg": {
+  "/images/Artworks/Plastic Art/Dandi Yatra.jpeg": {
     "width": 1600,
     "height": 1200
   },
@@ -310,10 +378,6 @@ const imageDimensions = {
   "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.12 PM.jpeg": {
     "width": 540,
     "height": 1170
-  },
-  "/images/Artworks/RaniAhilya2.jpeg": {
-    "width": 1080,
-    "height": 1444
   },
   "/images/Artworks/Recognitions/1.jpeg": {
     "width": 1550,
@@ -487,10 +551,6 @@ const imageDimensions = {
     "width": 540,
     "height": 553
   },
-  "/images/Artworks/Waste Wrapper Art/FB_IMG_1761902210283.jpg.jpeg": {
-    "width": 1532,
-    "height": 2048
-  },
   "/images/Artworks/Waste Wrapper Art/Gandhi.jpeg": {
     "width": 720,
     "height": 1280
@@ -498,10 +558,6 @@ const imageDimensions = {
   "/images/Artworks/Waste Wrapper Art/Gandhi2.jpeg": {
     "width": 1536,
     "height": 2048
-  },
-  "/images/Artworks/Waste Wrapper Art/IMG-20230705-WA0007.jpg.jpeg": {
-    "width": 1200,
-    "height": 1600
   },
   "/images/Artworks/Waste Wrapper Art/ModiTiger.jpeg": {
     "width": 1034,
@@ -519,10 +575,6 @@ const imageDimensions = {
     "width": 959,
     "height": 1280
   },
-  "/images/Artworks/Waste Wrapper Art/WhatsApp Image 2026-09-07 at 5.16.11 PM (1).jpeg": {
-    "width": 960,
-    "height": 1280
-  },
   "/images/Artworks/Waste Wrapper Art/Woman.jpeg": {
     "width": 1147,
     "height": 1280
@@ -531,9 +583,9 @@ const imageDimensions = {
     "width": 2208,
     "height": 3556
   },
-  "/images/Artworks/WhatsApp Image 2026-09-07 at 5.16.17 PM.jpeg": {
-    "width": 720,
-    "height": 1280
+  "/images/Artworks/Wooden Scrap Art/27cfa060-4c7f-49a2-a43b-806b7a4617a6.jfif.jpeg": {
+    "width": 1600,
+    "height": 1196
   },
   "/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg": {
     "width": 924,
@@ -551,10 +603,6 @@ const imageDimensions = {
     "width": 1058,
     "height": 1349
   },
-  "/images/Artworks/Wooden Scrap Art/gst.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
   "/images/Artworks/Wooden Scrap Art/manish singh.jpg.jpeg": {
     "width": 3254,
     "height": 5334
@@ -566,6 +614,10 @@ const imageDimensions = {
   "/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg": {
     "width": 2798,
     "height": 2978
+  },
+  "/images/Artworks/Wooden Scrap Art/Mohan Bhagvat.jpeg": {
+    "width": 1098,
+    "height": 1280
   },
   "/images/Artworks/Wooden Scrap Art/ravindra.jpg.jpeg": {
     "width": 2776,
@@ -590,6 +642,10 @@ const imageDimensions = {
   "/images/Artworks/Wooden Scrap Art/Sachiv4.jpeg": {
     "width": 2549,
     "height": 3004
+  },
+  "/images/Artworks/Wooden Scrap Art/WhatsApp Image 2025-10-31 at 5.22.52 PM (1).jpeg": {
+    "width": 1080,
+    "height": 1085
   },
   "/images/Artworks/Wooden Scrap Art/wodengandhi.webp": {
     "width": 3771,
