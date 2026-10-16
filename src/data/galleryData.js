@@ -19,12 +19,7 @@ const galleryCategories = [
         image: '/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
-      {
-        id: 'wsa-3',
-        title: 'Wooden Scrap Artwork 5',
-        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg',
-        alt: 'Wooden scrap artwork by Sunil Vyas',
-      },
+      
       {
         id: 'wsa-4',
         title: 'Wooden Scrap Artwork 1',
@@ -38,9 +33,21 @@ const galleryCategories = [
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
+        id: 'wsa-3',
+        title: 'Wooden Scrap Artwork 5',
+        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
         id: 'wsa-6',
         title: 'Wooden Scrap Artwork 3',
         image: '/images/Artworks/Wooden Scrap Art/Sachiv3.jpeg',
+        alt: 'Wooden scrap artwork by Sunil Vyas',
+      },
+      {
+        id: 'wsa-6',
+        title: 'Wooden Scrap Artwork 3',
+        image: '/images/Artworks/Wooden Scrap Art/Mohan Bhagvat.jpeg',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -129,9 +136,9 @@ const galleryCategories = [
     ],
   },
   {
-    id: 'fabric-art',
-    slug: 'fabric-art',
-    label: 'Fabric Art',
+    id: 'jute-art',
+    slug: 'jute-art',
+    label: 'jute Art',
     description:
       'Expressive denim based works exploring texture, denim fabric, and fiber as a medium for visual storytelling.',
 
@@ -202,11 +209,18 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
-        id: 'pca-2',
-        title: 'Paper Cutting Artwork 2',
-        image: '/images/Artworks/Paper Cutting Art/CleanIndia.jpeg',
+        id: 'pca-6',
+        title: 'Paper Cutting Artwork 6',
+        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
+      {
+        id: 'pca-20',
+        title: 'Paper Cutting Artwork 9',
+        image: '/images/Artworks/Paper Cutting Art/PC6.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      
       {
         id: 'pca-3',
         title: 'Paper Cutting Artwork 3',
@@ -225,12 +239,7 @@ const galleryCategories = [
         image: '/images/Artworks/Paper Cutting Art/Face.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
-      {
-        id: 'pca-6',
-        title: 'Paper Cutting Artwork 6',
-        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
+      
       {
         id: 'pca-8',
         title: 'Paper Cutting Artwork 8',
@@ -275,17 +284,18 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
+        id: 'pca-2',
+        title: 'Paper Cutting Artwork 2',
+        image: '/images/Artworks/Paper Cutting Art/CleanIndia.jpeg',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
         id: 'pca-19',
         title: 'Paper Cutting Artwork 9',
         image: '/images/Artworks/Paper Cutting Art/Scenery.jpeg',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
-      {
-        id: 'pca-20',
-        title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC6.jpeg',
-        alt: 'Paper cutting artwork by Sunil Vyas',
-      },
+      
       {
         id: 'pca-23',
         title: 'Paper Cutting Artwork 9',

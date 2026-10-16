@@ -3,9 +3,17 @@ const imageDimensions = {
     "width": 3204,
     "height": 4856
   },
-  "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
-    "width": 960,
+  "/images/Artworks/Cardboard Art/PC10.jpeg": {
+    "width": 6550,
+    "height": 13271
+  },
+  "/images/Artworks/Cardboard Art/PC11.jpeg": {
+    "width": 1217,
     "height": 1280
+  },
+  "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
+    "width": 910,
+    "height": 1093
   },
   "/images/Artworks/Contemporary Art/eichor.jpeg": {
     "width": 2160,
@@ -67,10 +75,6 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/FB_IMG_1744266826696.jpg.jpeg": {
-    "width": 2725,
-    "height": 4266
-  },
   "/images/Artworks/Images to crop/CM-MohanYadav.jpeg": {
     "width": 960,
     "height": 1280
@@ -90,6 +94,22 @@ const imageDimensions = {
   "/images/Artworks/Images to crop/PlasticGandhi.jpeg": {
     "width": 1080,
     "height": 1079
+  },
+  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.41.09 AM.jpeg": {
+    "width": 913,
+    "height": 1011
+  },
+  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.41.56 AM.jpeg": {
+    "width": 910,
+    "height": 1093
+  },
+  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.42.20 AM.jpeg": {
+    "width": 464,
+    "height": 869
+  },
+  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.42.37 AM.jpeg": {
+    "width": 718,
+    "height": 978
   },
   "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
     "width": 1848,
@@ -151,54 +171,6 @@ const imageDimensions = {
     "width": 13977,
     "height": 6259
   },
-  "/images/Artworks/News Mentions/Compressed/2019- bhaskar.jpg.webp": {
-    "width": 7566,
-    "height": 11934
-  },
-  "/images/Artworks/News Mentions/Compressed/2019- naidunia.jpg.webp": {
-    "width": 11316,
-    "height": 8083
-  },
-  "/images/Artworks/News Mentions/Compressed/2019-Naidunia-II.jpg.webp": {
-    "width": 8100,
-    "height": 7566
-  },
-  "/images/Artworks/News Mentions/Compressed/2019-Naidunia2.jpg.webp": {
-    "width": 5200,
-    "height": 10667
-  },
-  "/images/Artworks/News Mentions/Compressed/2019-Patrika-II.jpg.webp": {
-    "width": 13950,
-    "height": 7217
-  },
-  "/images/Artworks/News Mentions/Compressed/2019-Patrika.jpg.webp": {
-    "width": 9100,
-    "height": 6417
-  },
-  "/images/Artworks/News Mentions/Compressed/2021.jpg.webp": {
-    "width": 7500,
-    "height": 7217
-  },
-  "/images/Artworks/News Mentions/Compressed/bhaskar 2018.jpg.webp": {
-    "width": 13977,
-    "height": 6259
-  },
-  "/images/Artworks/News Mentions/Compressed/Indradarshan.jpg.webp": {
-    "width": 7402,
-    "height": 10169
-  },
-  "/images/Artworks/News Mentions/Compressed/naidunia-2018.jpg.webp": {
-    "width": 6554,
-    "height": 11133
-  },
-  "/images/Artworks/News Mentions/Compressed/naidunia.jpg.webp": {
-    "width": 4767,
-    "height": 7000
-  },
-  "/images/Artworks/News Mentions/Compressed/patrika-2020.jpg.webp": {
-    "width": 6567,
-    "height": 7650
-  },
   "/images/Artworks/News Mentions/DainikB.jpeg": {
     "width": 596,
     "height": 1280
@@ -231,10 +203,6 @@ const imageDimensions = {
     "width": 539,
     "height": 539
   },
-  "/images/Artworks/News Mentions/prabhat kiran-2018.jpg.webp": {
-    "width": 11545,
-    "height": 3755
-  },
   "/images/Artworks/News Mentions/RajivTimes.jpeg": {
     "width": 1280,
     "height": 1059
@@ -260,8 +228,8 @@ const imageDimensions = {
     "height": 2670
   },
   "/images/Artworks/Paper Cutting Art/horse.jpeg": {
-    "width": 960,
-    "height": 1280
+    "width": 913,
+    "height": 1011
   },
   "/images/Artworks/Paper Cutting Art/india.jpeg": {
     "width": 894,
@@ -278,14 +246,6 @@ const imageDimensions = {
   "/images/Artworks/Paper Cutting Art/Mayor.jpeg": {
     "width": 1471,
     "height": 1600
-  },
-  "/images/Artworks/Paper Cutting Art/PC10.jpeg": {
-    "width": 6550,
-    "height": 13271
-  },
-  "/images/Artworks/Paper Cutting Art/PC11.jpeg": {
-    "width": 1217,
-    "height": 1280
   },
   "/images/Artworks/Paper Cutting Art/PC3.jpeg": {
     "width": 1335,
@@ -360,24 +320,16 @@ const imageDimensions = {
     "height": 1080
   },
   "/images/Artworks/Plastic Art/PlasticGandhi.jpeg": {
-    "width": 1080,
-    "height": 1079
+    "width": 464,
+    "height": 869
   },
   "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.04 PM (1).jpeg": {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.08 PM (2).jpeg": {
-    "width": 1600,
-    "height": 1245
-  },
   "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.11 PM (2).jpeg": {
     "width": 1599,
     "height": 899
-  },
-  "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.12 PM.jpeg": {
-    "width": 540,
-    "height": 1170
   },
   "/images/Artworks/Recognitions/1.jpeg": {
     "width": 1550,
@@ -527,6 +479,10 @@ const imageDimensions = {
     "width": 4000,
     "height": 2252
   },
+  "/images/Artworks/Recognitions/FB_IMG_1744266826696.jpg.jpeg": {
+    "width": 2725,
+    "height": 4266
+  },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,
     "height": 1280
@@ -552,8 +508,8 @@ const imageDimensions = {
     "height": 553
   },
   "/images/Artworks/Waste Wrapper Art/Gandhi.jpeg": {
-    "width": 720,
-    "height": 1280
+    "width": 718,
+    "height": 978
   },
   "/images/Artworks/Waste Wrapper Art/Gandhi2.jpeg": {
     "width": 1536,
@@ -650,10 +606,6 @@ const imageDimensions = {
   "/images/Artworks/Wooden Scrap Art/wodengandhi.webp": {
     "width": 3771,
     "height": 4892
-  },
-  "/images/Artworks/Wooden Scrap Art/wooden1.webp": {
-    "width": 7992,
-    "height": 9167
   },
   "/images/Artworks/Wooden Scrap Art/Wooden2.jpeg": {
     "width": 976,
