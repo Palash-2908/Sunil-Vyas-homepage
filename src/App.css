@@ -18,36 +18,61 @@
   align-items: center;
 }
 
-/* Artwork Card */
 
-.art-card {
-  width: 100%;
-  height: 440px;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.45s ease;
-  transform: scale(1);
-  opacity: 1;
+/* ===========================================
+   Three artworks inside one category slide
+=========================================== */
+
+.three-artworks {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+  align-items: center;
 }
 
-.art-card img {
+
+/* ===========================================
+   Artwork Cards - DESKTOP
+=========================================== */
+
+.three-artworks .art-card {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  height: 440px;
+
   border-radius: 12px;
+  overflow: hidden;
+
+  background: #f5f3ee;
+
+  display: block;
 
   box-shadow:
     0 18px 45px rgba(0, 0, 0, 0.15);
 }
 
-/* Keep every slide the same size */
 
-.swiper-slide {
-  opacity: 1 !important;
+/* Artwork image */
+
+.three-artworks .art-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 12px;
 }
 
-/* Pagination */
+
+/* ===========================================
+   Pagination
+=========================================== */
 
 .artwork-swiper .swiper-pagination {
   position: relative;
@@ -57,9 +82,12 @@
 .artwork-swiper .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+
   background: #d7d2ca;
   opacity: 1;
+
   margin: 0 7px !important;
+
   transition: all 0.3s ease;
 }
 
@@ -68,14 +96,20 @@
   transform: scale(1.3);
 }
 
-/* Navigation Buttons */
+
+/* ===========================================
+   Navigation Buttons
+=========================================== */
 
 .artwork-swiper-button {
   width: 54px;
   height: 54px;
+
   border-radius: 50%;
   background: white;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+
   transition: all 0.3s ease;
 }
 
@@ -83,34 +117,89 @@
   transform: scale(1.08);
 }
 
-/* Responsive */
+
+/* ===========================================
+   Tablet
+=========================================== */
 
 @media (max-width: 1200px) {
 
   .three-artworks {
+    width: min(100%, 900px);
     gap: 8px;
   }
 
   .three-artworks .art-card {
     height: 420px;
   }
-
 }
+
+
+/* ===========================================
+   Android / Mobile
+=========================================== */
 
 @media (max-width: 768px) {
 
+  .artwork-swiper {
+    padding: 25px 0 60px;
+  }
+
   .three-artworks {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    width: calc(100% - 50px);
+    display: block;
   }
 
   .three-artworks .art-card {
-    height: 380px;
+    width: 100%;
+    height: 430px;
+    border-radius: 12px;
+    background: transparent;
   }
 
+  .three-artworks .art-card:not(:first-child) {
+    display: none;
+  }
+
+  .three-artworks .art-card img {
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .artwork-swiper .swiper-pagination {
+    margin-top: 30px;
+  }
 }
 
-/* Hide scrollbar */
+
+/* ===========================================
+   Smaller Android phones
+=========================================== */
+
+@media (max-width: 480px) {
+
+  .three-artworks {
+    width: calc(100% - 40px);
+  }
+
+  .three-artworks .art-card {
+    height: 360px;
+    border-radius: 10px;
+  }
+
+  .three-artworks .art-card img {
+    border-radius: 10px;
+  }
+}
+
+
+/* ===========================================
+   Hide scrollbar
+=========================================== */
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -119,30 +208,4 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-/* ===========================================
-   Three artworks inside one category slide
-=========================================== */
-
-.three-artworks {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  align-items: center;
-}
-
-.three-artworks .art-card {
-  width: 100%;
-  height: 440px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.three-artworks .art-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
 }

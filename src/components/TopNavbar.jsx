@@ -26,7 +26,7 @@ const TopNavbar = ({ onToggleSidebar, sidebarOpen }) => {
         )}
 
         <div className="lg:hidden text-[11px] tracking-[0.22em] font-semibold text-ink">
-          ARTIST PORTFOLIO
+          WASTE2ART
         </div>
 
         {/* Desktop right-aligned links */}
