@@ -151,21 +151,18 @@
   }
 
   .three-artworks .art-card {
-    width: 100%;
-    height: 430px;
-    border-radius: 12px;
-    background: transparent;
-  }
+  height: 420px;
+  border-radius: 10px;
+}
 
   .three-artworks .art-card:not(:first-child) {
     display: none;
   }
 
   .three-artworks .art-card img {
-    object-fit: contain;
-    object-position: center;
-    border-radius: 12px;
-
+    object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
     box-shadow:
       0 10px 25px rgba(0, 0, 0, 0.12);
   }
@@ -181,18 +178,20 @@
 =========================================== */
 
 @media (max-width: 480px) {
-
   .three-artworks {
-    width: calc(100% - 40px);
+    width: calc(100% - 24px);
+    gap: 5px;
   }
 
   .three-artworks .art-card {
-    height: 360px;
-    border-radius: 10px;
+    height: 380px;
+    border-radius: 8px;
   }
 
   .three-artworks .art-card img {
-    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
   }
 }
 

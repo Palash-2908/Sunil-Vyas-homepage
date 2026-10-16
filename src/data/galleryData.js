@@ -10,7 +10,7 @@ const galleryCategories = [
       {
         id: 'wsa-1',
         title: 'Wooden Scrap Artwork 4',
-        image: '/images/Artworks/Wooden Scrap Art/CMWodden.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/CMWodden.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -29,7 +29,7 @@ const galleryCategories = [
       {
         id: 'wsa-5',
         title: 'Wooden Scrap Artwork 2',
-        image: '/images/Artworks/Wooden Scrap Art/Sachiv2.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Sachiv2.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -41,7 +41,7 @@ const galleryCategories = [
       {
         id: 'wsa-6',
         title: 'Wooden Scrap Artwork 3',
-        image: '/images/Artworks/Wooden Scrap Art/Sachiv3.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Sachiv3.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -59,7 +59,7 @@ const galleryCategories = [
       {
         id: 'wsa-8',
         title: 'Wooden Scrap Artwork 8',
-        image: '/images/Artworks/Wooden Scrap Art/manish singh.jpg.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/manish singh.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -71,7 +71,7 @@ const galleryCategories = [
       {
         id: 'wsa-10',
         title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/wooden3.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/model-scrap.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -95,7 +95,7 @@ const galleryCategories = [
       {
         id: 'wsa-15',
         title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/Sachiv4.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Sachiv4.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
     ],
@@ -130,7 +130,7 @@ const galleryCategories = [
       {
         id: 'ta-4',
         title: 'Textile Artwork 2',
-        image: '/images/Artworks/Textile Art/Horse.jpeg',
+        image: '/images/Artworks/Textile Art/Horse.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
     ],
@@ -205,13 +205,13 @@ const galleryCategories = [
       {
         id: 'pca-14',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/Woman3.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/Woman3.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
         id: 'pca-6',
         title: 'Paper Cutting Artwork 6',
-        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -236,7 +236,7 @@ const galleryCategories = [
       {
         id: 'pca-5',
         title: 'Paper Cutting Artwork 5',
-        image: '/images/Artworks/Paper Cutting Art/Face.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/Face.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       
@@ -249,7 +249,7 @@ const galleryCategories = [
       {
         id: 'pca-11',
         title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC8.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/PC8.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -358,6 +358,12 @@ const galleryCategories = [
     },
     {
       id: 'plastic-3',
+      title: 'Plastic Artwork 2',
+      image: '/images/Artworks/Plastic Art/Dandi Yatra.jpeg',
+      alt: 'Plastic artwork by Sunil Vyas',
+    },
+    {
+      id: 'plastic-4',
       title: 'Plastic Artwork 2',
       image: '/images/Artworks/Plastic Art/LataMangeshkar.jpeg',
       alt: 'Plastic artwork by Sunil Vyas',

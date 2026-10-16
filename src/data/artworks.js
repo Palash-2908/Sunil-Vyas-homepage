@@ -10,12 +10,12 @@ const artworkSlides = [
       },
       {
         id: 2,
-        image: "/images/Artworks/Wooden Scrap Art/Sachiv2.jpeg",
+        image: "/images/Artworks/Wooden Scrap Art/Sachiv2.webp",
         alt: "Wooden artwork 2",
       },
       {
         id: 3,
-        image: "/images/Artworks/Wooden Scrap Art/Sachiv3.jpeg",
+        image: "/images/Artworks/Wooden Scrap Art/Sachiv3.webp",
         alt: "Wooden artwork 3",
       },
     ],
@@ -32,7 +32,7 @@ const artworkSlides = [
       },
       {
         id: 5,
-        image: "/images/Artworks/Textile Art/Horse.jpeg",
+        image: "/images/Artworks/Textile Art/Horse.webp",
         alt: "Painting 2",
       },
       {

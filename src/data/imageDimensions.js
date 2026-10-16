@@ -11,6 +11,82 @@ const imageDimensions = {
     "width": 1217,
     "height": 1280
   },
+  "/images/Artworks/Compressed/CMWodden.jpeg": {
+    "width": 3000,
+    "height": 4000
+  },
+  "/images/Artworks/Compressed/Face.jpeg": {
+    "width": 2002,
+    "height": 2670
+  },
+  "/images/Artworks/Compressed/Horse.jpeg": {
+    "width": 3108,
+    "height": 4712
+  },
+  "/images/Artworks/Compressed/manish singh.jpg.jpeg": {
+    "width": 3254,
+    "height": 5334
+  },
+  "/images/Artworks/Compressed/model-scrap.jpg.jpeg": {
+    "width": 3350,
+    "height": 3346
+  },
+  "/images/Artworks/Compressed/New folder/Face.webp": {
+    "width": 2002,
+    "height": 2670
+  },
+  "/images/Artworks/Compressed/New folder/Horse.webp": {
+    "width": 3108,
+    "height": 4712
+  },
+  "/images/Artworks/Compressed/New folder/PC8.webp": {
+    "width": 2992,
+    "height": 4000
+  },
+  "/images/Artworks/Compressed/New folder/RJSTHAN.jpg.webp": {
+    "width": 2427,
+    "height": 2649
+  },
+  "/images/Artworks/Compressed/New folder/Woman3.webp": {
+    "width": 3000,
+    "height": 4000
+  },
+  "/images/Artworks/Compressed/PC8.jpeg": {
+    "width": 2992,
+    "height": 4000
+  },
+  "/images/Artworks/Compressed/president.webp": {
+    "width": 5228,
+    "height": 7480
+  },
+  "/images/Artworks/Compressed/RJSTHAN.jpg.jpeg": {
+    "width": 2427,
+    "height": 2649
+  },
+  "/images/Artworks/Compressed/Sachiv2.jpeg": {
+    "width": 3309,
+    "height": 3767
+  },
+  "/images/Artworks/Compressed/Sachiv3.jpeg": {
+    "width": 3301,
+    "height": 3504
+  },
+  "/images/Artworks/Compressed/Sachiv4.jpeg": {
+    "width": 2549,
+    "height": 3004
+  },
+  "/images/Artworks/Compressed/SCBose.jpeg": {
+    "width": 3000,
+    "height": 4000
+  },
+  "/images/Artworks/Compressed/sunmica.webp": {
+    "width": 7900,
+    "height": 13085
+  },
+  "/images/Artworks/Compressed/Woman3.jpeg": {
+    "width": 3000,
+    "height": 4000
+  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 910,
     "height": 1093
@@ -35,7 +111,7 @@ const imageDimensions = {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Contemporary Art/SCBose.jpeg": {
+  "/images/Artworks/Contemporary Art/SCBose.webp": {
     "width": 3000,
     "height": 4000
   },
@@ -74,42 +150,6 @@ const imageDimensions = {
   "/images/Artworks/Fabric Art/WhatsApp Image 2026-09-07 at 5.16.03 PM (2).jpeg": {
     "width": 1600,
     "height": 1236
-  },
-  "/images/Artworks/Images to crop/CM-MohanYadav.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
-  "/images/Artworks/Images to crop/Gandhi.jpeg": {
-    "width": 720,
-    "height": 1280
-  },
-  "/images/Artworks/Images to crop/horse.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
-  "/images/Artworks/Images to crop/india.jpeg": {
-    "width": 894,
-    "height": 1280
-  },
-  "/images/Artworks/Images to crop/PlasticGandhi.jpeg": {
-    "width": 1080,
-    "height": 1079
-  },
-  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.41.09 AM.jpeg": {
-    "width": 913,
-    "height": 1011
-  },
-  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.41.56 AM.jpeg": {
-    "width": 910,
-    "height": 1093
-  },
-  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.42.20 AM.jpeg": {
-    "width": 464,
-    "height": 869
-  },
-  "/images/Artworks/Images to crop/WhatsApp Image 2026-10-16 at 11.42.37 AM.jpeg": {
-    "width": 718,
-    "height": 978
   },
   "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
     "width": 1848,
@@ -491,10 +531,6 @@ const imageDimensions = {
     "width": 1270,
     "height": 1599
   },
-  "/images/Artworks/Textile Art/DrAmbedkardenim.jpeg": {
-    "width": 2596,
-    "height": 3526
-  },
   "/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg": {
     "width": 828,
     "height": 1073
@@ -539,15 +575,11 @@ const imageDimensions = {
     "width": 2208,
     "height": 3556
   },
-  "/images/Artworks/Wooden Scrap Art/27cfa060-4c7f-49a2-a43b-806b7a4617a6.jfif.jpeg": {
-    "width": 1600,
-    "height": 1196
-  },
   "/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg": {
     "width": 924,
     "height": 1374
   },
-  "/images/Artworks/Wooden Scrap Art/CMWodden.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/CMWodden.webp": {
     "width": 3000,
     "height": 4000
   },
@@ -559,11 +591,11 @@ const imageDimensions = {
     "width": 1058,
     "height": 1349
   },
-  "/images/Artworks/Wooden Scrap Art/manish singh.jpg.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/manish singh.jpg.webp": {
     "width": 3254,
     "height": 5334
   },
-  "/images/Artworks/Wooden Scrap Art/model-scrap.jpg.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/model-scrap.jpg.webp": {
     "width": 3350,
     "height": 3346
   },
@@ -587,21 +619,17 @@ const imageDimensions = {
     "width": 2879,
     "height": 3290
   },
-  "/images/Artworks/Wooden Scrap Art/Sachiv2.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/Sachiv2.webp": {
     "width": 3309,
     "height": 3767
   },
-  "/images/Artworks/Wooden Scrap Art/Sachiv3.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/Sachiv3.webp": {
     "width": 3301,
     "height": 3504
   },
-  "/images/Artworks/Wooden Scrap Art/Sachiv4.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/Sachiv4.webp": {
     "width": 2549,
     "height": 3004
-  },
-  "/images/Artworks/Wooden Scrap Art/WhatsApp Image 2025-10-31 at 5.22.52 PM (1).jpeg": {
-    "width": 1080,
-    "height": 1085
   },
   "/images/Artworks/Wooden Scrap Art/wodengandhi.webp": {
     "width": 3771,

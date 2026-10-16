@@ -68,20 +68,20 @@ const Sidebar = ({ mobileOpen = false, onClose, onToggle }) => {
           onClick={onToggle}
           aria-label={mobileOpen ? 'Close sidebar' : 'Open sidebar'}
           className="
-    absolute
-    top-5
-    right-2
-    z-50
-    w-8
-    h-8
-    flex
-    items-center
-    justify-center
-    rounded-md
-    text-ink
-    hover:bg-black/5
-    transition-colors
-  "
+        absolute
+        top-5
+        right-2
+        z-50
+        w-8
+        h-8
+        flex
+        items-center
+       justify-center
+       rounded-md
+       text-ink
+       hover:bg-black/5
+        transition-colors
+         "
         >
           <FiMenu size={21} />
         </button>
@@ -126,7 +126,7 @@ const Sidebar = ({ mobileOpen = false, onClose, onToggle }) => {
                     smooth={true}
                     offset={-20}
                     duration={600}
-                    onClick={onClose}
+                    
                     className={`group relative flex items-center gap-3 px-3 py-2.5 rounded-md text-[14px] transition-colors duration-200 cursor-pointer ${isActive
                       ? 'text-accent2 font-medium'
                       : 'text-ink/80 hover:text-accent2'
