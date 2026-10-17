@@ -21,9 +21,10 @@ const GalleryCategory = ({ category }) => {
   const containerRef = useRef(null);
 
   const artworks = useMemo(
-  () => category.artworks ?? [],
-  [category.artworks]
-);
+    () => category.artworks ?? [],
+    [category.artworks]
+  );
+
   /*
    * Measure gallery width.
    */
@@ -44,92 +45,108 @@ const GalleryCategory = ({ category }) => {
     return () => observer.disconnect();
   }, []);
 
-  /*
-   * Load the natural aspect ratio of every artwork.
-   */
-
   const visibleArtworks = useMemo(
-  () => (showAll ? artworks : artworks.slice(0, 4)),
-  [showAll, artworks]
-);
+    () => (showAll ? artworks : artworks.slice(0, 4)),
+    [showAll, artworks]
+  );
 
   const hasMore = artworks.length > 4;
 
+  const isJuteArt =
+    category.label?.trim().toLowerCase() === 'jute art';
+
   /*
-   * Build rows.
+   * ---------------------------------------------------------
+   * NORMAL GALLERY ROW BUILDER
+   * ---------------------------------------------------------
    *
-   * Maximum 5 images per row.
-   *
-   * We still use the natural aspect ratios, but we don't
-   * force every completed row to stretch across the entire
-   * container.
+   * This is used by every normal category and also by
+   * Jute Art images AFTER the first 5.
    */
-  const rows = useMemo(() => {
-    if (!containerWidth || visibleArtworks.length === 0) {
-      return [];
-    }
+  const buildRows = useMemo(() => {
+    return (items) => {
+      if (!containerWidth || items.length === 0) {
+        return [];
+      }
 
-    const targetHeight = getTargetRowHeight(containerWidth);
+      const targetHeight = getTargetRowHeight(containerWidth);
 
-    const rows = [];
-    let currentRow = [];
-    let currentAspectSum = 0;
+      const rows = [];
+      let currentRow = [];
+      let currentAspectSum = 0;
 
-    visibleArtworks.forEach((artwork) => {
-  const dimensions = imageDimensions[artwork.image];
+      items.forEach((artwork) => {
+        const dimensions = imageDimensions[artwork.image];
 
-  const ratio = dimensions
-    ? dimensions.width / dimensions.height
-    : 1;
+        const ratio = dimensions
+          ? dimensions.width / dimensions.height
+          : 1;
 
-      currentRow.push({
-        artwork,
-        ratio,
-      });
-
-      currentAspectSum += ratio;
-
-      const gapWidth =
-        GAP * Math.max(currentRow.length - 1, 0);
-
-      const estimatedWidth =
-        currentAspectSum * targetHeight + gapWidth;
-
-      /*
-       * Create a row when:
-       *
-       * 1. We have reached 5 images, OR
-       * 2. The row has naturally reached the target width.
-       */
-      if (
-        currentRow.length >= MAX_IMAGES_PER_ROW ||
-        estimatedWidth >= containerWidth
-      ) {
-        rows.push({
-          items: currentRow,
-          isLast: false,
+        currentRow.push({
+          artwork,
+          ratio,
         });
 
-        currentRow = [];
-        currentAspectSum = 0;
-      }
-    });
+        currentAspectSum += ratio;
 
-    /*
-     * Remaining images become the final row.
-     */
-    if (currentRow.length > 0) {
-      rows.push({
-        items: currentRow,
-        isLast: true,
+        const gapWidth =
+          GAP * Math.max(currentRow.length - 1, 0);
+
+        const estimatedWidth =
+          currentAspectSum * targetHeight + gapWidth;
+
+        if (
+          currentRow.length >= MAX_IMAGES_PER_ROW ||
+          estimatedWidth >= containerWidth
+        ) {
+          rows.push({
+            items: currentRow,
+            isLast: false,
+          });
+
+          currentRow = [];
+          currentAspectSum = 0;
+        }
       });
-    }
 
-    return rows;
-  }, [
-    visibleArtworks,
-    containerWidth,
-  ]);
+      if (currentRow.length > 0) {
+        rows.push({
+          items: currentRow,
+          isLast: true,
+        });
+      }
+
+      return rows;
+    };
+  }, [containerWidth]);
+
+  /*
+   * Normal rows for the current category.
+   */
+  const rows = useMemo(
+    () => buildRows(visibleArtworks),
+    [buildRows, visibleArtworks]
+  );
+
+  /*
+   * For Jute Art:
+   *
+   * First 5 images are special.
+   * Image 1 = large image spanning both rows.
+   * Images 2-5 = four smaller positions.
+   *
+   * Images 6+ return to the normal gallery layout.
+   */
+  const juteExtraArtworks = useMemo(() => {
+    if (!isJuteArt) return [];
+
+    return visibleArtworks.slice(5);
+  }, [isJuteArt, visibleArtworks]);
+
+  const juteExtraRows = useMemo(
+    () => buildRows(juteExtraArtworks),
+    [buildRows, juteExtraArtworks]
+  );
 
   if (artworks.length === 0) return null;
 
@@ -165,14 +182,290 @@ const GalleryCategory = ({ category }) => {
           ref={containerRef}
           className="w-full"
         >
+
           {rows.length === 0 ? (
             <div className="min-h-[180px] flex items-center justify-center text-sm text-muted2">
               Loading artworks...
             </div>
+          ) : isJuteArt ? (
+
+            <>
+              {/* =====================================================
+                  JUTE ART SPECIAL FEATURED LAYOUT
+                  ===================================================== */}
+
+              <div
+                className="
+                  grid
+                  grid-cols-1
+                  md:grid-cols-3
+                  gap-5
+                "
+              >
+
+                {/* -------------------------------------------------
+                    IMAGE 1
+                    Large image spanning both rows
+                   ------------------------------------------------- */}
+                {visibleArtworks[0] && (
+                  <motion.div
+                    layout
+                    initial={{
+                      opacity: 0,
+                      y: 12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.45,
+                    }}
+                    className="
+                      w-full
+                      md:row-span-2
+                    "
+                  >
+                    <ArtworkCard
+                      artwork={visibleArtworks[0]}
+                      onClick={setSelected}
+                      juteLayout
+                      frameStyle={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    />
+                  </motion.div>
+                )}
+
+                {/* -------------------------------------------------
+                    IMAGE 2
+                    Row 1 / Column 2
+                   ------------------------------------------------- */}
+                {visibleArtworks[1] && (
+                  <motion.div
+                    layout
+                    initial={{
+                      opacity: 0,
+                      y: 12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.45,
+                      delay: 0.04,
+                    }}
+                    className="w-full"
+                  >
+                    <ArtworkCard
+                      artwork={visibleArtworks[1]}
+                      onClick={setSelected}
+                      juteLayout
+                      frameStyle={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    />
+                  </motion.div>
+                )}
+
+                {/* -------------------------------------------------
+                    IMAGE 3
+                    Row 1 / Column 3
+                   ------------------------------------------------- */}
+                {visibleArtworks[2] && (
+                  <motion.div
+                    layout
+                    initial={{
+                      opacity: 0,
+                      y: 12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.45,
+                      delay: 0.08,
+                    }}
+                    className="w-full"
+                  >
+                    <ArtworkCard
+                      artwork={visibleArtworks[2]}
+                      onClick={setSelected}
+                      juteLayout
+                      frameStyle={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    />
+                  </motion.div>
+                )}
+
+                {/* -------------------------------------------------
+                    IMAGE 4
+                    Row 2 / Column 2
+                   ------------------------------------------------- */}
+                {visibleArtworks[3] && (
+                  <motion.div
+                    layout
+                    initial={{
+                      opacity: 0,
+                      y: 12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.45,
+                      delay: 0.12,
+                    }}
+                    className="w-full"
+                  >
+                    <ArtworkCard
+                      artwork={visibleArtworks[3]}
+                      onClick={setSelected}
+                      juteLayout
+                      frameStyle={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    />
+                  </motion.div>
+                )}
+
+                {/* -------------------------------------------------
+                    IMAGE 5
+                    Row 2 / Column 3
+
+                    This is intentionally empty until a fifth
+                    Jute artwork is added.
+                   ------------------------------------------------- */}
+                {visibleArtworks[4] && (
+                  <motion.div
+                    layout
+                    initial={{
+                      opacity: 0,
+                      y: 12,
+                    }}
+                    animate={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 0.45,
+                      delay: 0.16,
+                    }}
+                    className="w-full"
+                  >
+                    <ArtworkCard
+                      artwork={visibleArtworks[4]}
+                      onClick={setSelected}
+                      juteLayout
+                      frameStyle={{
+                        width: '100%',
+                        height: '100%',
+                      }}
+                    />
+                  </motion.div>
+                )}
+
+              </div>
+
+              {/* =====================================================
+                  JUTE ART - NORMAL GALLERY AFTER FIRST 5
+                  ===================================================== */}
+
+              {juteExtraRows.length > 0 && (
+                <div className="space-y-5 mt-5">
+
+                  {juteExtraRows.map((row, rowIndex) => {
+
+                    const totalAspectRatio = row.items.reduce(
+                      (sum, item) => sum + item.ratio,
+                      0
+                    );
+
+                    const rowGap =
+                      GAP * Math.max(row.items.length - 1, 0);
+
+                    const targetHeight =
+                      getTargetRowHeight(containerWidth);
+
+                    const calculatedHeight =
+                      (containerWidth - rowGap) /
+                      totalAspectRatio;
+
+                    const rowHeight = Math.min(
+                      targetHeight,
+                      calculatedHeight
+                    );
+
+                    return (
+                      <motion.div
+                        key={`jute-extra-row-${rowIndex}`}
+                        layout
+                        initial={{
+                          opacity: 0,
+                          y: 12,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                        }}
+                        transition={{
+                          duration: 0.45,
+                          delay: rowIndex * 0.04,
+                        }}
+                        className="flex w-full items-stretch"
+                        style={{
+                          gap: `${GAP}px`,
+                        }}
+                      >
+
+                        {row.items.map(({ artwork, ratio }) => {
+
+                          const width =
+                            rowHeight * ratio;
+
+                          return (
+                            <ArtworkCard
+                              key={artwork.id}
+                              artwork={artwork}
+                              onClick={setSelected}
+                              frameStyle={{
+                                width: `${width}px`,
+                                height: `${rowHeight}px`,
+                                flex: `0 0 ${width}px`,
+                              }}
+                            />
+                          );
+
+                        })}
+
+                      </motion.div>
+                    );
+
+                  })}
+
+                </div>
+              )}
+
+            </>
+
           ) : (
+
+            /* =====================================================
+               NORMAL GALLERY
+               ===================================================== */
+
             <div className="space-y-5">
 
               {rows.map((row, rowIndex) => {
+
                 const totalAspectRatio = row.items.reduce(
                   (sum, item) => sum + item.ratio,
                   0
@@ -184,49 +477,14 @@ const GalleryCategory = ({ category }) => {
                 const targetHeight =
                   getTargetRowHeight(containerWidth);
 
-                /*
-                 * Calculate the natural height required for
-                 * the row to fill the available width.
-                 */
                 const calculatedHeight =
                   (containerWidth - rowGap) /
                   totalAspectRatio;
 
-                /*
-                 * IMPORTANT:
-                 *
-                 * Don't allow rows to become excessively tall.
-                 *
-                 * This prevents portrait images from suddenly
-                 * getting large empty areas when more images
-                 * are added to the category.
-                 */
-                let rowHeight;
-
-                if (row.isLast) {
-                  /*
-                   * Final row:
-                   * Keep it close to the target height and
-                   * don't stretch it aggressively.
-                   */
-                  rowHeight = Math.min(
-                    targetHeight,
-                    calculatedHeight
-                  );
-                } else {
-                  /*
-                   * Normal rows:
-                   * Use the smaller of the calculated height
-                   * and target height.
-                   *
-                   * This is the key difference from the
-                   * previous implementation.
-                   */
-                  rowHeight = Math.min(
-                    targetHeight,
-                    calculatedHeight
-                  );
-                }
+                const rowHeight = Math.min(
+                  targetHeight,
+                  calculatedHeight
+                );
 
                 return (
                   <motion.div
@@ -249,7 +507,9 @@ const GalleryCategory = ({ category }) => {
                       gap: `${GAP}px`,
                     }}
                   >
+
                     {row.items.map(({ artwork, ratio }) => {
+
                       const width =
                         rowHeight * ratio;
 
@@ -265,18 +525,24 @@ const GalleryCategory = ({ category }) => {
                           }}
                         />
                       );
+
                     })}
+
                   </motion.div>
                 );
+
               })}
 
             </div>
+
           )}
+
         </div>
 
         {/* View All / Show Less */}
         {hasMore && (
           <div className="flex justify-center mt-8 md:mt-10">
+
             <button
               onClick={() => setShowAll((prev) => !prev)}
               className="
@@ -297,6 +563,7 @@ const GalleryCategory = ({ category }) => {
                 ? 'Show Less'
                 : `View All ${category.label}`}
             </button>
+
           </div>
         )}
 

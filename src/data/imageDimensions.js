@@ -11,89 +11,9 @@ const imageDimensions = {
     "width": 1217,
     "height": 1280
   },
-  "/images/Artworks/Compressed/CMWodden.jpeg": {
-    "width": 3000,
-    "height": 4000
-  },
-  "/images/Artworks/Compressed/Face.jpeg": {
-    "width": 2002,
-    "height": 2670
-  },
-  "/images/Artworks/Compressed/Horse.jpeg": {
-    "width": 3108,
-    "height": 4712
-  },
-  "/images/Artworks/Compressed/manish singh.jpg.jpeg": {
-    "width": 3254,
-    "height": 5334
-  },
-  "/images/Artworks/Compressed/model-scrap.jpg.jpeg": {
-    "width": 3350,
-    "height": 3346
-  },
-  "/images/Artworks/Compressed/New folder/Face.webp": {
-    "width": 2002,
-    "height": 2670
-  },
-  "/images/Artworks/Compressed/New folder/Horse.webp": {
-    "width": 3108,
-    "height": 4712
-  },
-  "/images/Artworks/Compressed/New folder/PC8.webp": {
-    "width": 2992,
-    "height": 4000
-  },
-  "/images/Artworks/Compressed/New folder/RJSTHAN.jpg.webp": {
-    "width": 2427,
-    "height": 2649
-  },
-  "/images/Artworks/Compressed/New folder/Woman3.webp": {
-    "width": 3000,
-    "height": 4000
-  },
-  "/images/Artworks/Compressed/PC8.jpeg": {
-    "width": 2992,
-    "height": 4000
-  },
-  "/images/Artworks/Compressed/president.webp": {
-    "width": 5228,
-    "height": 7480
-  },
-  "/images/Artworks/Compressed/RJSTHAN.jpg.jpeg": {
-    "width": 2427,
-    "height": 2649
-  },
-  "/images/Artworks/Compressed/Sachiv2.jpeg": {
-    "width": 3309,
-    "height": 3767
-  },
-  "/images/Artworks/Compressed/Sachiv3.jpeg": {
-    "width": 3301,
-    "height": 3504
-  },
-  "/images/Artworks/Compressed/Sachiv4.jpeg": {
-    "width": 2549,
-    "height": 3004
-  },
-  "/images/Artworks/Compressed/SCBose.jpeg": {
-    "width": 3000,
-    "height": 4000
-  },
-  "/images/Artworks/Compressed/sunmica.webp": {
-    "width": 7900,
-    "height": 13085
-  },
-  "/images/Artworks/Compressed/Woman3.jpeg": {
-    "width": 3000,
-    "height": 4000
-  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 910,
     "height": 1093
-  },
-  "/images/Artworks/Contemporary Art/eichor.jpeg": {
-    "width": 2160,
-    "height": 3840
   },
   "/images/Artworks/Contemporary Art/Eichor2.jpeg": {
     "width": 4080,
@@ -131,17 +51,9 @@ const imageDimensions = {
     "width": 1080,
     "height": 1080
   },
-  "/images/Artworks/Fabric Art/Gandhi.jpeg": {
-    "width": 1200,
-    "height": 1600
-  },
   "/images/Artworks/Fabric Art/Gandhi3.jpeg": {
     "width": 988,
     "height": 1280
-  },
-  "/images/Artworks/Fabric Art/IMG-20220621-WA0029.jpg.jpeg": {
-    "width": 1200,
-    "height": 1600
   },
   "/images/Artworks/Fabric Art/Rajwada.jpeg": {
     "width": 1280,
@@ -150,10 +62,6 @@ const imageDimensions = {
   "/images/Artworks/Fabric Art/WhatsApp Image 2026-09-07 at 5.16.03 PM (2).jpeg": {
     "width": 1600,
     "height": 1236
-  },
-  "/images/Artworks/Nail Art/20260215_121004.jpg.jpeg": {
-    "width": 1848,
-    "height": 3002
   },
   "/images/Artworks/Nail Art/GandhiNA.jpeg": {
     "width": 1848,
@@ -165,10 +73,6 @@ const imageDimensions = {
   },
   "/images/Artworks/Nail Art/TA2.jpeg": {
     "width": 774,
-    "height": 1280
-  },
-  "/images/Artworks/Nail Art/WhatsApp Image 2026-09-07 at 5.16.02 PM.jpeg": {
-    "width": 960,
     "height": 1280
   },
   "/images/Artworks/News Mentions/2019- bhaskar.jpg.webp": {
@@ -263,7 +167,7 @@ const imageDimensions = {
     "width": 720,
     "height": 347
   },
-  "/images/Artworks/Paper Cutting Art/Face.jpeg": {
+  "/images/Artworks/Paper Cutting Art/Face.webp": {
     "width": 2002,
     "height": 2670
   },
@@ -307,7 +211,7 @@ const imageDimensions = {
     "width": 1386,
     "height": 1600
   },
-  "/images/Artworks/Paper Cutting Art/PC8.jpeg": {
+  "/images/Artworks/Paper Cutting Art/PC8.webp": {
     "width": 2992,
     "height": 4000
   },
@@ -319,7 +223,7 @@ const imageDimensions = {
     "width": 1280,
     "height": 1277
   },
-  "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.jpeg": {
+  "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.webp": {
     "width": 2427,
     "height": 2649
   },
@@ -339,7 +243,7 @@ const imageDimensions = {
     "width": 960,
     "height": 1280
   },
-  "/images/Artworks/Paper Cutting Art/Woman3.jpeg": {
+  "/images/Artworks/Paper Cutting Art/Woman3.webp": {
     "width": 3000,
     "height": 4000
   },
@@ -367,10 +271,6 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.11 PM (2).jpeg": {
-    "width": 1599,
-    "height": 899
-  },
   "/images/Artworks/Recognitions/1.jpeg": {
     "width": 1550,
     "height": 1296
@@ -378,10 +278,6 @@ const imageDimensions = {
   "/images/Artworks/Recognitions/10.jpeg": {
     "width": 2048,
     "height": 1152
-  },
-  "/images/Artworks/Recognitions/11.jpeg": {
-    "width": 786,
-    "height": 1139
   },
   "/images/Artworks/Recognitions/12.jpeg": {
     "width": 1156,
@@ -395,33 +291,17 @@ const imageDimensions = {
     "width": 2420,
     "height": 2304
   },
-  "/images/Artworks/Recognitions/15.jpeg": {
-    "width": 2020,
-    "height": 2824
-  },
   "/images/Artworks/Recognitions/16.jpeg": {
     "width": 2880,
     "height": 1980
-  },
-  "/images/Artworks/Recognitions/17.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
-  "/images/Artworks/Recognitions/18.jpeg": {
-    "width": 864,
-    "height": 1152
   },
   "/images/Artworks/Recognitions/19.jpeg": {
     "width": 868,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/2.jpeg": {
+  "/images/Artworks/Recognitions/2.webp": {
     "width": 4453,
     "height": 4512
-  },
-  "/images/Artworks/Recognitions/20.jpeg": {
-    "width": 1280,
-    "height": 853
   },
   "/images/Artworks/Recognitions/21.jpeg": {
     "width": 868,
@@ -439,15 +319,11 @@ const imageDimensions = {
     "width": 1200,
     "height": 1109
   },
-  "/images/Artworks/Recognitions/25.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
-  "/images/Artworks/Recognitions/26.jpeg": {
+  "/images/Artworks/Recognitions/26.webp": {
     "width": 2456,
     "height": 2776
   },
-  "/images/Artworks/Recognitions/27.jpeg": {
+  "/images/Artworks/Recognitions/27.webp": {
     "width": 4232,
     "height": 2352
   },
@@ -455,11 +331,11 @@ const imageDimensions = {
     "width": 1156,
     "height": 534
   },
-  "/images/Artworks/Recognitions/29.jpeg": {
+  "/images/Artworks/Recognitions/29.webp": {
     "width": 4024,
     "height": 3892
   },
-  "/images/Artworks/Recognitions/3.jpeg": {
+  "/images/Artworks/Recognitions/3.webp": {
     "width": 5596,
     "height": 6046
   },
@@ -467,21 +343,13 @@ const imageDimensions = {
     "width": 1080,
     "height": 1080
   },
-  "/images/Artworks/Recognitions/31.jpeg": {
+  "/images/Artworks/Recognitions/31.webp": {
     "width": 2880,
     "height": 3464
   },
   "/images/Artworks/Recognitions/32.jpeg": {
     "width": 1156,
     "height": 534
-  },
-  "/images/Artworks/Recognitions/33.jpeg": {
-    "width": 1280,
-    "height": 853
-  },
-  "/images/Artworks/Recognitions/34.jpeg": {
-    "width": 864,
-    "height": 1152
   },
   "/images/Artworks/Recognitions/35.jpeg": {
     "width": 729,
@@ -491,15 +359,11 @@ const imageDimensions = {
     "width": 1600,
     "height": 1066
   },
-  "/images/Artworks/Recognitions/37.jpeg": {
-    "width": 1080,
-    "height": 1434
+  "/images/Artworks/Recognitions/37.webp": {
+    "width": 2725,
+    "height": 4266
   },
-  "/images/Artworks/Recognitions/4.jpeg": {
-    "width": 2032,
-    "height": 1264
-  },
-  "/images/Artworks/Recognitions/5.jpeg": {
+  "/images/Artworks/Recognitions/5.webp": {
     "width": 4758,
     "height": 2470
   },
@@ -511,17 +375,9 @@ const imageDimensions = {
     "width": 1280,
     "height": 960
   },
-  "/images/Artworks/Recognitions/8.jpeg": {
+  "/images/Artworks/Recognitions/8.webp": {
     "width": 4000,
     "height": 2252
-  },
-  "/images/Artworks/Recognitions/9.jpeg": {
-    "width": 4000,
-    "height": 2252
-  },
-  "/images/Artworks/Recognitions/FB_IMG_1744266826696.jpg.jpeg": {
-    "width": 2725,
-    "height": 4266
   },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,
@@ -535,7 +391,7 @@ const imageDimensions = {
     "width": 828,
     "height": 1073
   },
-  "/images/Artworks/Textile Art/Horse.jpeg": {
+  "/images/Artworks/Textile Art/Horse.webp": {
     "width": 3108,
     "height": 4712
   },

@@ -1,23 +1,33 @@
 import React from 'react';
 import { Expand } from 'lucide-react';
 
-const ArtworkCard = ({ artwork, onClick, frameStyle }) => {
+const ArtworkCard = ({
+  artwork,
+  onClick,
+  frameStyle,
+  juteLayout = false,
+}) => {
   return (
     <div
-      className="
+      className={`
         group
         relative
         cursor-pointer
         overflow-hidden
-        rounded-lg
-        bg-black/5
-        border
-        border-black/10
-        hover:-translate-y-1
-        hover:shadow-lg
+        ${juteLayout
+          ? 'rounded-lg border-0 bg-transparent shadow-none'
+          : `
+            rounded-lg
+            bg-black/5
+            border
+            border-black/10
+            hover:-translate-y-1
+            hover:shadow-lg
+          `
+        }
         transition-all
         duration-300
-      "
+      `}
       style={frameStyle}
       onClick={() => onClick(artwork)}
     >
@@ -26,29 +36,31 @@ const ArtworkCard = ({ artwork, onClick, frameStyle }) => {
         alt={artwork.alt}
         loading="lazy"
         decoding="async"
-        className="
+        className={`
           h-full
           w-full
-          object-contain
+          ${juteLayout ? 'object-cover' : 'object-contain'}
           block
-        "
+        `}
       />
 
       {/* Hover overlay */}
       <div
-        className="
+        className={`
           absolute
           inset-0
-          bg-black/0
           transition-all
           duration-400
-          group-hover:bg-black/40
           flex
           items-end
-        "
+          ${juteLayout
+            ? 'bg-black/0 group-hover:bg-black/20'
+            : 'bg-black/0 group-hover:bg-black/40'
+          }
+        `}
       >
         <div
-          className="
+          className={`
             w-full
             translate-y-4
             opacity-0
@@ -57,7 +69,7 @@ const ArtworkCard = ({ artwork, onClick, frameStyle }) => {
             group-hover:translate-y-0
             group-hover:opacity-100
             p-4
-          "
+          `}
         >
           <p className="text-white font-display text-base font-medium leading-snug">
             {artwork.title}

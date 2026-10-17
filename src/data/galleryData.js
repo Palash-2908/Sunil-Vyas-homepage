@@ -138,7 +138,7 @@ const galleryCategories = [
   {
     id: 'jute-art',
     slug: 'jute-art',
-    label: 'jute Art',
+    label: 'Jute Art',
     description:
       'Expressive denim based works exploring texture, denim fabric, and fiber as a medium for visual storytelling.',
 
@@ -481,7 +481,7 @@ const galleryCategories = [
       {
         id: 'ca-7',
         title: 'Contemporary Artwork 7',
-        image: '/images/Artworks/Contemporary Art/SCBose.jpeg',
+        image: '/images/Artworks/Contemporary Art/SCBose.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {

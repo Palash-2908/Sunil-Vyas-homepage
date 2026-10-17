@@ -75,7 +75,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/2.jpeg',
+      '/images/Artworks/Recognitions/2.webp',
   },
 
   {
@@ -83,7 +83,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/3.jpeg',
+      '/images/Artworks/Recognitions/3.webp',
   },
 
 
@@ -92,7 +92,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/5.jpeg',
+      '/images/Artworks/Recognitions/5.webp',
   },
 
   {
@@ -114,7 +114,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/8.jpeg',
+      '/images/Artworks/Recognitions/8.webp',
   },
   {
     id: 'recognition-6',
@@ -191,14 +191,14 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/26.jpeg',
+      '/images/Artworks/Recognitions/26.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/27.jpeg',
+      '/images/Artworks/Recognitions/27.webp',
   },
   {
     id: 'recognition-6',
@@ -212,7 +212,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/29.jpeg',
+      '/images/Artworks/Recognitions/29.webp',
   },
   {
     id: 'recognition-6',
@@ -226,7 +226,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/31.jpeg',
+      '/images/Artworks/Recognitions/31.webp',
   },
   {
     id: 'recognition-6',
