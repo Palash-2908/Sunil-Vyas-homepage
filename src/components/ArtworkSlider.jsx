@@ -64,7 +64,7 @@ const ArtworkSlider = ({ onCategoryChange }) => {
         }}
         onSlideChange={handleSlideChange}
         modules={[Pagination, Autoplay, Keyboard]}
-        
+
         /* IMPORTANT:
            One Swiper slide = One category
         */
@@ -93,16 +93,26 @@ const ArtworkSlider = ({ onCategoryChange }) => {
       >
 
         {artworks.map((slide, slideIndex) => (
-  <SwiperSlide key={slide.category}>
+          <SwiperSlide key={slide.category}>
 
             <div className="three-artworks">
 
-              {slide.artworks.map((art) => (
+              {slide.artworks.map((art, artIndex) => (
                 <div className="art-card" key={art.id}>
                   <img
                     src={art.image}
                     alt={art.alt}
-                    loading={slideIndex === 0 ? 'eager' : 'lazy'}
+                    loading={
+                      slideIndex === 0 && artIndex < 3
+                        ? "eager"
+                        : "lazy"
+                    }
+                    fetchPriority={
+                      slideIndex === 0 && artIndex < 3
+                        ? "high"
+                        : "auto"
+                    }
+                    decoding="async"
                   />
                 </div>
               ))}

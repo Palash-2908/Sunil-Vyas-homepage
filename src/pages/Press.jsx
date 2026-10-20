@@ -54,7 +54,7 @@ const PressCard = ({ item, index, frameAspect, onSelect }) => (
         <img
           src={item.image}
           alt={item.title}
-          loading={index < 3 ? 'eager' : 'lazy'}
+          loading={index === 0 ? 'eager' : 'lazy'}
           className="
             w-full
             h-full
