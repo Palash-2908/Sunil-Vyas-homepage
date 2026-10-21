@@ -67,7 +67,7 @@ export const featuredRecognitions = [
     title: '2021-T.jpg.jpeg',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/1.jpeg',
+      '/images/Artworks/Recognitions/1.webp',
   },
 
   {
@@ -100,14 +100,14 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/6.jpeg',
+      '/images/Artworks/Recognitions/6.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/7.jpeg',
+      '/images/Artworks/Recognitions/7.webp',
   },
   {
     id: 'recognition-6',
@@ -121,70 +121,70 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/10.jpeg',
+      '/images/Artworks/Recognitions/10.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/12.jpeg',
+      '/images/Artworks/Recognitions/12.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/13.jpeg',
+      '/images/Artworks/Recognitions/13.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/14.jpeg',
+      '/images/Artworks/Recognitions/14.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/16.jpeg',
+      '/images/Artworks/Recognitions/16.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/19.jpeg',
+      '/images/Artworks/Recognitions/19.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/21.jpeg',
+      '/images/Artworks/Recognitions/21.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/22.jpeg',
+      '/images/Artworks/Recognitions/22.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/23.jpeg',
+      '/images/Artworks/Recognitions/23.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/24.jpeg',
+      '/images/Artworks/Recognitions/24.webp',
   },
   {
     id: 'recognition-6',
@@ -205,7 +205,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/28.jpeg',
+      '/images/Artworks/Recognitions/28.webp',
   },
   {
     id: 'recognition-6',
@@ -219,7 +219,7 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/30.jpeg',
+      '/images/Artworks/Recognitions/30.webp',
   },
   {
     id: 'recognition-6',
@@ -233,20 +233,20 @@ export const featuredRecognitions = [
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/32.jpeg',
+      '/images/Artworks/Recognitions/32.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/35.jpeg',
+      '/images/Artworks/Recognitions/35.webp',
   },
   {
     id: 'recognition-6',
     title: 'Recognition',
     organization: 'Featured Recognition',
     image:
-      '/images/Artworks/Recognitions/36.jpeg',
+      '/images/Artworks/Recognitions/36.webp',
   },
 ];

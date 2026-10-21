@@ -3,14 +3,6 @@ const imageDimensions = {
     "width": 3204,
     "height": 4856
   },
-  "/images/Artworks/Cardboard Art/PC10.jpeg": {
-    "width": 6550,
-    "height": 13271
-  },
-  "/images/Artworks/Cardboard Art/PC11.jpeg": {
-    "width": 1217,
-    "height": 1280
-  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 910,
     "height": 1093
@@ -44,16 +36,16 @@ const imageDimensions = {
     "height": 13085
   },
   "/images/Artworks/Fabric Art/AhilyaFabric.jpeg": {
-    "width": 2434,
-    "height": 3742
+    "width": 2120,
+    "height": 3400
   },
   "/images/Artworks/Fabric Art/CM2.jpeg": {
     "width": 1080,
     "height": 1080
   },
   "/images/Artworks/Fabric Art/Gandhi3.jpeg": {
-    "width": 988,
-    "height": 1280
+    "width": 835,
+    "height": 1124
   },
   "/images/Artworks/Fabric Art/Rajwada.jpeg": {
     "width": 1280,
@@ -271,31 +263,31 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/Recognitions/1.jpeg": {
+  "/images/Artworks/Recognitions/1.webp": {
     "width": 1550,
     "height": 1296
   },
-  "/images/Artworks/Recognitions/10.jpeg": {
+  "/images/Artworks/Recognitions/10.webp": {
     "width": 2048,
     "height": 1152
   },
-  "/images/Artworks/Recognitions/12.jpeg": {
+  "/images/Artworks/Recognitions/12.webp": {
     "width": 1156,
     "height": 866
   },
-  "/images/Artworks/Recognitions/13.jpeg": {
+  "/images/Artworks/Recognitions/13.webp": {
     "width": 1154,
     "height": 2048
   },
-  "/images/Artworks/Recognitions/14.jpeg": {
+  "/images/Artworks/Recognitions/14.webp": {
     "width": 2420,
     "height": 2304
   },
-  "/images/Artworks/Recognitions/16.jpeg": {
+  "/images/Artworks/Recognitions/16.webp": {
     "width": 2880,
     "height": 1980
   },
-  "/images/Artworks/Recognitions/19.jpeg": {
+  "/images/Artworks/Recognitions/19.webp": {
     "width": 868,
     "height": 1156
   },
@@ -303,19 +295,19 @@ const imageDimensions = {
     "width": 4453,
     "height": 4512
   },
-  "/images/Artworks/Recognitions/21.jpeg": {
+  "/images/Artworks/Recognitions/21.webp": {
     "width": 868,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/22.jpeg": {
+  "/images/Artworks/Recognitions/22.webp": {
     "width": 720,
     "height": 1600
   },
-  "/images/Artworks/Recognitions/23.jpeg": {
+  "/images/Artworks/Recognitions/23.webp": {
     "width": 866,
     "height": 1156
   },
-  "/images/Artworks/Recognitions/24.jpeg": {
+  "/images/Artworks/Recognitions/24.webp": {
     "width": 1200,
     "height": 1109
   },
@@ -327,7 +319,7 @@ const imageDimensions = {
     "width": 4232,
     "height": 2352
   },
-  "/images/Artworks/Recognitions/28.jpeg": {
+  "/images/Artworks/Recognitions/28.webp": {
     "width": 1156,
     "height": 534
   },
@@ -339,7 +331,7 @@ const imageDimensions = {
     "width": 5596,
     "height": 6046
   },
-  "/images/Artworks/Recognitions/30.jpeg": {
+  "/images/Artworks/Recognitions/30.webp": {
     "width": 1080,
     "height": 1080
   },
@@ -347,15 +339,15 @@ const imageDimensions = {
     "width": 2880,
     "height": 3464
   },
-  "/images/Artworks/Recognitions/32.jpeg": {
+  "/images/Artworks/Recognitions/32.webp": {
     "width": 1156,
     "height": 534
   },
-  "/images/Artworks/Recognitions/35.jpeg": {
+  "/images/Artworks/Recognitions/35.webp": {
     "width": 729,
     "height": 1296
   },
-  "/images/Artworks/Recognitions/36.jpeg": {
+  "/images/Artworks/Recognitions/36.webp": {
     "width": 1600,
     "height": 1066
   },
@@ -367,11 +359,11 @@ const imageDimensions = {
     "width": 4758,
     "height": 2470
   },
-  "/images/Artworks/Recognitions/6.jpeg": {
+  "/images/Artworks/Recognitions/6.webp": {
     "width": 2726,
     "height": 1870
   },
-  "/images/Artworks/Recognitions/7.jpeg": {
+  "/images/Artworks/Recognitions/7.webp": {
     "width": 1280,
     "height": 960
   },

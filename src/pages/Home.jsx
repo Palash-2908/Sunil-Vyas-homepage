@@ -31,7 +31,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.55, ease: 'easeOut' }}
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[54px] font-normal tracking-[0.06em] text-ink leading-tight"
+              className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-normal tracking-[0.06em] text-ink leading-tight"
             >
               {category}
             </motion.h1>
