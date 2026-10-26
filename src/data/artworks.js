@@ -5,7 +5,7 @@ const artworkSlides = [
     artworks: [
       {
         id: 1,
-        image: "/images/Artworks/Wooden Scrap Art/Sachiv.jpeg",
+        image: "/images/Artworks/Wooden Scrap Art/Sachiv.webp",
         alt: "Wooden artwork 1",
       },
       {

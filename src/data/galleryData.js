@@ -16,14 +16,14 @@ const galleryCategories = [
       {
         id: 'wsa-2',
         title: 'Wooden Scrap Artwork 6',
-        image: '/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/modi.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       
       {
         id: 'wsa-4',
         title: 'Wooden Scrap Artwork 1',
-        image: '/images/Artworks/Wooden Scrap Art/Sachiv.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Sachiv.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -65,7 +65,7 @@ const galleryCategories = [
       {
         id: 'wsa-9',
         title: 'Wooden Scrap Artwork 10',
-        image: '/images/Artworks/Wooden Scrap Art/ravindra.jpg.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/ravindra.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -146,7 +146,7 @@ const galleryCategories = [
       {
         id: 'ta-1',
         title: 'Textile Artwork 1',
-        image: '/images/Artworks/Fabric Art/AhilyaFabric.jpeg',
+        image: '/images/Artworks/Fabric Art/AhilyaFabric.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
@@ -332,7 +332,7 @@ const galleryCategories = [
     {
       id: 'nail-2',
       title: 'Nail Artwork 2',
-      image: '/images/Artworks/Nail Art/GandhiNA.jpeg',
+      image: '/images/Artworks/Nail Art/GandhiNA.webp',
       alt: 'Nail art by Sunil Vyas',
     },
   ],
@@ -416,13 +416,13 @@ const galleryCategories = [
     {
       id: 'wrapper-7',
       title: 'Waste Wrapper Artwork 6',
-      image: '/images/Artworks/Waste Wrapper Art/Gandhi2.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/Gandhi2.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
       id: 'wrapper-8',
       title: 'Waste Wrapper Artwork 6',
-      image: '/images/Artworks/Waste Wrapper Art/WSA1.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/WSA1.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {

@@ -35,7 +35,7 @@ const imageDimensions = {
     "width": 7900,
     "height": 13085
   },
-  "/images/Artworks/Fabric Art/AhilyaFabric.jpeg": {
+  "/images/Artworks/Fabric Art/AhilyaFabric.webp": {
     "width": 2120,
     "height": 3400
   },
@@ -55,7 +55,7 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/Nail Art/GandhiNA.jpeg": {
+  "/images/Artworks/Nail Art/GandhiNA.webp": {
     "width": 1848,
     "height": 2916
   },
@@ -251,10 +251,6 @@ const imageDimensions = {
     "width": 1280,
     "height": 960
   },
-  "/images/Artworks/Plastic Art/p-gandhi and me2-grey.png": {
-    "width": 1920,
-    "height": 1080
-  },
   "/images/Artworks/Plastic Art/PlasticGandhi.jpeg": {
     "width": 464,
     "height": 869
@@ -395,7 +391,7 @@ const imageDimensions = {
     "width": 718,
     "height": 978
   },
-  "/images/Artworks/Waste Wrapper Art/Gandhi2.jpeg": {
+  "/images/Artworks/Waste Wrapper Art/Gandhi2.webp": {
     "width": 1536,
     "height": 2048
   },
@@ -419,7 +415,7 @@ const imageDimensions = {
     "width": 1147,
     "height": 1280
   },
-  "/images/Artworks/Waste Wrapper Art/WSA1.jpeg": {
+  "/images/Artworks/Waste Wrapper Art/WSA1.webp": {
     "width": 2208,
     "height": 3556
   },
@@ -447,7 +443,7 @@ const imageDimensions = {
     "width": 3350,
     "height": 3346
   },
-  "/images/Artworks/Wooden Scrap Art/modi.jpg.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/modi.jpg.webp": {
     "width": 2798,
     "height": 2978
   },
@@ -455,7 +451,7 @@ const imageDimensions = {
     "width": 1098,
     "height": 1280
   },
-  "/images/Artworks/Wooden Scrap Art/ravindra.jpg.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/ravindra.jpg.webp": {
     "width": 2776,
     "height": 2959
   },
@@ -463,7 +459,7 @@ const imageDimensions = {
     "width": 1400,
     "height": 1722
   },
-  "/images/Artworks/Wooden Scrap Art/Sachiv.jpeg": {
+  "/images/Artworks/Wooden Scrap Art/Sachiv.webp": {
     "width": 2879,
     "height": 3290
   },
