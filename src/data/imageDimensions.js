@@ -1,72 +1,4 @@
 const imageDimensions = {
-  "/images/Artworks/compressed/AhilyaBai.jpeg": {
-    "width": 924,
-    "height": 1374
-  },
-  "/images/Artworks/compressed/Clean.jpeg": {
-    "width": 864,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/contact-web.png": {
-    "width": 720,
-    "height": 347
-  },
-  "/images/Artworks/compressed/Gandhi.jpeg": {
-    "width": 718,
-    "height": 978
-  },
-  "/images/Artworks/compressed/india.jpeg": {
-    "width": 656,
-    "height": 955
-  },
-  "/images/Artworks/compressed/Kailash.jpeg": {
-    "width": 1371,
-    "height": 1363
-  },
-  "/images/Artworks/compressed/Kid.jpeg": {
-    "width": 1440,
-    "height": 1440
-  },
-  "/images/Artworks/compressed/ModiTiger.jpeg": {
-    "width": 1034,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/PC3.jpeg": {
-    "width": 1335,
-    "height": 1600
-  },
-  "/images/Artworks/compressed/PC9.jpeg": {
-    "width": 1080,
-    "height": 1080
-  },
-  "/images/Artworks/compressed/RaniAhilya.jpeg": {
-    "width": 1280,
-    "height": 1277
-  },
-  "/images/Artworks/compressed/rssguru.jpeg": {
-    "width": 1400,
-    "height": 1722
-  },
-  "/images/Artworks/compressed/SBIGandhi.jpeg": {
-    "width": 960,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/Shivrajsingh.jpeg": {
-    "width": 1030,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/Woman.jpeg": {
-    "width": 1147,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/Wooden2.jpeg": {
-    "width": 976,
-    "height": 1280
-  },
-  "/images/Artworks/compressed/Wooden4.jpeg": {
-    "width": 1454,
-    "height": 1785
-  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.webp": {
     "width": 583,
     "height": 700
@@ -83,17 +15,17 @@ const imageDimensions = {
     "width": 667,
     "height": 600
   },
-  "/images/Artworks/Contemporary Art/SBIGandhi.jpeg": {
-    "width": 960,
-    "height": 1280
+  "/images/Artworks/Contemporary Art/SBIGandhi.webp": {
+    "width": 525,
+    "height": 700
   },
   "/images/Artworks/Contemporary Art/SCBose.webp": {
     "width": 450,
     "height": 600
   },
-  "/images/Artworks/Contemporary Art/Shivrajsingh.jpeg": {
-    "width": 1030,
-    "height": 1280
+  "/images/Artworks/Contemporary Art/Shivrajsingh.webp": {
+    "width": 563,
+    "height": 700
   },
   "/images/Artworks/Contemporary Art/sunmica.webp": {
     "width": 362,
@@ -219,9 +151,9 @@ const imageDimensions = {
     "width": 1280,
     "height": 1089
   },
-  "/images/Artworks/Paper Cutting Art/contact-web.png": {
-    "width": 720,
-    "height": 347
+  "/images/Artworks/Paper Cutting Art/contact-web.webp": {
+    "width": 700,
+    "height": 337
   },
   "/images/Artworks/Paper Cutting Art/Face.webp": {
     "width": 450,
@@ -231,25 +163,25 @@ const imageDimensions = {
     "width": 913,
     "height": 1011
   },
-  "/images/Artworks/Paper Cutting Art/india.jpeg": {
-    "width": 656,
-    "height": 955
+  "/images/Artworks/Paper Cutting Art/india.webp": {
+    "width": 481,
+    "height": 700
   },
-  "/images/Artworks/Paper Cutting Art/Kailash.jpeg": {
-    "width": 1371,
-    "height": 1363
+  "/images/Artworks/Paper Cutting Art/Kailash.webp": {
+    "width": 604,
+    "height": 600
   },
-  "/images/Artworks/Paper Cutting Art/Kid.jpeg": {
-    "width": 1440,
-    "height": 1440
+  "/images/Artworks/Paper Cutting Art/Kid.webp": {
+    "width": 600,
+    "height": 600
   },
   "/images/Artworks/Paper Cutting Art/Mayor.webp": {
     "width": 600,
     "height": 653
   },
-  "/images/Artworks/Paper Cutting Art/PC3.jpeg": {
-    "width": 1335,
-    "height": 1600
+  "/images/Artworks/Paper Cutting Art/PC3.webp": {
+    "width": 584,
+    "height": 700
   },
   "/images/Artworks/Paper Cutting Art/PC4.webp": {
     "width": 600,
@@ -271,13 +203,13 @@ const imageDimensions = {
     "width": 449,
     "height": 600
   },
-  "/images/Artworks/Paper Cutting Art/PC9.jpeg": {
-    "width": 1080,
-    "height": 1080
+  "/images/Artworks/Paper Cutting Art/PC9.webp": {
+    "width": 600,
+    "height": 600
   },
-  "/images/Artworks/Paper Cutting Art/RaniAhilya.jpeg": {
-    "width": 1280,
-    "height": 1277
+  "/images/Artworks/Paper Cutting Art/RaniAhilya.webp": {
+    "width": 601,
+    "height": 600
   },
   "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.webp": {
     "width": 550,
@@ -303,9 +235,9 @@ const imageDimensions = {
     "width": 450,
     "height": 600
   },
-  "/images/Artworks/Plastic Art/Clean.jpeg": {
-    "width": 864,
-    "height": 1280
+  "/images/Artworks/Plastic Art/Clean.webp": {
+    "width": 473,
+    "height": 700
   },
   "/images/Artworks/Plastic Art/Dandi Yatra.jpeg": {
     "width": 1600,
@@ -451,17 +383,17 @@ const imageDimensions = {
     "width": 540,
     "height": 553
   },
-  "/images/Artworks/Waste Wrapper Art/Gandhi.jpeg": {
-    "width": 718,
-    "height": 978
+  "/images/Artworks/Waste Wrapper Art/Gandhi.webp": {
+    "width": 514,
+    "height": 700
   },
   "/images/Artworks/Waste Wrapper Art/Gandhi2.webp": {
     "width": 525,
     "height": 700
   },
-  "/images/Artworks/Waste Wrapper Art/ModiTiger.jpeg": {
-    "width": 1034,
-    "height": 1280
+  "/images/Artworks/Waste Wrapper Art/ModiTiger.webp": {
+    "width": 565,
+    "height": 700
   },
   "/images/Artworks/Waste Wrapper Art/PC1.webp": {
     "width": 669,
@@ -475,17 +407,17 @@ const imageDimensions = {
     "width": 959,
     "height": 1280
   },
-  "/images/Artworks/Waste Wrapper Art/Woman.jpeg": {
-    "width": 1147,
-    "height": 1280
+  "/images/Artworks/Waste Wrapper Art/Woman.webp": {
+    "width": 600,
+    "height": 670
   },
   "/images/Artworks/Waste Wrapper Art/WSA1.webp": {
     "width": 435,
     "height": 700
   },
-  "/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg": {
-    "width": 924,
-    "height": 1374
+  "/images/Artworks/Wooden Scrap Art/AhilyaBai.webp": {
+    "width": 471,
+    "height": 700
   },
   "/images/Artworks/Wooden Scrap Art/CMWodden.webp": {
     "width": 450,
@@ -519,9 +451,9 @@ const imageDimensions = {
     "width": 563,
     "height": 600
   },
-  "/images/Artworks/Wooden Scrap Art/rssguru.jpeg": {
-    "width": 1400,
-    "height": 1722
+  "/images/Artworks/Wooden Scrap Art/rssguru.webp": {
+    "width": 569,
+    "height": 700
   },
   "/images/Artworks/Wooden Scrap Art/Sachiv.webp": {
     "width": 525,
@@ -543,17 +475,17 @@ const imageDimensions = {
     "width": 463,
     "height": 600
   },
-  "/images/Artworks/Wooden Scrap Art/Wooden2.jpeg": {
-    "width": 976,
-    "height": 1280
+  "/images/Artworks/Wooden Scrap Art/Wooden2.webp": {
+    "width": 534,
+    "height": 700
   },
   "/images/Artworks/Wooden Scrap Art/wooden3.jpeg": {
     "width": 932,
     "height": 1204
   },
-  "/images/Artworks/Wooden Scrap Art/Wooden4.jpeg": {
-    "width": 1454,
-    "height": 1785
+  "/images/Artworks/Wooden Scrap Art/Wooden4.webp": {
+    "width": 570,
+    "height": 700
   }
 };
 

@@ -9,13 +9,13 @@ const galleryCategories = [
     artworks: [
       {
         id: 'wsa-1',
-        title: 'Wooden Scrap Artwork 4',
+        title: 'CM Dr. Mohan Yadav',
         image: '/images/Artworks/Wooden Scrap Art/CMWodden.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
         id: 'wsa-2',
-        title: 'Wooden Scrap Artwork 6',
+        title: 'PMO Narendra Modi',
         image: '/images/Artworks/Wooden Scrap Art/modi.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
@@ -53,7 +53,7 @@ const galleryCategories = [
       {
         id: 'wsa-7',
         title: 'Wooden Scrap Artwork 7',
-        image: '/images/Artworks/Wooden Scrap Art/rssguru.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/rssguru.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -77,19 +77,19 @@ const galleryCategories = [
       {
         id: 'wsa-11',
         title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/Wooden4.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Wooden4.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
         id: 'wsa-13',
         title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/Wooden2.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/Wooden2.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
         id: 'wsa-14',
         title: 'Wooden Scrap Artwork 9',
-        image: '/images/Artworks/Wooden Scrap Art/AhilyaBai.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/AhilyaBai.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -111,7 +111,7 @@ const galleryCategories = [
     artworks: [
       {
         id: 'ta-1',
-        title: 'Textile Artwork 1',
+        title: 'Dr. Bheem Rao Ambedkar',
         image: '/images/Artworks/Textile Art/DrAmbedkardenim.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
@@ -129,15 +129,15 @@ const galleryCategories = [
       },
       {
         id: 'ta-4',
-        title: 'Textile Artwork 2',
+        title: 'Horse',
         image: '/images/Artworks/Textile Art/Horse.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
     ],
   },
   {
-    id: 'jute-art',
-    slug: 'jute-art',
+    id: 'Jute-art',
+    slug: 'Jute-art',
     label: 'Jute Art',
     description:
       'Expressive denim based works exploring texture, denim fabric, and fiber as a medium for visual storytelling.',
@@ -145,25 +145,25 @@ const galleryCategories = [
     artworks: [
       {
         id: 'ta-1',
-        title: 'Textile Artwork 1',
+        title: 'Rani AhilyaBai Holker',
         image: '/images/Artworks/Fabric Art/AhilyaFabric.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
         id: 'ta-2',
-        title: 'Textile Artwork 3',
+        title: 'Ex CM Shivraj Singh Chouhan',
         image: '/images/Artworks/Fabric Art/CM2.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
         id: 'ta-3',
-        title: 'Textile Artwork 4',
+        title: 'Mahatma Gandhi',
         image: '/images/Artworks/Fabric Art/Gandhi3.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
         id: 'ta-4',
-        title: 'Textile Artwork 4',
+        title: 'Rajwada',
         image: '/images/Artworks/Fabric Art/Rajwada.jpeg',
         alt: 'Textile artwork by Sunil Vyas',
       },
@@ -209,6 +209,12 @@ const galleryCategories = [
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
+        id: 'pca-14',
+        title: 'Paper Cutting Artwork 8',
+        image: '/images/Artworks/Paper Cutting Art/RaniAhilya.webp',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
         id: 'pca-6',
         title: 'Paper Cutting Artwork 6',
         image: '/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.webp',
@@ -230,13 +236,19 @@ const galleryCategories = [
       {
         id: 'pca-4',
         title: 'Paper Cutting Artwork 4',
-        image: '/images/Artworks/Paper Cutting Art/Kailash.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/Kailash.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
         id: 'pca-5',
         title: 'Paper Cutting Artwork 5',
         image: '/images/Artworks/Paper Cutting Art/Face.webp',
+        alt: 'Paper cutting artwork by Sunil Vyas',
+      },
+      {
+        id: 'pca-5',
+        title: 'Paper Cutting Artwork 5',
+        image: '/images/Artworks/Paper Cutting Art/Kid.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       
@@ -255,7 +267,7 @@ const galleryCategories = [
       {
         id: 'pca-12',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/PC9.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/PC9.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -274,7 +286,7 @@ const galleryCategories = [
       {
         id: 'pca-16',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/india.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/india.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -299,13 +311,13 @@ const galleryCategories = [
       {
         id: 'pca-23',
         title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/PC3.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/PC3.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
         id: 'pca-24',
         title: 'Paper Cutting Artwork 9',
-        image: '/images/Artworks/Paper Cutting Art/contact-web.png',
+        image: '/images/Artworks/Paper Cutting Art/contact-web.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
     ],
@@ -319,19 +331,19 @@ const galleryCategories = [
   artworks: [
     {
       id: 'nail-1',
-      title: 'Nail Artwork 1',
+      title: 'Veer Savarkar',
       image: '/images/Artworks/Nail Art/TA2.jpeg',
       alt: 'Nail art by Sunil Vyas',
     },
     {
       id: 'nail-2',
-      title: 'Nail Artwork 2',
+      title: 'Swami Vivekanand',
       image: '/images/Artworks/Nail Art/SwamiVivek.webp',
       alt: 'Nail art by Sunil Vyas',
     },
     {
       id: 'nail-2',
-      title: 'Nail Artwork 2',
+      title: 'Mahatma Gandhi',
       image: '/images/Artworks/Nail Art/GandhiNA.webp',
       alt: 'Nail art by Sunil Vyas',
     },
@@ -347,7 +359,7 @@ const galleryCategories = [
     {
       id: 'plastic-1',
       title: 'Plastic Artwork 1',
-      image: '/images/Artworks/Plastic Art/Clean.jpeg',
+      image: '/images/Artworks/Plastic Art/Clean.webp',
       alt: 'Plastic artwork by Sunil Vyas',
     },
     {
@@ -379,13 +391,13 @@ const galleryCategories = [
   artworks: [
     {
       id: 'wrapper-1',
-      title: 'Waste Wrapper Artwork 1',
-      image: '/images/Artworks/Waste Wrapper Art/Gandhi.jpeg',
+      title: 'Mahatma Gandhi',
+      image: '/images/Artworks/Waste Wrapper Art/Gandhi.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
       id: 'wrapper-2',
-      title: 'Waste Wrapper Artwork 2',
+      title: 'Dandi Yatra',
       image: '/images/Artworks/Waste Wrapper Art/PC1.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
@@ -404,18 +416,18 @@ const galleryCategories = [
     {
       id: 'wrapper-5',
       title: 'Waste Wrapper Artwork 5',
-      image: '/images/Artworks/Waste Wrapper Art/Woman.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/Woman.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
       id: 'wrapper-6',
-      title: 'Waste Wrapper Artwork 6',
+      title: 'Buddha',
       image: '/images/Artworks/Waste Wrapper Art/PC2.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
       id: 'wrapper-7',
-      title: 'Waste Wrapper Artwork 6',
+      title: 'Mahatma Gandhi',
       image: '/images/Artworks/Waste Wrapper Art/Gandhi2.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
@@ -427,8 +439,8 @@ const galleryCategories = [
     },
     {
       id: 'wrapper-9',
-      title: 'Waste Wrapper Artwork 6',
-      image: '/images/Artworks/Waste Wrapper Art/ModiTiger.jpeg',
+      title: 'Prime Minister of India Narendra Modi',
+      image: '/images/Artworks/Waste Wrapper Art/ModiTiger.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
   ],
@@ -444,50 +456,50 @@ const galleryCategories = [
     artworks: [
       {
         id: 'ca-1',
-        title: 'Contemporary Artwork 1',
+        title: 'President of India',
         image: '/images/Artworks/Contemporary Art/president.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-2',
-        title: 'Contemporary Artwork 2',
+        title: 'Sunmica',
         image: '/images/Artworks/Contemporary Art/sunmica.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-3',
-        title: 'Contemporary Artwork 3',
+        title: 'CM Dr. Mohan Yadav',
         image: '/images/Artworks/Contemporary Art/CM-MohanYadav.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-4',
-        title: 'Contemporary Artwork 4',
+        title: 'Radha Krishna',
         image: '/images/Artworks/Contemporary Art/Radhakrishna.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-5',
-        title: 'Contemporary Artwork 5',
-        image: '/images/Artworks/Contemporary Art/Shivrajsingh.jpeg',
+        title: 'EX CM Shivraj Singh Chouhan',
+        image: '/images/Artworks/Contemporary Art/Shivrajsingh.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-6',
-        title: 'Contemporary Artwork 6',
+        title: 'Eichor Motors',
         image: '/images/Artworks/Contemporary Art/Eichor2.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-7',
-        title: 'Contemporary Artwork 7',
+        title: 'Subhash Chandra Bose',
         image: '/images/Artworks/Contemporary Art/SCBose.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-8',
-        title: 'Contemporary Artwork 7',
-        image: '/images/Artworks/Contemporary Art/SBIGandhi.jpeg',
+        title: 'Mahatma Gandhi',
+        image: '/images/Artworks/Contemporary Art/SBIGandhi.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
     ],
