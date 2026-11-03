@@ -112,13 +112,13 @@ const galleryCategories = [
       {
         id: 'ta-1',
         title: 'Textile Artwork 1',
-        image: '/images/Artworks/Textile Art/Ambedkar.jpeg',
+        image: '/images/Artworks/Textile Art/DrAmbedkardenim.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
         id: 'ta-2',
         title: 'Textile Artwork 3',
-        image: '/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg',
+        image: '/images/Artworks/Textile Art/HARSHITA SINGH.jpg.webp',
         alt: 'Textile artwork by Sunil Vyas',
       },
       {
@@ -193,13 +193,13 @@ const galleryCategories = [
       {
         id: 'pca-10',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/PC7.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/PC7.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
         id: 'pca-28',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/Mayor.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/Mayor.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -243,7 +243,7 @@ const galleryCategories = [
       {
         id: 'pca-8',
         title: 'Paper Cutting Artwork 8',
-        image: '/images/Artworks/Paper Cutting Art/PC4.jpeg',
+        image: '/images/Artworks/Paper Cutting Art/PC4.webp',
         alt: 'Paper cutting artwork by Sunil Vyas',
       },
       {
@@ -386,7 +386,7 @@ const galleryCategories = [
     {
       id: 'wrapper-2',
       title: 'Waste Wrapper Artwork 2',
-      image: '/images/Artworks/Waste Wrapper Art/PC1.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/PC1.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
@@ -410,7 +410,7 @@ const galleryCategories = [
     {
       id: 'wrapper-6',
       title: 'Waste Wrapper Artwork 6',
-      image: '/images/Artworks/Waste Wrapper Art/PC2.jpeg',
+      image: '/images/Artworks/Waste Wrapper Art/PC2.webp',
       alt: 'Waste wrapper artwork by Sunil Vyas',
     },
     {
@@ -457,13 +457,13 @@ const galleryCategories = [
       {
         id: 'ca-3',
         title: 'Contemporary Artwork 3',
-        image: '/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg',
+        image: '/images/Artworks/Contemporary Art/CM-MohanYadav.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
         id: 'ca-4',
         title: 'Contemporary Artwork 4',
-        image: '/images/Artworks/Contemporary Art/Radhakrishna.jpeg',
+        image: '/images/Artworks/Contemporary Art/Radhakrishna.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {
@@ -475,7 +475,7 @@ const galleryCategories = [
       {
         id: 'ca-6',
         title: 'Contemporary Artwork 6',
-        image: '/images/Artworks/Contemporary Art/Eichor2.jpeg',
+        image: '/images/Artworks/Contemporary Art/Eichor2.webp',
         alt: 'Contemporary artwork by Sunil Vyas',
       },
       {

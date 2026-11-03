@@ -27,7 +27,7 @@ const artworkSlides = [
     artworks: [
       {
         id: 4,
-        image: "/images/Artworks/Textile Art/Ambedkar.jpeg",
+        image: "/images/Artworks/Textile Art/DrAmbedkardenim.webp",
         alt: "Painting 1",
       },
       {
@@ -37,7 +37,7 @@ const artworkSlides = [
       },
       {
         id: 6,
-        image: "/images/Artworks/Textile Art/HARSHITA SINGH.jpg.jpeg",
+        image: "/images/Artworks/Textile Art/HARSHITA SINGH.jpg.webp",
         alt: "Painting 3",
       },
     ],
@@ -81,7 +81,7 @@ const artworkSlides = [
       },
       {
         id: 12,
-        image: "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg",
+        image: "/images/Artworks/Contemporary Art/CM-MohanYadav.webp",
         alt: "Nail artwork 3",
       },
     ],
