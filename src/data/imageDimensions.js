@@ -1,44 +1,4 @@
 const imageDimensions = {
-  "/images/Artworks/2019- bhaskar.jpg.webp": {
-    "width": 7566,
-    "height": 11934
-  },
-  "/images/Artworks/2019- naidunia.jpg.webp": {
-    "width": 11316,
-    "height": 8083
-  },
-  "/images/Artworks/2019-Naidunia-II.jpg.webp": {
-    "width": 8100,
-    "height": 7566
-  },
-  "/images/Artworks/2019-Naidunia2.jpg.webp": {
-    "width": 5200,
-    "height": 10667
-  },
-  "/images/Artworks/2019-Patrika-II.jpg.webp": {
-    "width": 13950,
-    "height": 7217
-  },
-  "/images/Artworks/2019-Patrika.jpg.webp": {
-    "width": 9100,
-    "height": 6417
-  },
-  "/images/Artworks/2021-news today.jpg.webp": {
-    "width": 1015,
-    "height": 1165
-  },
-  "/images/Artworks/2021.jpg.webp": {
-    "width": 7500,
-    "height": 7217
-  },
-  "/images/Artworks/2023.jpg.jpeg": {
-    "width": 869,
-    "height": 478
-  },
-  "/images/Artworks/bhaskar 2018.jpg.webp": {
-    "width": 13977,
-    "height": 6259
-  },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 910,
     "height": 1093
@@ -48,8 +8,8 @@ const imageDimensions = {
     "height": 3060
   },
   "/images/Artworks/Contemporary Art/president.webp": {
-    "width": 5228,
-    "height": 7480
+    "width": 419,
+    "height": 600
   },
   "/images/Artworks/Contemporary Art/Radhakrishna.jpeg": {
     "width": 1600,
@@ -60,20 +20,16 @@ const imageDimensions = {
     "height": 1280
   },
   "/images/Artworks/Contemporary Art/SCBose.webp": {
-    "width": 3000,
-    "height": 4000
+    "width": 450,
+    "height": 600
   },
   "/images/Artworks/Contemporary Art/Shivrajsingh.jpeg": {
     "width": 1030,
     "height": 1280
   },
   "/images/Artworks/Contemporary Art/sunmica.webp": {
-    "width": 7900,
-    "height": 13085
-  },
-  "/images/Artworks/DainikB.jpeg": {
-    "width": 596,
-    "height": 1280
+    "width": 362,
+    "height": 600
   },
   "/images/Artworks/Fabric Art/AhilyaFabric.webp": {
     "width": 2120,
@@ -95,25 +51,13 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
-  "/images/Artworks/Indradarshan.jpg.webp": {
-    "width": 7402,
-    "height": 10169
-  },
-  "/images/Artworks/naidunia-2018.jpg.webp": {
-    "width": 6554,
-    "height": 11133
-  },
-  "/images/Artworks/naidunia.jpg.webp": {
-    "width": 4767,
-    "height": 7000
-  },
   "/images/Artworks/Nail Art/GandhiNA.webp": {
     "width": 1848,
     "height": 2916
   },
-  "/images/Artworks/Nail Art/SwamiVivek.jpeg": {
-    "width": 3000,
-    "height": 4000
+  "/images/Artworks/Nail Art/SwamiVivek.webp": {
+    "width": 450,
+    "height": 600
   },
   "/images/Artworks/Nail Art/TA2.jpeg": {
     "width": 774,
@@ -199,10 +143,6 @@ const imageDimensions = {
     "width": 600,
     "height": 594
   },
-  "/images/Artworks/NewsPaper.jpeg": {
-    "width": 1237,
-    "height": 1600
-  },
   "/images/Artworks/Paper Cutting Art/CleanIndia.jpeg": {
     "width": 808,
     "height": 808
@@ -216,16 +156,16 @@ const imageDimensions = {
     "height": 347
   },
   "/images/Artworks/Paper Cutting Art/Face.webp": {
-    "width": 2002,
-    "height": 2670
+    "width": 450,
+    "height": 600
   },
   "/images/Artworks/Paper Cutting Art/horse.jpeg": {
     "width": 913,
     "height": 1011
   },
   "/images/Artworks/Paper Cutting Art/india.jpeg": {
-    "width": 894,
-    "height": 1280
+    "width": 656,
+    "height": 955
   },
   "/images/Artworks/Paper Cutting Art/Kailash.jpeg": {
     "width": 1371,
@@ -260,8 +200,8 @@ const imageDimensions = {
     "height": 1600
   },
   "/images/Artworks/Paper Cutting Art/PC8.webp": {
-    "width": 2992,
-    "height": 4000
+    "width": 449,
+    "height": 600
   },
   "/images/Artworks/Paper Cutting Art/PC9.jpeg": {
     "width": 1080,
@@ -272,8 +212,8 @@ const imageDimensions = {
     "height": 1277
   },
   "/images/Artworks/Paper Cutting Art/RJSTHAN.jpg.webp": {
-    "width": 2427,
-    "height": 2649
+    "width": 550,
+    "height": 600
   },
   "/images/Artworks/Paper Cutting Art/Scenery.jpeg": {
     "width": 938,
@@ -292,20 +232,8 @@ const imageDimensions = {
     "height": 1280
   },
   "/images/Artworks/Paper Cutting Art/Woman3.webp": {
-    "width": 3000,
-    "height": 4000
-  },
-  "/images/Artworks/patrika-2020.jpg.webp": {
-    "width": 6567,
-    "height": 7650
-  },
-  "/images/Artworks/patrika.jpg.webp": {
-    "width": 6750,
-    "height": 5070
-  },
-  "/images/Artworks/Patrika.webp": {
-    "width": 539,
-    "height": 539
+    "width": 450,
+    "height": 600
   },
   "/images/Artworks/Plastic Art/Clean.jpeg": {
     "width": 864,
@@ -406,10 +334,6 @@ const imageDimensions = {
   "/images/Artworks/Press Thumbnails/TatkalTimes.webp": {
     "width": 600,
     "height": 594
-  },
-  "/images/Artworks/RajivTimes.jpeg": {
-    "width": 1280,
-    "height": 1059
   },
   "/images/Artworks/Recognitions/1.webp": {
     "width": 1550,
@@ -519,10 +443,6 @@ const imageDimensions = {
     "width": 4000,
     "height": 2252
   },
-  "/images/Artworks/TatkalTimes.jpeg": {
-    "width": 667,
-    "height": 660
-  },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,
     "height": 1280
@@ -538,6 +458,18 @@ const imageDimensions = {
   "/images/Artworks/Textile Art/Horse.webp": {
     "width": 3108,
     "height": 4712
+  },
+  "/images/Artworks/Thumbnail/DenimArt.webp": {
+    "width": 472,
+    "height": 600
+  },
+  "/images/Artworks/Thumbnail/DrAmbedkardenim.webp": {
+    "width": 442,
+    "height": 600
+  },
+  "/images/Artworks/Thumbnail/IMG_20231130_153655.jpg.webp": {
+    "width": 296,
+    "height": 600
   },
   "/images/Artworks/Waste Wrapper Art/Cleaning.jpeg": {
     "width": 540,
@@ -580,60 +512,60 @@ const imageDimensions = {
     "height": 1374
   },
   "/images/Artworks/Wooden Scrap Art/CMWodden.webp": {
-    "width": 3000,
-    "height": 4000
+    "width": 450,
+    "height": 600
   },
-  "/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg": {
-    "width": 2146,
-    "height": 2995
+  "/images/Artworks/Wooden Scrap Art/dalai laama.jpg.webp": {
+    "width": 430,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Dalai-lama2.jpeg": {
     "width": 1058,
     "height": 1349
   },
   "/images/Artworks/Wooden Scrap Art/manish singh.jpg.webp": {
-    "width": 3254,
-    "height": 5334
+    "width": 366,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/model-scrap.jpg.webp": {
-    "width": 3350,
-    "height": 3346
+    "width": 600,
+    "height": 599
   },
   "/images/Artworks/Wooden Scrap Art/modi.jpg.webp": {
-    "width": 2798,
-    "height": 2978
+    "width": 564,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Mohan Bhagvat.jpeg": {
     "width": 1098,
     "height": 1280
   },
   "/images/Artworks/Wooden Scrap Art/ravindra.jpg.webp": {
-    "width": 2776,
-    "height": 2959
+    "width": 563,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/rssguru.jpeg": {
     "width": 1400,
     "height": 1722
   },
   "/images/Artworks/Wooden Scrap Art/Sachiv.webp": {
-    "width": 2879,
-    "height": 3290
+    "width": 525,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Sachiv2.webp": {
-    "width": 3309,
-    "height": 3767
+    "width": 527,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Sachiv3.webp": {
-    "width": 3301,
-    "height": 3504
+    "width": 565,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Sachiv4.webp": {
-    "width": 2549,
-    "height": 3004
+    "width": 509,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/wodengandhi.webp": {
-    "width": 3771,
-    "height": 4892
+    "width": 463,
+    "height": 600
   },
   "/images/Artworks/Wooden Scrap Art/Wooden2.jpeg": {
     "width": 976,

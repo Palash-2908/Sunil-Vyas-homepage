@@ -35,7 +35,7 @@ const galleryCategories = [
       {
         id: 'wsa-3',
         title: 'Wooden Scrap Artwork 5',
-        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.jpeg',
+        image: '/images/Artworks/Wooden Scrap Art/dalai laama.jpg.webp',
         alt: 'Wooden scrap artwork by Sunil Vyas',
       },
       {
@@ -326,7 +326,7 @@ const galleryCategories = [
     {
       id: 'nail-2',
       title: 'Nail Artwork 2',
-      image: '/images/Artworks/Nail Art/SwamiVivek.jpeg',
+      image: '/images/Artworks/Nail Art/SwamiVivek.webp',
       alt: 'Nail art by Sunil Vyas',
     },
     {
