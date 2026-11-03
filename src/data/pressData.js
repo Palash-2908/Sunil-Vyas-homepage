@@ -13,7 +13,7 @@ const pressItems = [
     publication: 'Tatkal Times',
     type: 'Newspaper Feature',
     date: '2024',
-    image: '/images/Artworks/News Mentions/TatkalTimes.jpeg',
+    image: '/images/Artworks/News Mentions/TatkalTimes.webp',
   },
   {
     id: 'pr-18',
@@ -21,7 +21,7 @@ const pressItems = [
     publication: 'Rajiv Times',
     type: 'Newspaper Feature',
     date: '2022',
-    image: '/images/Artworks/News Mentions/RajivTimes.jpeg',
+    image: '/images/Artworks/News Mentions/RajivTimes.webp',
   },
 
   {
@@ -96,7 +96,7 @@ const pressItems = [
     publication: 'Patrika',
     type: 'Newspaper Feature',
     date: '2019',
-    image: '/images/Artworks/News Mentions/NewsPaper.jpeg',
+    image: '/images/Artworks/News Mentions/NewsPaper.webp',
   },
   {
     id: 'pr-4',

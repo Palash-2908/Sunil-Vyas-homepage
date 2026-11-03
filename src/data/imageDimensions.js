@@ -1,7 +1,43 @@
 const imageDimensions = {
-  "/images/Artworks/Acrylic Water Portrait Art/IMG-20240824-WA0010.jpg.jpeg": {
-    "width": 3204,
-    "height": 4856
+  "/images/Artworks/2019- bhaskar.jpg.webp": {
+    "width": 7566,
+    "height": 11934
+  },
+  "/images/Artworks/2019- naidunia.jpg.webp": {
+    "width": 11316,
+    "height": 8083
+  },
+  "/images/Artworks/2019-Naidunia-II.jpg.webp": {
+    "width": 8100,
+    "height": 7566
+  },
+  "/images/Artworks/2019-Naidunia2.jpg.webp": {
+    "width": 5200,
+    "height": 10667
+  },
+  "/images/Artworks/2019-Patrika-II.jpg.webp": {
+    "width": 13950,
+    "height": 7217
+  },
+  "/images/Artworks/2019-Patrika.jpg.webp": {
+    "width": 9100,
+    "height": 6417
+  },
+  "/images/Artworks/2021-news today.jpg.webp": {
+    "width": 1015,
+    "height": 1165
+  },
+  "/images/Artworks/2021.jpg.webp": {
+    "width": 7500,
+    "height": 7217
+  },
+  "/images/Artworks/2023.jpg.jpeg": {
+    "width": 869,
+    "height": 478
+  },
+  "/images/Artworks/bhaskar 2018.jpg.webp": {
+    "width": 13977,
+    "height": 6259
   },
   "/images/Artworks/Contemporary Art/CM-MohanYadav.jpeg": {
     "width": 910,
@@ -35,6 +71,10 @@ const imageDimensions = {
     "width": 7900,
     "height": 13085
   },
+  "/images/Artworks/DainikB.jpeg": {
+    "width": 596,
+    "height": 1280
+  },
   "/images/Artworks/Fabric Art/AhilyaFabric.webp": {
     "width": 2120,
     "height": 3400
@@ -55,6 +95,18 @@ const imageDimensions = {
     "width": 1600,
     "height": 1236
   },
+  "/images/Artworks/Indradarshan.jpg.webp": {
+    "width": 7402,
+    "height": 10169
+  },
+  "/images/Artworks/naidunia-2018.jpg.webp": {
+    "width": 6554,
+    "height": 11133
+  },
+  "/images/Artworks/naidunia.jpg.webp": {
+    "width": 4767,
+    "height": 7000
+  },
   "/images/Artworks/Nail Art/GandhiNA.webp": {
     "width": 1848,
     "height": 2916
@@ -68,84 +120,88 @@ const imageDimensions = {
     "height": 1280
   },
   "/images/Artworks/News Mentions/2019- bhaskar.jpg.webp": {
-    "width": 7566,
-    "height": 11934
+    "width": 380,
+    "height": 600
   },
   "/images/Artworks/News Mentions/2019- naidunia.jpg.webp": {
-    "width": 11316,
-    "height": 8083
+    "width": 600,
+    "height": 429
   },
   "/images/Artworks/News Mentions/2019-Naidunia-II.jpg.webp": {
-    "width": 8100,
-    "height": 7566
+    "width": 600,
+    "height": 560
   },
   "/images/Artworks/News Mentions/2019-Naidunia2.jpg.webp": {
-    "width": 5200,
-    "height": 10667
+    "width": 292,
+    "height": 600
   },
   "/images/Artworks/News Mentions/2019-Patrika-II.jpg.webp": {
-    "width": 13950,
-    "height": 7217
+    "width": 600,
+    "height": 310
   },
   "/images/Artworks/News Mentions/2019-Patrika.jpg.webp": {
-    "width": 9100,
-    "height": 6417
+    "width": 600,
+    "height": 423
   },
   "/images/Artworks/News Mentions/2021-news today.jpg.webp": {
-    "width": 1015,
-    "height": 1165
+    "width": 523,
+    "height": 600
   },
   "/images/Artworks/News Mentions/2021.jpg.webp": {
-    "width": 7500,
-    "height": 7217
+    "width": 600,
+    "height": 577
   },
-  "/images/Artworks/News Mentions/2023.jpg.jpeg": {
-    "width": 869,
-    "height": 478
+  "/images/Artworks/News Mentions/2023.jpg.webp": {
+    "width": 600,
+    "height": 330
   },
   "/images/Artworks/News Mentions/bhaskar 2018.jpg.webp": {
-    "width": 13977,
-    "height": 6259
+    "width": 600,
+    "height": 269
   },
-  "/images/Artworks/News Mentions/DainikB.jpeg": {
-    "width": 596,
-    "height": 1280
+  "/images/Artworks/News Mentions/DainikB.webp": {
+    "width": 279,
+    "height": 600
   },
   "/images/Artworks/News Mentions/Indradarshan.jpg.webp": {
-    "width": 7402,
-    "height": 10169
+    "width": 437,
+    "height": 600
   },
   "/images/Artworks/News Mentions/naidunia-2018.jpg.webp": {
-    "width": 6554,
-    "height": 11133
+    "width": 353,
+    "height": 600
   },
   "/images/Artworks/News Mentions/naidunia.jpg.webp": {
-    "width": 4767,
-    "height": 7000
+    "width": 409,
+    "height": 600
   },
-  "/images/Artworks/News Mentions/NewsPaper.jpeg": {
-    "width": 1237,
-    "height": 1600
+  "/images/Artworks/News Mentions/NewsPaper.webp": {
+    "width": 464,
+    "height": 600
   },
   "/images/Artworks/News Mentions/patrika-2020.jpg.webp": {
-    "width": 6567,
-    "height": 7650
+    "width": 515,
+    "height": 600
   },
   "/images/Artworks/News Mentions/patrika.jpg.webp": {
-    "width": 6750,
-    "height": 5070
+    "width": 600,
+    "height": 451
   },
   "/images/Artworks/News Mentions/Patrika.webp": {
     "width": 539,
     "height": 539
   },
-  "/images/Artworks/News Mentions/RajivTimes.jpeg": {
-    "width": 1280,
-    "height": 1059
+  "/images/Artworks/News Mentions/RajivTimes.webp": {
+    "width": 600,
+    "height": 496
   },
-  "/images/Artworks/News Mentions/TatkalTimes.jpeg": {
-    "width": 667,
-    "height": 660
+  "/images/Artworks/News Mentions/TatkalTimes.webp": {
+    "width": 600,
+    "height": 594
+  },
+  "/images/Artworks/NewsPaper.jpeg": {
+    "width": 1237,
+    "height": 1600
   },
   "/images/Artworks/Paper Cutting Art/CleanIndia.jpeg": {
     "width": 808,
@@ -239,6 +295,18 @@ const imageDimensions = {
     "width": 3000,
     "height": 4000
   },
+  "/images/Artworks/patrika-2020.jpg.webp": {
+    "width": 6567,
+    "height": 7650
+  },
+  "/images/Artworks/patrika.jpg.webp": {
+    "width": 6750,
+    "height": 5070
+  },
+  "/images/Artworks/Patrika.webp": {
+    "width": 539,
+    "height": 539
+  },
   "/images/Artworks/Plastic Art/Clean.jpeg": {
     "width": 864,
     "height": 1280
@@ -258,6 +326,90 @@ const imageDimensions = {
   "/images/Artworks/Plastic Art/WhatsApp Image 2026-09-07 at 5.16.04 PM (1).jpeg": {
     "width": 1600,
     "height": 1236
+  },
+  "/images/Artworks/Press Thumbnails/2019- bhaskar.jpg.webp": {
+    "width": 380,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/2019- naidunia.jpg.webp": {
+    "width": 600,
+    "height": 429
+  },
+  "/images/Artworks/Press Thumbnails/2019-Naidunia-II.jpg.webp": {
+    "width": 600,
+    "height": 560
+  },
+  "/images/Artworks/Press Thumbnails/2019-Naidunia2.jpg.webp": {
+    "width": 292,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/2019-Patrika-II.jpg.webp": {
+    "width": 600,
+    "height": 310
+  },
+  "/images/Artworks/Press Thumbnails/2019-Patrika.jpg.webp": {
+    "width": 600,
+    "height": 423
+  },
+  "/images/Artworks/Press Thumbnails/2021-news today.jpg.webp": {
+    "width": 523,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/2021.jpg.webp": {
+    "width": 600,
+    "height": 577
+  },
+  "/images/Artworks/Press Thumbnails/2023.jpg.webp": {
+    "width": 600,
+    "height": 330
+  },
+  "/images/Artworks/Press Thumbnails/bhaskar 2018.jpg.webp": {
+    "width": 600,
+    "height": 269
+  },
+  "/images/Artworks/Press Thumbnails/DainikB.webp": {
+    "width": 279,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/Indradarshan.jpg.webp": {
+    "width": 437,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/naidunia-2018.jpg.webp": {
+    "width": 353,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/naidunia.jpg.webp": {
+    "width": 409,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/NewsPaper.webp": {
+    "width": 464,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/patrika-2020.jpg.webp": {
+    "width": 515,
+    "height": 600
+  },
+  "/images/Artworks/Press Thumbnails/patrika.jpg.webp": {
+    "width": 600,
+    "height": 451
+  },
+  "/images/Artworks/Press Thumbnails/Patrika.webp": {
+    "width": 539,
+    "height": 539
+  },
+  "/images/Artworks/Press Thumbnails/RajivTimes.webp": {
+    "width": 600,
+    "height": 496
+  },
+  "/images/Artworks/Press Thumbnails/TatkalTimes.webp": {
+    "width": 600,
+    "height": 594
+  },
+  "/images/Artworks/RajivTimes.jpeg": {
+    "width": 1280,
+    "height": 1059
   },
   "/images/Artworks/Recognitions/1.webp": {
     "width": 1550,
@@ -366,6 +518,10 @@ const imageDimensions = {
   "/images/Artworks/Recognitions/8.webp": {
     "width": 4000,
     "height": 2252
+  },
+  "/images/Artworks/TatkalTimes.jpeg": {
+    "width": 667,
+    "height": 660
   },
   "/images/Artworks/Textile Art/Ambedkar.jpeg": {
     "width": 942,
