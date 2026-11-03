@@ -54,7 +54,7 @@ const artworkSlides = [
       },
       {
         id: 8,
-        image: "/images/Artworks/Paper Cutting Art/RaniAhilya.jpeg",
+        image: "/images/Artworks/Paper Cutting Art/RaniAhilya.webp",
         alt: "Scrap artwork 2",
       },
       {
